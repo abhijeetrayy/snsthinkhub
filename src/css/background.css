@@ -1,0 +1,75 @@
+#backgroundpatter1 {
+  --s: 82px; /* control the size */
+  --c1: #b2b2b2;
+  --c2: #ffffff;
+  --c3: #d9d9d9;
+
+  --_g: var(--c3) 0 120deg, #0000 0;
+  background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+    conic-gradient(
+      from 60deg at calc(200% / 3),
+      var(--c3) 60deg,
+      var(--c2) 0 120deg,
+      #0000 0
+    ),
+    conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+    linear-gradient(
+      90deg,
+      var(--c1) calc(100% / 6),
+      var(--c2) 0 50%,
+      var(--c1) 0 calc(500% / 6),
+      var(--c2) 0
+    );
+  background-size: calc(1.732 * var(--s)) var(--s);
+}
+
+.bg2 {
+  --s: 120px; /* control the size */
+  --c1: #ff6b6b;
+  --c2: #556270;
+
+  background: conic-gradient(
+        at calc(50% / 3) calc(50% / 3),
+        #0000 75%,
+        var(--c2) 0
+      )
+      calc(var(--s) / 3) calc(var(--s) / 3),
+    conic-gradient(#0000 75%, var(--c1) 0) calc(var(--s) / 6) calc(var(--s) / 6),
+    conic-gradient(at calc(250% / 3) calc(250% / 3), var(--c1) 75%, var(--c2) 0);
+  background-size: var(--s) var(--s);
+}
+
+.bg3 {
+  --s: 105px; /* control the size */
+  --c1: #b9b9b9;
+  --c2: #dcdcdc;
+  --c3: #fafafa;
+
+  background: conic-gradient(
+        from 75deg,
+        var(--c1) 15deg,
+        var(--c2) 0 30deg,
+        #0000 0 180deg,
+        var(--c2) 0 195deg,
+        var(--c1) 0 210deg,
+        #0000 0
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) / 0.577),
+    conic-gradient(
+      var(--c1) 30deg,
+      var(--c3) 0 75deg,
+      var(--c1) 0 90deg,
+      var(--c2) 0 105deg,
+      var(--c3) 0 150deg,
+      var(--c2) 0 180deg,
+      var(--c3) 0 210deg,
+      var(--c1) 0 256deg,
+      var(--c2) 0 270deg,
+      var(--c1) 0 286deg,
+      var(--c2) 0 331deg,
+      var(--c3) 0
+    );
+  background-size: var(--s) calc(var(--s) / 0.577);
+  /* 0.577=tan(30deg)*/
+}
