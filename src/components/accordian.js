@@ -32,7 +32,7 @@ export default function Example() {
     return (
         <Fragment>
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(1)}>
+                <AccordionHeader className="text-lg text-gray-600" onClick={() => handleOpen(1)}>
                     What is Material Tailwind?
                 </AccordionHeader>
                 <AccordionBody>
@@ -43,7 +43,7 @@ export default function Example() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(2)}>
+                <AccordionHeader className="text-lg text-gray-600" onClick={() => handleOpen(2)}>
                     How to use Material Tailwind?
                 </AccordionHeader>
                 <AccordionBody>
@@ -54,7 +54,7 @@ export default function Example() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(3)}>
+                <AccordionHeader className="text-lg text-gray-600" onClick={() => handleOpen(3)}>
                     What can I do with Material Tailwind?
                 </AccordionHeader>
                 <AccordionBody>

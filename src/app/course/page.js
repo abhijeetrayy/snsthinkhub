@@ -1,14 +1,11 @@
-import React from 'react'
-import PayPage from "../../components/payPage"
-import Card from "../../components/card"
+import React from "react";
 
+import CourseDetail from "../../components/CourseDetail";
 
 export default function page() {
-    return (
-        <><PayPage />
-            <Card />
-
-        </>
-
-    )
+  return (
+    <>
+      <CourseDetail />
+    </>
+  );
 }

@@ -8,6 +8,7 @@ import { useSession } from "next-auth/react";
 
 const Navbar = () => {
   const { data: session } = useSession()
+  console.log(session)
   const navigation = [
     { name: "Home", url: "/" },
     { name: "Course", url: "/courses" },
@@ -82,6 +83,20 @@ const Navbar = () => {
                     >
                       Get Started
                     </Link>
+                    {session ?
+
+                      <Link
+                        href="/"
+                        className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                      >
+                        <span className=" capitalize">{session?.user?.name}</span>
+                      </Link> : <Link
+                        href="/api/auth/signin"
+                        className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                      >
+                        Log In
+                      </Link>
+                    }
                   </>
                 </Disclosure.Panel>
               </div>
@@ -118,7 +133,7 @@ const Navbar = () => {
               href="/"
               className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
             >
-              <img src={session?.user?.image} className="mr-2 w-8 rounded-full inline-block" /><span>{session?.user?.name}</span>
+              <span className=" capitalize">{session?.user?.name}</span>
             </Link> : <Link
               href="/api/auth/signin"
               className="px-4 py-2 text-white content-center bg-indigo-600 rounded-md md:ml-5"

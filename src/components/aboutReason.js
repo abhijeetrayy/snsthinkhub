@@ -3,9 +3,9 @@ import img1 from "../public/icon/icon-and-text/02/01.png"
 
 export default function aboutReason() {
     return (
-        <section className="p-6">
+        <section className=" py-2 px-6">
             <div className="flex">
-                <div className="hidden md:flex bg-cover">
+                <div className="hidden lg:flex bg-cover">
                     <img className=' object-cover' src='https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
                 </div>
 
@@ -40,7 +40,7 @@ export default function aboutReason() {
                                 </li>
                                 <li className="flex flex-row gap-4 items-center">
                                     <div className="">
-                                        <img className='max-w-[50px]' src="https://img.icons8.com/?size=512&id=119287&format=png" alt="" />
+                                        <img className='max-w-[50px]' src="https://img.icons8.com/?size=512&id=XHK06L6pZveA&format=png" alt="" />
                                     </div>
                                     <div className="">
                                         <h4 className="text-gray-600 text-xl font-bold">Our Vision</h4>

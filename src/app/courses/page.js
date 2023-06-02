@@ -9,10 +9,9 @@ export default function page() {
     return (<>
 
 
-        <CourseHeader />
+        <CourseHeader title={"Course"} />
         <Card />
-        <Accordian />
-        <Review />
+
     </>
     )
 }

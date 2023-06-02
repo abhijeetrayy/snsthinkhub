@@ -68,52 +68,13 @@ export default function Home() {
         });
     };
     return (
-        <div>
 
-            <main className="font-Inter h-screen overflow-auto bg-gradient-to-tr from-[#252B30] to-[#191C22]">
+        <button
+            onClick={makePayment}
+            className="bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
+        >
+            Purchase Now
+        </button>
 
-
-
-
-
-                <div className="relative z-10 flex flex-col md:flex-row mt-10 items-center  max-w-6xl justify-evenly mx-auto">
-                    <div className="md:w-1/3 mb-20 md:mb-0 mx-10">
-                        <h1 className=" text-white font-bold text-5xl mb-10">
-                            SnSthinkHub
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-                                payments
-                            </span>{" "}
-
-                        </h1>
-                        <p className="text-sm text-gray-300 font-light tracking-wide w-[300px] mb-10">
-
-                        </p>
-                        <div className="bg-gradient-to-r from-[#3e4044] to-[#1D2328] p-[1px] rounded-md mb-4">
-                            <button
-                                onClick={makePayment}
-                                className="bg-gradient-to-r from-[#2E3137] to-[#1D2328] rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-gray-300 font-bold"
-                            >
-                                Purchase Now!
-                            </button>
-                        </div>
-                        <div className="bg-gradient-to-r from-[#3e4044] to-[#1D2328] p-[1px] rounded-md">
-                            {color ? <button className="bg-gradient-to-r from-[#1D2328] to-[#1D2328] rounded-md w-full py-4 shadow-sm drop-shadow-sm text-gray-400 font-light">
-                                Read Blog
-                            </button> : <button className="bg-gradient-to-r from-[#ffffff] to-[#fe0973] rounded-md w-full py-4 shadow-sm drop-shadow-sm text-gray-400 font-light">
-                                Read Blog
-                            </button>}
-                        </div>
-                    </div>
-                    {/* <div className="w-2/3 bg-white flex-shrink-0  relative"> */}
-                    <img
-                        className="w-full md:w-[36rem] h-full"
-                        alt="stripe payment from undraw"
-                        src="/payments.svg"
-                    />
-                    {/* </div> */}
-                </div>
-
-            </main>
-        </div>
     );
 }

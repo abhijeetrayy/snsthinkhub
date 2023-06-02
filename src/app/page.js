@@ -4,26 +4,24 @@ import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Testimonials from "../components/testimonials";
 import Faq from "../components/faq";
-import Team from "../components/team"
+import Team from "../components/team";
 import Header from "../components/header";
 import Features from "../components/features";
-import Card from "../components/card"
-import ProgramBuy from "../components/programBuy"
-
+import Card from "../components/card";
+import ProgramBuy from "../components/programBuy";
+import "../css/background.css";
 
 const Home = () => {
   return (
     <>
-
-
-
       <Header />
       <Features />
-      <Card />
+      <Card id="backgroundpatter1" />
       <ProgramBuy />
       <SectionTitle
         pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
+        title=" Why should you use this landing page"
+      >
         Nextly is a free landing page & marketing website template for startups
         and indie projects. Its built with Next.js & TailwindCSS. And its
         completely open-source.
@@ -32,7 +30,8 @@ const Home = () => {
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
         pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
+        title="Learn how to fullfil your needs"
+      >
         This section is to highlight a promo or demo video of your product.
         Analysts says a landing page with video has 3% more conversion rate. So,
         don&apos;t forget to add one. Just like this.
@@ -41,7 +40,8 @@ const Home = () => {
       <Team />
       <SectionTitle
         pretitle="Testimonials"
-        title="Here's what our customers said">
+        title="Here's what our customers said"
+      >
         Testimonails is a great way to increase the brand trust and awareness.
         Use this section to highlight your popular customers.
       </SectionTitle>
@@ -51,10 +51,8 @@ const Home = () => {
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
-
-
     </>
   );
-}
+};
 
 export default Home;
