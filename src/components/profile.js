@@ -4,8 +4,8 @@ import React from "react";
 import { Bars } from "react-loader-spinner";
 
 export default function ProfilePage() {
-    const { data: session } = useSession();
-    if (!session) {
+    const { data: session, status } = useSession();
+    if (status == "loading") {
         return (
             <div className="h-screen w-screen flex justify-center items-center">
                 <Bars
@@ -15,7 +15,21 @@ export default function ProfilePage() {
                     width={100}
                     timeout={3000}
                 />
-                Maybe Your loged Out, Please check
+
+            </div>
+        )
+    }
+    if (!session) {
+        return (
+            <div className="h-screen w-screen flex justify-center items-center flex-col text-indigo-500">
+                <Bars
+                    type="Puff"
+                    color="gray"
+                    height={100}
+                    width={100}
+                    timeout={3000}
+                />
+                You are loged Out, Please check
             </div>
         );
     } else {

@@ -86,7 +86,7 @@ export default function CourseDetail() {
                     </div>
 
                     <div className=" my-3 mx-auto sm:max-w-[370px] md:min-w-[420px] ">
-                        <div className=" shadow-md rounded-lg">
+                        <div className=" shadow-md rounded-lg py-2">
 
                             <div>
                                 <img
@@ -151,7 +151,7 @@ export default function CourseDetail() {
                                         Get your team access to 16,000+ top Udemy courses anytime,
                                         anywhere.
                                     </p>
-                                    <div className="flex justify-center w-full mt-3">
+                                    <div className="flex justify-center w-full my-3">
 
                                         <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
                                             Try Bussiness
