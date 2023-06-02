@@ -1,5 +1,6 @@
 'use client'
 
+import { useSession } from "next-auth/react";
 import { useState } from "react";
 
 
@@ -10,9 +11,14 @@ import { TiTick } from "react-icons/ti"
 export default function Home() {
     const [color, setColor] = useState(false)
     const notify = () => toast(<><TiTick className="text-green-400 text-lg" /> Here is your toast.</>);
+    const { data: session } = useSession()
     const makePayment = async () => {
-        setColor(false)
+
         console.log("here...");
+        if (!session) {
+            toast("Please LogIn First")
+            return
+        }
         const res = await initializeRazorpay();
 
         if (!res) {
