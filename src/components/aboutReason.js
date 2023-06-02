@@ -3,8 +3,8 @@ import img1 from "../public/icon/icon-and-text/02/01.png"
 
 export default function aboutReason() {
     return (
-        <section className=" py-2 px-6">
-            <div className="flex">
+        <section className=" py-2 px-6 md:px-16">
+            <div className="flex ">
                 <div className="hidden lg:flex bg-cover">
                     <img className=' object-cover' src='https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
                 </div>
@@ -14,7 +14,7 @@ export default function aboutReason() {
                     <div className="flex gap-4 flex-col md:w-1/2 m-6">
                         <div className="">
                             <h4 className="text-black text-5xl font-extrabold mb-4">Why chose us</h4>
-                            <p className="text-black">87% of people learning for professional
+                            <p className="text-black">People learning for professional
                                 development
                                 report
                                 career benefits</p>
@@ -29,11 +29,7 @@ export default function aboutReason() {
                                     </div>
                                     <div className="">
                                         <h4 className="text-gray-600 text-xl font-bold">Our Mission</h4>
-                                        <p className="text-gray-600 leading-8">BSB mission is to achieve excellence in
-                                            business
-                                            through excellent services and new scopes for world-class
-                                            education by realizing dreams of our clients within their
-                                            capacities.
+                                        <p className="text-gray-600 leading-8">Our mission is to provide students with the skills and knowledge they need to succeed in the workforce and create a more prosperous future for everyone.
 
                                         </p>
                                     </div>
@@ -44,10 +40,7 @@ export default function aboutReason() {
                                     </div>
                                     <div className="">
                                         <h4 className="text-gray-600 text-xl font-bold">Our Vision</h4>
-                                        <p className="text-gray-600 leading-8">Our Vision is to be the leading student
-                                            consultancy
-                                            and recruiting agency of the world by satisfying our clients in
-                                            all aspects.
+                                        <p className="text-gray-600 leading-8">We believe that by working together, we can create a more educated and prosperous world.
 
                                         </p>
                                     </div>
@@ -58,10 +51,7 @@ export default function aboutReason() {
                                     </div>
                                     <div className="">
                                         <h4 className="text-gray-600 text-xl font-bold">Our Goal</h4>
-                                        <p className="text-gray-600 leading-8">Create opportunities of abroad higher study and
-                                            improve significantly family & position and national development
-                                            and to contribute to achieve Bangladesh as a middle income
-                                            country.
+                                        <p className="text-gray-600 leading-8">We have impacted the lives of thousands of students and teachers, and we are committed to continuing to make a positive difference in the world.
                                         </p>
                                     </div>
                                 </li>

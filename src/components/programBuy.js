@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import "../css/background.css"
 
@@ -8,13 +9,13 @@ export default function programBuy() {
         < div className="" >
             <div className="container m-auto px-6 py-20 md:px-12 lg:px-20">
                 <div className="m-auto text-center lg:w-8/12 xl:w-7/12">
-                    <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">A Tailus Blocks subscription gives you access to our components and more.</h2>
+                    <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">We offer a variety of programs for students at all levels.</h2>
                 </div>
                 <div className="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
                     <div className="relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12">
                         <div aria-hidden="true" className="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"></div>
                         <div className="relative p-6 space-y-6 lg:p-8">
-                            <h3 className="text-3xl text-gray-700 font-semibold text-center">Organisation</h3>
+                            <h3 className="text-3xl text-gray-700 font-semibold text-center">Business Only</h3>
                             <div>
                                 <div className="relative flex justify-around">
                                     <div className="flex items-end">
@@ -50,11 +51,36 @@ export default function programBuy() {
                                 </a>
                                 <span>or</span>
                             </p>
-                            <button type="submit" title="Submit" className="block w-full py-3 px-6 text-center rounded-xl transition bg-purple-600 hover:bg-purple-700 active:bg-purple-800 focus:bg-indigo-600">
-                                <span className="text-white font-semibold">
-                                    Send us an email
-                                </span>
-                            </button>
+                            <div className='w-full flex justify-center'>
+
+                                {/* Open the modal using ID.showModal() method */}
+                                <button className="btn bg-indigo-600 hover:bg-indigo-500 text-white" onClick={() => window.my_modal_5.showModal()}>Contact Us</button>
+                                <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                                    <form method="dialog" className="modal-box p-7 flex flex-col">
+                                        <h3 className="font-bold text-lg">Hello Bussines</h3>
+                                        <p className="py-4">Thank You for contacting us.</p>
+                                        <div className='flex flex-col gap-3'>
+                                            <div>
+
+                                                <span className='text-lg text-gray-700 mr-3'>Name</span>
+                                                <input type='text' className='border border-gray-200 rounded-lg' />
+                                            </div>
+                                            <div>
+                                                <span className='text-lg text-gray-700 mr-3'>Email</span>
+                                                <input type='email' className='border border-gray-200 rounded-lg' />
+                                            </div>
+                                        </div>
+                                        <div className="modal-action">
+                                            {/* if there is a button in form, it will close the modal */}
+                                            <button className="btn" type='submit'>Submit</button>
+                                            <button className="btn" type='submit'>Close</button>
+                                        </div>
+                                    </form>
+                                </dialog>
+
+
+                            </div>
+
                         </div>
                     </div>
 

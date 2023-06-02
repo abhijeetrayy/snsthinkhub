@@ -31,13 +31,12 @@ export default function Team() {
                                 height="24"
                             />
                         </svg>
-                        <span className="relative">Welcome</span>
+                        <span className="relative">Our</span>
                     </span>{' '}
-                    our talented team of professionals
+                    talented team of professionals
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                    Our team is composed of experienced educators, industry professionals, and thought leaders who are passionate about education and making a difference in the world.
                 </p>
             </div>
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">

@@ -4,7 +4,7 @@ const Statistic = () => {
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
                 <div>
                     <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                        Brand new
+                        new
                     </p>
                 </div>
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-blue-500 sm:text-4xl md:mx-auto">
@@ -31,13 +31,12 @@ const Statistic = () => {
                                 height="24"
                             />
                         </svg>
-                        <span className="relative">The</span>
-                    </span>{' '}
-                    quick, brown fox jumps over a lazy dog
+                        <span className="relative">Our</span>
+                    </span>{" "}
+                    Programs
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                    We offer a variety of resources to support our students' learning. These resources include online learning modules, tutoring, and career counseling.
                 </p>
             </div>
             <div className="relative w-full p-px mx-auto mb-4 overflow-hidden transition-shadow duration-300 border rounded lg:mb-8 lg:max-w-4xl group hover:shadow-xl">
@@ -73,4 +72,4 @@ const Statistic = () => {
     );
 };
 
-export default Statistic
+export default Statistic;
