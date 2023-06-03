@@ -1,15 +1,18 @@
 "use client";
 import Link from "next/link";
-
-import Image from "next/image";
-import Logo from "../public/logosns.png";
-import { Disclosure } from "@headlessui/react";
+import { Fragment, useRef, useState } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import { useSession } from "next-auth/react";
+import Image from "next/image";
+import Logosvg from "../public/logosnss.png"
 
+function Navbar() {
+  const [open, setOpen] = useState(false)
 
-const Navbar = () => {
-  const { data: session } = useSession()
-  console.log(session)
+  const cancelButtonRef = useRef(null)
+  const { data: session } = useSession();
+  console.log(session);
   const navigation = [
     { name: "Home", url: "/" },
     { name: "Course", url: "/courses" },
@@ -21,82 +24,145 @@ const Navbar = () => {
     <div className="z-50 w-full shadow-md">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto  lg:justify-between lg:px-0">
         {/* Logo  */}
-        <Disclosure>
-          {({ open }) => (
-            <>
-              <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
-                  <span className="flex  flex-row space-x-2 text-2xl font-medium text-indigo-500">
 
-                    {/* <Image
+        <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
+          <Link href="/">
+            <span className="flex  flex-row space-x-2 text-2xl font-medium text-indigo-500">
+              {/* <Image
                       width={44}
                       height={44}
                       src={Logo}
                     /> */}
 
+              <span>SnSThinkHub</span>
+            </span>
+          </Link>
+          <button className='flex px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-500 rounded-lg lg:hidden' onClick={() => setOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg></button>
+          <Transition.Root show={open} as={Fragment} className="lg:hidden z-50">
+            <Dialog as="div" className="relative" initialFocus={cancelButtonRef} onClose={setOpen}>
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+              >
+                <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+              </Transition.Child>
 
-                    <span>SnSThinkHub</span>
-                  </span>
-                </Link>
-
-                <Disclosure.Button
-                  aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none da"
-                >
-                  <svg
-                    className="w-6 h-6 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
+              <div className="fixed h-screen w-screen bg-indigo-700 inset-0  overflow-y-auto ">
+                <div className="flex justify-start p-4 text-center items-center sm:p-0">
+                  <Transition.Child
+                    as={Fragment}
+                    enter="ease-out duration-300"
+                    enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                    enterTo="opacity-100 translate-y-0 sm:scale-100"
+                    leave="ease-in duration-200"
+                    leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                    leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                   >
-                    {open && (
-                      <path d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
-                    )}
-                    {!open && (
-                      <path
-                        fillRule="evenodd"
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      />
-                    )}
-                  </svg>
-                </Disclosure.Button>
+                    <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around">
+                      <div className="px-4 pb-4 pt-5   sm:p-6 sm:pb-4 h-1/2 w-full">
+                        <div className=" flex flex-col gap-2 h-full w-full">
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <Link
-                        key={index}
-                        href={item.url}
-                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                    <Link
-                      href="/"
-                      className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
-                    >
-                      Get Started
-                    </Link>
-                    {session ?
+                          <div className="flex flex-col gap-8 mt-3 sm:ml-4 sm:mt-0 text-left w-full">
+                            <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
+                              <div className="flex justify-between">
 
-                      <Link
-                        href="/profile"
-                        className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
-                      >
-                        <span className=" capitalize">{session?.user?.name}</span>
-                      </Link> : <Link
-                        href="/api/auth/signin"
-                        className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
-                      >
-                        Log In
-                      </Link>
-                    }
-                  </>
-                </Disclosure.Panel>
+                                <Link href="/">
+                                  <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
+
+
+                                    <span>SnSThinkHub</span>
+                                  </span>
+                                </Link>
+                                <div>
+                                  <button className='flex px-4 py-2 bg-white text-indigo-700 hover:bg-gray-200 rounded-lg lg:hidden' onClick={() => setOpen(false)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                  </svg></button>
+                                </div>
+                              </div>
+                            </Dialog.Title>
+                            <div className="flex justify-between gap-6 h-full w-full ">
+                              <div className="flex flex-col gap-6 w-full">
+
+                                {navigation.map((item, index) => (
+
+                                  <Link
+                                    key={index}
+                                    href={item.url}
+                                    onClick={() => setOpen(false)}
+                                    className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
+                                  >
+                                    {item.name}
+                                  </Link>
+
+                                ))}
+
+                              </div>
+                              <Image className="w-64 h-auto text-white bg-cover " src={Logosvg} />
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col gap-6  sm:flex-row-reverse sm:px-6">
+                        <button
+                          type="button"
+                          onClick={() => setOpen(false)}
+                        >
+                          <Link
+                            href="/about"
+                            className="w-full px-6 py-2 text-center bg-white text-black r hover:bg-indigo-400 hover:text-white rounded-md "
+                          >
+                            Contact Us
+                          </Link>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setOpen(false)}
+                          ref={cancelButtonRef}
+                        >
+                          {session ? (
+                            <Link
+                              href="/profile"
+                              className="w-full px-6 py-2 text-center bg-white text-black  hover:bg-indigo-400 hover:text-white rounded-md "
+                            >
+                              <span className=" capitalize">
+                                {session?.user?.name}
+                              </span>
+                            </Link>
+                          ) : (
+                            <Link
+                              href="/api/auth/signin"
+                              className="w-full px-6 py-2 mt-3 text-center bg-white text-black  hover:bg-indigo-400 hover:text-white rounded-md "
+                            >
+                              Log In
+                            </Link>
+                          )}
+                        </button>
+                      </div>
+
+                    </Dialog.Panel>
+                  </Transition.Child>
+                </div>
               </div>
-            </>
-          )}
-        </Disclosure>
+            </Dialog>
+          </Transition.Root>
+
+
+
+
+
+
+
+        </div>
+
 
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
@@ -116,28 +182,29 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex items-center nav__item ">
           <Link
-            href="/"
+            href="/about"
             className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
           >
-            Get Started
+            Contact Us
           </Link>
-          {session ?
-
+          {session ? (
             <Link
               href="/profile"
               className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
             >
               <span className=" capitalize">{session?.user?.name}</span>
-            </Link> : <Link
+            </Link>
+          ) : (
+            <Link
               href="/api/auth/signin"
               className="px-4 py-2 text-white content-center bg-indigo-600 rounded-md md:ml-5"
             >
               Log In
             </Link>
-          }
+          )}
         </div>
-      </nav>
-    </div>
+      </nav >
+    </div >
   );
 };
 

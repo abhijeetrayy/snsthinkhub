@@ -10,7 +10,7 @@ export default function Example() {
 
     return (
         <>
-            <button className='px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-500 rounded-lg' onClick={() => setOpen(true)}>click</button>
+            <button className='px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-500 rounded-lg' onClick={() => setOpen(true)}>Apply</button>
             <Transition.Root show={open} as={Fragment}>
                 <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
                     <Transition.Child

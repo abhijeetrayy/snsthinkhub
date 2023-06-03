@@ -85,7 +85,7 @@ export default function CourseDetail() {
                         </div>
                     </div>
 
-                    <div className=" my-3 mx-auto sm:max-w-[370px] md:min-w-[420px] ">
+                    <div className=" my-3 mx-auto sm:max-w-[370px] md:min-w-[420px] px-3">
                         <div className=" shadow-md rounded-lg py-2">
 
                             <div>
