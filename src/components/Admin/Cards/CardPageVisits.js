@@ -5,15 +5,15 @@ import React from "react";
 export default function CardPageVisits({ title }) {
   return (
     <>
-      <section class="items-center lg:flex bg-white  lg:h-screen font-poppins dark:bg-gray-800 ">
+      <section class="items-center lg:flex bg-white  lg:h-screen font-poppins  ">
         <div class="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
-          <div class="pt-4 rounded shadow bg-stone-100 dark:bg-gray-900">
-            <div class="flex flex-wrap items-center justify-between px-6 pb-4 border-b dark:border-gray-700">
-              <h2 class="mb-4 text-xl font-bold md:mb-0 dark:text-gray-400">List of document</h2>
-              <div class="flex px-6 py-2 mb-4 border border-gray-600 rounded-md md:mb-0 dark:border-gray-400">
+          <div class="pt-4 rounded shadow bg-stone-100 ">
+            <div class="flex flex-wrap items-center justify-between px-6 pb-4 border-b ">
+              <h2 class="mb-4 text-xl font-bold md:mb-0 ">List of document</h2>
+              <div class="flex px-6 py-2 mb-4 border border-gray-600 rounded-md md:mb-0 ">
 
                 <button
-                  class="flex items-center text-gray-700 dark:text-gray-400 dark:hover:text-blue-300 hover:text-blue-600">
+                  class="flex items-center text-gray-700  ">
                   <span class="mr-2 text-xs ">Go</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -26,8 +26,8 @@ export default function CardPageVisits({ title }) {
             <div class="p-4 overflow-x-auto">
               <table class="w-full table-auto">
                 <thead>
-                  <tr class="text-sm text-left text-gray-500 dark:text-gray-400">
-                    <th class="flex items-center px-6 pb-3 font-medium dark:text-gray-400">
+                  <tr class="text-sm text-left text-gray-500 ">
+                    <th class="flex items-center px-6 pb-3 font-medium ">
 
                       <span>Name</span>
                     </th>
@@ -38,7 +38,7 @@ export default function CardPageVisits({ title }) {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="text-sm bg-white dark:text-gray-400 dark:bg-gray-800">
+                  <tr class="text-sm bg-white  ">
                     <td class="flex items-center px-6 py-5 font-medium">
 
                       <p class="">General Purpose Report</p>
@@ -46,11 +46,11 @@ export default function CardPageVisits({ title }) {
                     <td class="px-6 py-5 font-medium ">Branklin Ferdnaz</td>
                     <td class="px-6 py-5 font-medium ">13 jan 2022</td>
                     <td class="px-6 py-5 font-medium">
-                      <span class="text-blue-400 dark:text-blue-300">General</span>
+                      <span class="text-blue-400 ">General</span>
                     </td>
                     <td class="flex items-center px-6 py-5 ">
                       <a href="#"
-                        class="font-medium text-blue-600 hover:text-blue-500 dark:hover:text-gray-300 dark:text-blue-300">
+                        class="font-medium text-blue-600 hover:text-blue-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 mr-3 bi bi-pencil-square"
                           viewBox="0 0 16 16">
@@ -61,7 +61,7 @@ export default function CardPageVisits({ title }) {
                         </svg>
                       </a>
                       <a href="#"
-                        class="font-medium text-red-600 hover:text-red-500 dark:hover:text-red-300 dark:text-red-400">
+                        class="font-medium text-red-600 hover:text-red-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 bi bi-trash-fill" viewBox="0 0 16 16">
                           <path
@@ -70,7 +70,7 @@ export default function CardPageVisits({ title }) {
                       </a>
                     </td>
                   </tr>
-                  <tr class="text-sm dark:text-gray-400 dark:bg-transparent">
+                  <tr class="text-sm  ">
                     <td class="flex items-center px-6 py-5 font-medium">
 
                       <p class="">Monthly Report</p>
@@ -78,11 +78,11 @@ export default function CardPageVisits({ title }) {
                     <td class="px-6 py-5 font-medium ">Kathryn Pearson</td>
                     <td class="px-6 py-5 font-medium ">14 jan 2022</td>
                     <td class="px-6 py-5 font-medium">
-                      <span class="text-blue-400 dark:text-blue-300">Compliance</span>
+                      <span class="text-blue-400 ">Compliance</span>
                     </td>
                     <td class="flex items-center px-6 py-5 ">
                       <a href="#"
-                        class="font-medium text-blue-600 hover:text-blue-500 dark:hover:text-gray-300 dark:text-blue-300">
+                        class="font-medium text-blue-600 hover:text-blue-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 mr-3 bi bi-pencil-square"
                           viewBox="0 0 16 16">
@@ -93,7 +93,7 @@ export default function CardPageVisits({ title }) {
                         </svg>
                       </a>
                       <a href="#"
-                        class="font-medium text-red-600 hover:text-red-500 dark:hover:text-red-300 dark:text-red-400">
+                        class="font-medium text-red-600 hover:text-red-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 bi bi-trash-fill" viewBox="0 0 16 16">
                           <path
@@ -102,7 +102,7 @@ export default function CardPageVisits({ title }) {
                       </a>
                     </td>
                   </tr>
-                  <tr class="text-sm bg-white dark:text-gray-400 dark:bg-gray-800">
+                  <tr class="text-sm bg-white  ">
                     <td class="flex items-center px-6 py-5 font-medium">
 
                       <p class="">Client Status Report</p>
@@ -110,11 +110,11 @@ export default function CardPageVisits({ title }) {
                     <td class="px-6 py-5 font-medium ">Nicole West</td>
                     <td class="px-6 py-5 font-medium ">15 jan 2022</td>
                     <td class="px-6 py-5 font-medium">
-                      <span class="text-blue-400 dark:text-blue-300">Security</span>
+                      <span class="text-blue-400 ">Security</span>
                     </td>
                     <td class="flex items-center px-6 py-5 ">
                       <a href="#"
-                        class="font-medium text-blue-600 hover:text-blue-500 dark:hover:text-gray-300 dark:text-blue-300">
+                        class="font-medium text-blue-600 hover:text-blue-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 mr-3 bi bi-pencil-square"
                           viewBox="0 0 16 16">
@@ -125,7 +125,7 @@ export default function CardPageVisits({ title }) {
                         </svg>
                       </a>
                       <a href="#"
-                        class="font-medium text-red-600 hover:text-red-500 dark:hover:text-red-300 dark:text-red-400">
+                        class="font-medium text-red-600 hover:text-red-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 bi bi-trash-fill" viewBox="0 0 16 16">
                           <path
@@ -134,7 +134,7 @@ export default function CardPageVisits({ title }) {
                       </a>
                     </td>
                   </tr>
-                  <tr class="text-sm dark:text-gray-400 dark:bg-transparent">
+                  <tr class="text-sm  ">
                     <td class="flex items-center px-6 py-5 font-medium">
 
                       <p class="">Work Flow Management</p>
@@ -142,11 +142,11 @@ export default function CardPageVisits({ title }) {
                     <td class="px-6 py-5 font-medium ">Peter Ferdnaz</td>
                     <td class="px-6 py-5 font-medium ">17 jan 2022</td>
                     <td class="px-6 py-5 font-medium">
-                      <span class="text-blue-400 dark:text-blue-300">Training</span>
+                      <span class="text-blue-400 ">Training</span>
                     </td>
                     <td class="flex items-center px-6 py-5 ">
                       <a href="#"
-                        class="font-medium text-blue-600 hover:text-blue-500 dark:hover:text-gray-300 dark:text-blue-300">
+                        class="font-medium text-blue-600 hover:text-blue-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 mr-3 bi bi-pencil-square"
                           viewBox="0 0 16 16">
@@ -157,7 +157,7 @@ export default function CardPageVisits({ title }) {
                         </svg>
                       </a>
                       <a href="#"
-                        class="font-medium text-red-600 hover:text-red-500 dark:hover:text-red-300 dark:text-red-400">
+                        class="font-medium text-red-600 hover:text-red-500  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                           fill="currentColor" class="w-4 h-4 bi bi-trash-fill" viewBox="0 0 16 16">
                           <path
@@ -168,32 +168,32 @@ export default function CardPageVisits({ title }) {
                   </tr>
                 </tbody>
               </table>
-              <div class="flex justify-end pt-4 mt-4 border-t dark:border-gray-700">
+              <div class="flex justify-end pt-4 mt-4 border-t ">
                 <nav aria-label="page-navigation">
                   <ul class="flex list-style-none">
                     <li class="page-item disabled ">
                       <a href="#"
-                        class="relative block pointer-events-none px-3 py-1.5 mr-3 text-base text-gray-700 transition-all duration-300  rounded-md dark:text-gray-400 hover:text-gray-100 hover:bg-blue-600">Previous
+                        class="relative block pointer-events-none px-3 py-1.5 mr-3 text-base text-gray-700 transition-all duration-300  rounded-md  hover:text-gray-100 hover:bg-blue-600">Previous
                       </a>
                     </li>
                     <li class="page-item ">
                       <a href="#"
-                        class="relative block px-3 py-1.5 mr-3 text-base hover:text-blue-700 transition-all duration-300 hover:bg-blue-200 dark:hover:text-gray-400 dark:hover:bg-gray-700 rounded-md text-gray-100 bg-blue-600">1
+                        class="relative block px-3 py-1.5 mr-3 text-base hover:text-blue-700 transition-all duration-300 hover:bg-blue-200   rounded-md text-gray-100 bg-blue-600">1
                       </a>
                     </li>
                     <li class="page-item ">
                       <a href="#"
-                        class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md mr-3  ">2
+                        class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300   hover:bg-blue-100 rounded-md mr-3  ">2
                       </a>
                     </li>
                     <li class="page-item ">
                       <a href="#"
-                        class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md mr-3 ">3
+                        class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300   hover:bg-blue-100 rounded-md mr-3 ">3
                       </a>
                     </li>
                     <li class="page-item ">
                       <a href="#"
-                        class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md ">Next
+                        class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300   hover:bg-blue-100 rounded-md ">Next
                       </a>
                     </li>
                   </ul>

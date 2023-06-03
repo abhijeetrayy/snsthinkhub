@@ -4,6 +4,7 @@ import Accordion from "./accordian";
 import { BiPlayCircle, BiTimer } from "react-icons/bi";
 import { BsCalendarDate } from "react-icons/bs";
 import { FaMoneyBillAlt } from "react-icons/fa";
+import IntershihfillButton from './intershipfillform'
 
 export default function intershipInfo() {
     return (
@@ -167,7 +168,7 @@ export default function intershipInfo() {
                                 <span>5</span>
                             </div>
                         </div>
-                        <div className="w-full flex items-center justify-center"><button className="px-6 py-3 text-white font-bold bg-indigo-600 rounded-lg hover:bg-indigo-500">Apply</button></div>
+                        <div className="w-full flex items-center justify-center"><IntershihfillButton /></div>
                     </div>
                 </div>
             </div>

@@ -3,11 +3,11 @@ import React from 'react'
 export default function countdown() {
     return (
         <div>
-            <section class="py-8 bg-indigo-500 bg-gradient dark:bg-gray-800 md:py-16">
+            <section class="py-8 bg-indigo-500 bg-gradient md:py-16">
                 <div class="box-content max-w-5xl px-5 mx-auto">
                     <div class="flex flex-col items-center -mx-5 md:flex-row">
                         <div class="w-full px-5 mb-5 text-center md:mb-0 md:text-left">
-                            <h6 class="text-xs font-semibold text-indigo-800 uppercase md:text-base dark:text-gray-100">
+                            <h6 class="text-xs font-semibold text-indigo-800 uppercase md:text-bas">
                                 Opening tickets
                             </h6>
                             <h3 class="text-2xl font-bold text-white font-heading md:text-4xl">

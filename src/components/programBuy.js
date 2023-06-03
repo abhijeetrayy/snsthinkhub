@@ -22,28 +22,28 @@ export default function programBuy() {
                                         <span className="text-8xl text-gray-800 font-bold leading-0">35</span>
                                         <div className="pb-2">
                                             <span className="block text-2xl text-gray-700 font-bold">%</span>
-                                            <span className="block text-xl text-purple-500 font-bold">Off</span>
+                                            <span className="block text-xl  text-indigo-600 font-bold">Off</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <ul role="list" className="w-max space-y-4 py-6 m-auto text-gray-600">
                                 <li className="space-x-2">
-                                    <span className="text-purple-500 font-semibold">&#10003;</span>
+                                    <span className=" text-indigo-600 font-semibold">&#10003;</span>
                                     <span>First premium advantage</span>
                                 </li>
                                 <li className="space-x-2">
-                                    <span className="text-purple-500 font-semibold">&#10003;</span>
+                                    <span className=" text-indigo-600 font-semibold">&#10003;</span>
                                     <span>Second advantage weekly</span>
                                 </li>
                                 <li className="space-x-2">
-                                    <span className="text-purple-500 font-semibold">&#10003;</span>
+                                    <span className=" text-indigo-600 font-semibold">&#10003;</span>
                                     <span>Third advantage donate to project</span>
                                 </li>
                             </ul>
                             <p className="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center">
                                 <span>Call us at</span>
-                                <a href="tel:+24300" className="flex space-x-2 items-center text-purple-600">
+                                <a href="tel:+24300" className="flex space-x-2 items-center text-indigo-600">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-6" viewBox="0 0 16 16">
                                         <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                                     </svg>
@@ -54,9 +54,9 @@ export default function programBuy() {
                             <div className='w-full flex justify-center'>
 
                                 {/* Open the modal using ID.showModal() method */}
-                                <button className="btn bg-indigo-600 hover:bg-indigo-500 text-white" onClick={() => window.my_modal_5.showModal()}>Contact Us</button>
-                                <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                                    <form method="dialog" className="modal-box p-7 flex flex-col">
+                                <button className="btn px-3 py-2 border border-gray-200 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white" onClick={() => window.my_modal_5.showModal()}>Contact Us</button>
+                                <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle rounded-lg">
+                                    <form method="dialog" className="modal-box p-7 flex flex-col gap-3 ">
                                         <h3 className="font-bold text-lg">Hello Bussines</h3>
                                         <p className="py-4">Thank You for contacting us.</p>
                                         <div className='flex flex-col gap-3'>
@@ -70,10 +70,10 @@ export default function programBuy() {
                                                 <input type='email' className='border border-gray-200 rounded-lg' />
                                             </div>
                                         </div>
-                                        <div className="modal-action">
+                                        <div className="modal-action flex flex-row gap-3">
                                             {/* if there is a button in form, it will close the modal */}
-                                            <button className="btn" type='submit'>Submit</button>
-                                            <button className="btn" type='submit'>Close</button>
+                                            <button className="btn px-3 py-1 border border-gray-200 rounded-lg " type='submit'>Submit</button>
+                                            <button className="btn px-3 py-1 border border-gray-200 rounded-lg" type='submit'>Close</button>
                                         </div>
                                     </form>
                                 </dialog>
@@ -89,19 +89,19 @@ export default function programBuy() {
                         <div className="relative p-6 pt-16 md:p-8 md:pl-12 md:rounded-r-2xl lg:pl-20 lg:p-16">
                             <ul role="list" className="space-y-4 py-6 text-gray-600">
                                 <li className="space-x-2">
-                                    <span className="text-purple-500 font-semibold">&#10003;</span>
+                                    <span className=" text-indigo-600 font-semibold">&#10003;</span>
                                     <span>First premium advantage</span>
                                 </li>
                                 <li className="space-x-2">
-                                    <span className="text-purple-500 font-semibold">&#10003;</span>
+                                    <span className=" text-indigo-600 font-semibold">&#10003;</span>
                                     <span>Second advantage weekly</span>
                                 </li>
                                 <li className="space-x-2">
-                                    <span className="text-purple-500 font-semibold">&#10003;</span>
+                                    <span className=" text-indigo-600 font-semibold">&#10003;</span>
                                     <span>Third advantage donate to project</span>
                                 </li>
                                 <li className="space-x-2">
-                                    <span className="text-purple-500 font-semibold">&#10003;</span>
+                                    <span className=" text-indigo-600 font-semibold">&#10003;</span>
                                     <span>Fourth, access to all components weekly</span>
                                 </li>
                             </ul>

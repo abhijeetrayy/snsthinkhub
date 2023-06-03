@@ -2,9 +2,10 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import Logo from "../public/img/logo.svg";
+import Logo from "../public/logosns.png";
 import { Disclosure } from "@headlessui/react";
 import { useSession } from "next-auth/react";
+
 
 const Navbar = () => {
   const { data: session } = useSession()
@@ -25,22 +26,15 @@ const Navbar = () => {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500">
-                    <span>
-                      <svg
-                        width="44"
-                        height="44"
-                        viewBox="0 0 44 44"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect width="44" height="44" rx="6" fill="#4F46E5" />
-                        <path
-                          d="M31.3662 34H25.7427L17.4282 19.4014V34H11.7725V10.5391H17.4282L25.7266 25.1377V10.5391H31.3662V34Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </span>
+                  <span className="flex  flex-row space-x-2 text-2xl font-medium text-indigo-500">
+
+                    {/* <Image
+                      width={44}
+                      height={44}
+                      src={Logo}
+                    /> */}
+
+
                     <span>SnSThinkHub</span>
                   </span>
                 </Link>

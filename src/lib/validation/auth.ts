@@ -2,6 +2,8 @@ import { NextAuthOptions } from 'next-auth'
 
 import GoogleProvider from 'next-auth/providers/google'
 
+
+
 function getGoogleCredentials() {
     const clientId = process.env.GOOGLE_CLIENT_ID
     const clientSecret = process.env.GOOGLE_CLIENT_SECRET
@@ -19,9 +21,6 @@ function getGoogleCredentials() {
 
 export const authOptions: NextAuthOptions = {
 
-    session: {
-        strategy: 'jwt',
-    },
 
 
     providers: [
@@ -30,5 +29,10 @@ export const authOptions: NextAuthOptions = {
             clientSecret: getGoogleCredentials().clientSecret,
         }),
     ],
+    session: {
+        strategy: 'jwt',
+    },
+    callbacks: {
 
+    }
 }

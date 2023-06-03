@@ -1,4 +1,4 @@
-import "../css/background.css"
+import "../css/background.css";
 
 const AboutHeader = () => {
     return (
@@ -7,17 +7,18 @@ const AboutHeader = () => {
                 <div class="flex flex-wrap justify-around md:flex-row">
                     <div class="group px-4 max-w-[700px] bg-cover  bg-indigo-600 p-6 rounded-lg shadow-md m-4  ">
                         <div class="hero-content flex justify-center flex-col duration-700 group-hover:px-8">
-                            <h1
-                                class="text-white mb-6 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]"
-                            >
+                            <h1 class="text-white mb-6 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]">
                                 About Us - <br />
-                                Our
-                                Approach
+                                Our Approach
                             </h1>
                             <p class="text-md body-color mb-4 text-lg text-white leading-8">
-                                We believe that a holistic approach to education is essential for students to succeed in today's competitive job market. Our programs are designed to provide students with the skills and knowledge they need to be successful in their chosen field, while also developing their critical thinking, problem-solving, and communication skills. </p>
-
-
+                                We believe that a holistic approach to education is essential
+                                for students to succeed in today's competitive job market. Our
+                                programs are designed to provide students with the skills and
+                                knowledge they need to be successful in their chosen field,
+                                while also developing their critical thinking, problem-solving,
+                                and communication skills.{" "}
+                            </p>
                         </div>
                     </div>
                     {/* <div class="hidden px-4 lg:block lg:w-1/12"></div> */}
@@ -73,4 +74,4 @@ const AboutHeader = () => {
     );
 };
 
-export default AboutHeader
+export default AboutHeader;

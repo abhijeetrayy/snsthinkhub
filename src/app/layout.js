@@ -38,7 +38,7 @@ export default function Layout({ children }) {
   return (
     <html>
       <head></head>
-      <body>{children}</body>
+      <body><SessionProvider>{children}</SessionProvider></body>
     </html>
   );
 }

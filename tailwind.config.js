@@ -2,6 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+
   mode: "jit",
   purge: [
     "./node_modules/flowbite-react/**/*.js",
@@ -12,9 +13,7 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        trueGray: colors.trueGray,
-      },
+
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
@@ -27,6 +26,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/forms"),
     require("tailwind-scrollbar"),
-    require("@tailwindcss/aspect-ratio"), require("daisyui")
+    require("@tailwindcss/aspect-ratio"),
   ],
 };

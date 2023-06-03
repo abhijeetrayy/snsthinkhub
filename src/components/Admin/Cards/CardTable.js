@@ -425,5 +425,5 @@ CardTable.defaultProps = {
 };
 
 CardTable.propTypes = {
-  color: PropTypes.oneOf(["light", "dark"]),
+  color: PropTypes.oneOf(["light"]),
 };
