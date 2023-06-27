@@ -1,15 +1,19 @@
-
+"use client"
 import React from "react";
 import Link from "next/link";
 import Contactus from "../../components/contactus"
 import CourseHeader from "../../components/couserHeader"
 import MoreButton from "../../components/moreButton"
+import {useState} from "react"
 
 export default function page() {
     
-    const data = [
+     const data = [
         "Remote",
         "Remote",
+        "Inoffice",
+        "Inoffice",
+        "Inoffice",
         "Inoffice",
         "Inoffice",
         "Inoffice",
@@ -17,6 +21,18 @@ export default function page() {
         "Remote",
         "Remote",
     ];
+    const [filtered, setFilter] = useState(data)
+    function filterData(type){
+       const filteredData = data.filter(filterthedata)
+       function filterthedata(datas){
+        return datas == type
+       }
+       setFilter(filteredData)
+    }
+
+
+    
+   
 
     return (
         <>
@@ -32,9 +48,9 @@ export default function page() {
                 <div className="w-full flex justify-between items-center sm:w-[740px] lg:w-[1124px] p-6 m-3 shadow-md border-2 rounded-lg" >
                     <span>Filters</span>
                     <div className="inline-block ml-3 ">
-                        <button className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 mr-3 sm:text-sm hover:bg-indigo-200 hover:border-0 transition focus:border-0 focus:bg-indigo-200 text-xs">All</button>
-                        <button className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 mr-3 sm:text-sm  hover:bg-indigo-200 hover:border-0 transition focus:border-0 focus:bg-indigo-200 text-xs">Online</button>
-                        <button className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 sm:text-sm hover:bg-indigo-200 hover:border-0 transition focus:border-0 focus:bg-indigo-200 text-xs">Offline</button>
+                        <button onClick={()=> setFilter(data)} className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 mr-3 sm:text-sm hover:bg-indigo-200 hover:border-0 transition  text-xs">All</button>
+                        <button onClick={()=> filterData("Remote")} className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 mr-3 sm:text-sm  hover:bg-indigo-200 hover:border-0 transition  text-xs">Remote</button>
+                        <button onClick={()=> filterData("Inoffice")} className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 sm:text-sm hover:bg-indigo-200 hover:border-0 transition  text-xs">Offline/In Office</button>
                     </div>
                 </div>
             </div>
@@ -47,7 +63,7 @@ export default function page() {
 
             <div className="w-full flex  justify-center ">
                 <div className=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 ">
-                    {data.map((item) => (
+                    {filtered.map((item) => (
                         <div className="border-0 shadow-md rounded-md max-w-xs p-3 bg-slate-50 hover:bg-slate-100 transition">
                             <h2>new</h2>
                             <div className="p-6">
@@ -111,9 +127,9 @@ export default function page() {
                                         prestigious Management Consulting firm?
                                     </span>
                                 </div>
-                                <div>
-                                    <Link href={"/internship/safda"} className="my-4  px-6 py-2 inline-flex items-center rounded-md bg-blue-500 text-sm font-medium text-white hover:bg-blue-700 ring-0 border-0">
-                                        <MoreButton data={"More..."} size={10}/>
+                                <div className="mt-3">
+                                    <Link href={"/internship/WebDevelopment"} >
+                                        <MoreButton data={"More..."} size={10} style={"w-16 h-7  flex items-center justify-center rounded-md bg-blue-500 text-sm font-medium text-white hover:bg-blue-700 ring-0 border-0"}/>
                                     </Link>
                                 </div>
                             </div>

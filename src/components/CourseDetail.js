@@ -15,7 +15,7 @@ export default function CourseDetail() {
             <div className="max-w-[1324px]">
                 <div className="flex flex-col mt-9 justify-between md:flex-row">
                     <div className="flex flex-col gap-5 px-10">
-                        <div className="flex flex-col gap-5 bg-purple-600 p-3 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-indigo-600 p-3 rounded-lg">
                             <h2 className="text-5xl font-bold text-white">
                                 Become a professional Web Developer from Scratch
                             </h2>

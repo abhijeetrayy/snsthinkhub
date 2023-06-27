@@ -97,9 +97,9 @@ export default function card() {
                                         <p>Vanilla JS</p>
                                     </div>
                                       <Link href={"/courses/hello"}>
-                                    <button className="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
-                                       <ClickButton data={"Buy Lesson"}/> 
-                                    </button>
+                                  
+                                       <ClickButton style={"mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"} data={"Buy Lesson"}/> 
+                                    
                                      </Link>
                                 </div>
                             </div>
@@ -184,9 +184,9 @@ export default function card() {
                                     <p>TypeScript</p>
                                 </div>
                                       <Link href={"/courses/WebDevelopment"}>
-                                <button className="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
-                                    <ClickButton data={"Start Watching Now"}/> 
-                                </button>
+                            
+                                <ClickButton style={"mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"} data={"Start Watching Now"}/> 
+                           
                                    </Link>
                             </div>
                         </div>
@@ -268,9 +268,9 @@ export default function card() {
                                     <p>Vanilla JS</p>
                                 </div>
                                   <Link href={"/courses/WebDevelopment"}>
-                                <button className="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
-                                    <ClickButton data={"Buy Lesson"}/>
-                                </button>
+                                
+                                    <ClickButton style={"mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"} data={"Buy Lesson"}/>
+                                
                                 </Link>
                             </div>
                         </div>

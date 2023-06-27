@@ -27,7 +27,7 @@ const Header = () => {
                     <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
                         Welcome
                     </p>
-                    <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-blue-600 sm:text-4xl sm:leading-none">
+                    <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-indigo-500 sm:text-4xl sm:leading-none">
                         Everything you
                         <br className="hidden md:block" />
                         can imagine{' '}
@@ -42,7 +42,7 @@ const Header = () => {
                     <div className="flex items-center">
                         <Link
                             href="/about"
-                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
+                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
                         >
                             About Us
                         </Link>

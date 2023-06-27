@@ -26,13 +26,14 @@ const handleSubmit = async () => {
                 body: JSON.stringify(formData),
             });
             const resWhichSave = await response.json();
-            
+           
             if(resWhichSave.message === "Form data saved successfully"){
                 setLoading(false)
-                toast("Good Wishes, Registration successfull🥳")
-            }else{
+                toast("Good Wishes, Registration successfull")
+            }
+             else{
                 setLoading(false)
-                toast("Something went wrong 😞")
+                toast("something went worng, please contact and send the requeset on the contact-us page.📞")
             }
             console.log("hell",resWhichSave);
             // Handle success message or redirect
@@ -67,6 +68,7 @@ const handleSubmit = async () => {
 
         if (!res) {
             alert("Payment Failed to load");
+            setLoading(false)
             return;
         }
 
@@ -85,7 +87,7 @@ const handleSubmit = async () => {
             description: "Thankyou",
             image: "",
             handler: function (response) {
-                toast("Please wait, registring you to the couser....")
+                toast("Please wait, registring you to the couse.... 😊")
                 handleSubmit()
                 // Validate payment at server - using webhooks is a better idea.
                 // toast(response.razorpay_payment_id);
@@ -123,7 +125,7 @@ const handleSubmit = async () => {
 
         <button
             onClick={makePayment}
-            className=""
+            className="flex w-full justify-center bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
         >
            {loading ? <DotLoader color="#FFFFFF" size={26}/> : "Purchase Now"} 
         </button>

@@ -27,7 +27,7 @@ export default function Layout({ children }) {
               <Navbar />
               <div className=" flex-grow">{children}</div>
               <Footer />
-              <PopupWidget />
+            
             </div>
           </SessionProvider>
           <Toaster />

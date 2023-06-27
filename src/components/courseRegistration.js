@@ -40,6 +40,7 @@ const [formData, setFormData] = useState({
                                                                 type="Name"
                                                                 value={formData.Name}
                                                                 onChange={handleChange}
+                                                                
                                                                 autoComplete="Name"
                                                                 placeholder='Abhijeet Ray'
                                                                 className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -57,6 +58,7 @@ const [formData, setFormData] = useState({
                                                                 type="Email"
                                                                 value={formData.Email}
                                                                 onChange={handleChange}
+                                                                required="true"
                                                                 autoComplete="Email"
                                                                 placeholder='abc@gmail.com'
                                                                 className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -74,6 +76,7 @@ const [formData, setFormData] = useState({
                                                                 type="Phone"
                                                                 value={formData.Phone}
                                                                 onChange={handleChange}
+                                                                required="true"
                                                                 autoComplete="phone"
                                                                 placeholder='+91 999911111'
                                                                 className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -91,6 +94,7 @@ const [formData, setFormData] = useState({
                                                                 type="University"
                                                                 value={formData.University}
                                                                 onChange={handleChange}
+                                                                required="true"
                                                                 autoComplete="University"
                                                                 placeholder='Eg. Delhi University'
                                                                 className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -108,6 +112,7 @@ const [formData, setFormData] = useState({
                                                                 type="Course"
                                                                 value={formData.Course}
                                                                 onChange={handleChange}
+                                                                required="true"
                                                                 autoComplete="Course"
                                                                 placeholder='Eg. Btech CSE'
                                                                 className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -125,6 +130,7 @@ const [formData, setFormData] = useState({
                                                                 type="Year"
                                                                 value={formData.Year}
                                                                 onChange={handleChange}
+                                                                required="true"
                                                                 autoComplete="Year"
                                                                 placeholder='Eg. 2021-2025'
                                                                 className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -135,7 +141,7 @@ const [formData, setFormData] = useState({
 
                                                     <div
                                            
-                                            className="flex w-full justify-center bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
+                                            className=""
                                             
                                         >
                                             <PayButton formData={formData}/>

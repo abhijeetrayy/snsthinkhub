@@ -13,6 +13,7 @@ useEffect(()=>{
 	setData(response)
 	console.log(data)
 	}
+	find()
 },[])
 	return(
 <>

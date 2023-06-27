@@ -52,6 +52,11 @@ export default function Example() {
                  setLoading(false)
                 toast("Good Wishes, Form Filled successfully")
             }
+            else{
+                setLoading(false)
+                toast("something went wrong!😢")
+                }
+
             console.log("hell",data);
             // Handle success message or redirect
         } catch (error) {
