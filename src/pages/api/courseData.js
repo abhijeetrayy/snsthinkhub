@@ -6,28 +6,28 @@ import mongoose, { model, models } from 'mongoose';
 
 
 async function submitForm(req, res) {
-	const interUser = new mongoose.Schema({
+	const courseUserSchema = new mongoose.Schema({
 			
 		   	Name: String,
 		   	Email: String,
 		   	Phone: String,
-		   	Linkedin: String,
-		   	Github: String,
-		    about: String,
-		    internshipId: String,
+		   	University: String,
+		   	Course: String,
+		    Year: String,
+		    CourseId: String,
   	
 	})
-	const interUserModel = models.intershipUser || model('intershipUser', interUser)
+	const courseUserModel = models.courseUser || model('courseUser', courseUserSchema)
 
 	
-	const IntershipData = new mongoose.Schema({
-	internshipId: {type: String, required: true},
+	const CouserDataSchema = new mongoose.Schema({
+	CourseId: {type: String, required: true},
    
   
   
    			 // Add more fields as needed
 		});
- 	const InternData = models.internshipData || model('internshipData', IntershipData)
+ 	const courseDataModel = models.courseData || model('courseData', CouserDataSchema)
 
     if (req.method !== "POST") {
         return res.status(405).json({ error: "Method Not Allowed" });
@@ -37,61 +37,65 @@ async function submitForm(req, res) {
     console.log("working")
    
    try {
-   		const { Name, Email, Phone, Linkedin, Github, about, internshipId } = req.body;
-   		 console.log(internshipId);
-        await connectToDatabase();
-        let check = await InternData.findOne({internshipId})
-        if(check){
-
-
-
-
-			      console.log("milgya")
-			     const saveusers = new interUserModel({
-			     					        	 	
-			     			Name,
-						   	Email,
-						   	Phone,
-						   	Linkedin,
-						   	Github,
-						    about,
-						    internshipId,
-  	
-			        	 })
-			        	await saveusers.save()
-			        
-			       } else{
-
-
-			        	 check =new InternData({
-			        		internshipId ,
-			        		
-			        		
-			        	})
-			        	 await check.save()
-			        	 const saveusers = new interUserModel({
-			        	 	internshipId,
-			        	 	Name,
-						   	Email,
-						   	Phone,
-						   	Linkedin,
-						   	Github,
-						    about,
-  	
-			        	 })
-			        	await saveusers.save()
-			        
-					        	
-			        }
-			       
-
-	        	
-
-
-	        
-       
-   
-         return res.status(200).json({ message: "Form data saved successfully"});
+   		const { Name, Email, Phone, University, Course, Year, CourseId } = req.body;
+   		await connectToDatabase();
+        let checkUserIsAlreadyFilled = await courseUserModel.findOne({CourseId, Email})
+        if (checkUserIsAlreadyFilled){
+        	return res.status(200).json({message: "User You have already Registered for the Course"})
+        }
+        else
+        {let check = await courseDataModel.findOne({CourseId})
+                if(check){
+        
+        
+        
+        
+        			      console.log("milgya")
+        			     const saveusers = new courseUserModel({
+        			     					        	 	
+        			     			Name,
+        						   	Email,
+        						   	Phone,
+        						   	University,
+        						   	Course,
+        						    Year,
+        						    CourseId,
+          	
+        			        	 })
+        			        	await saveusers.save()
+        			        
+        			       } else{
+        
+        
+        			        	 check =new courseDataModel({
+        			        		CourseId ,
+        			        		
+        			        		
+        			        	})
+        			        	 await check.save()
+        			        	 const saveusers = new courseUserModel({
+        			        	 	Name,
+        						   	Email,
+        						   	Phone,
+        						   	University,
+        						   	Course,
+        						    Year,
+        						    CourseId,
+          	
+        			        	 })
+        			        	await saveusers.save()
+        			        
+        					        	
+        			        }
+        			       
+        
+        	        	
+        
+        
+        	        
+               
+           
+                 return res.status(200).json({ message: "Form data saved successfully"});}
     } catch (error) {
         return res.status(500).json(error);
     }
