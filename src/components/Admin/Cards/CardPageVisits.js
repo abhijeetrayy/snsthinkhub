@@ -2,7 +2,7 @@ import React from "react";
 
 // components
 
-export default function CardPageVisits({ title }) {
+export default function CardPageVisits({ title, data }) {
   return (
     <>
       <section class="items-center lg:flex bg-white  lg:h-screen font-poppins  ">
@@ -178,7 +178,7 @@ export default function CardPageVisits({ title }) {
                     </li>
                     <li class="page-item ">
                       <a href="#"
-                        class="relative block px-3 py-1.5 mr-3 text-base hover:text-blue-700 transition-all duration-300 hover:bg-blue-200   rounded-md text-gray-100 bg-blue-600">1
+                        class="relative block px-3 py-1.5 mr-3 text-base hover:text-blue-700 transition-all duration-300 hover:bg-blue-200   rounded-md text-gray-100 bg-blue-600">{data ? data[0].name : 1}
                       </a>
                     </li>
                     <li class="page-item ">

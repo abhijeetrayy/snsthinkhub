@@ -1,28 +1,72 @@
 'use client'
 
-import { useSession } from "next-auth/react";
+
 import { useState } from "react";
 
 
 import toast from 'react-hot-toast';
 import { TiTick } from "react-icons/ti"
+import DotLoader from "react-spinners/DotLoader";
 
 
-export default function Home() {
+export default function Home({formData}) {
+      let [loading, setLoading] = useState(false);
     const [color, setColor] = useState(false)
-    const notify = () => toast(<><TiTick className="text-green-400 text-lg" /> Here is your toast.</>);
-    const { data: session } = useSession()
+  
+const handleSubmit = async () => {
+      
+        try {
+              
+            
+            const response = await fetch('/api/courseData', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const resWhichSave = await response.json();
+            if(resWhichSave.message === "User You have already Registered for the Course"){
+                setLoading(false)
+                toast("You have already Registered for the course")
+            }
+            if(resWhichSave.message === "Form data saved successfully"){
+                setLoading(false)
+                toast("Good Wishes, Registration successfull")
+            }
+            console.log("hell",resWhichSave);
+            // Handle success message or redirect
+        } catch (error) {
+            console.log('Failed to submit form:', error);
+            // Handle error
+        }
+    };
+   
     const makePayment = async () => {
+        console.log(formData)
+        setLoading(true)
 
         console.log("here...");
-        if (!session) {
-            toast("Please LogIn First")
-            return
+        const check = await fetch('/api/checkUserForCourse', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            
+            const dataToCheck = await check.json();
+            console.log(dataToCheck)
+        
+        if(dataToCheck.message == "User You have already Registered for the Course"){
+            toast("You have already Registered for the course")
+            setLoading(false)
+            return;
         }
         const res = await initializeRazorpay();
 
         if (!res) {
-            alert("Razorpay SDK Failed to load");
+            alert("Payment Failed to load");
             return;
         }
 
@@ -41,10 +85,12 @@ export default function Home() {
             description: "Thankyou",
             image: "",
             handler: function (response) {
+                toast("Please wait, registring you to the couser....")
+                handleSubmit()
                 // Validate payment at server - using webhooks is a better idea.
-                toast(response.razorpay_payment_id);
-                toast(response.razorpay_order_id);
-                toast(response.razorpay_signature);
+                // toast(response.razorpay_payment_id);
+                // toast(response.razorpay_order_id);
+                // toast(response.razorpay_signature);
             },
             prefill: {
                 name: "SnS THINKHUB",
@@ -77,9 +123,9 @@ export default function Home() {
 
         <button
             onClick={makePayment}
-            className="bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
+            className=""
         >
-            Purchase Now
+           {loading ? <DotLoader color="#FFFFFF" size={26}/> : "Purchase Now"} 
         </button>
 
     );

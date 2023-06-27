@@ -1,6 +1,59 @@
+"use client"
 import React from "react";
+import {useState} from "react"
+import toast from "react-hot-toast"
+import DotLoader from "react-spinners/DotLoader";
 
 export default function contactus() {
+      let [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+       
+        Name: '',
+        Email: '',
+        Phone: '',
+       
+       
+        Message: '',
+      
+        
+    });
+
+    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+        
+
+    };
+
+    const handleSubmit = async () => {
+        setLoading(true)
+      
+        try {
+             
+              console.log(formData)
+            const response = await fetch('/api/saveContact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const data = await response.json();
+           
+            if(data.message === "Form data saved successfully"){
+                setLoading(false)
+                 toast("Thanks, We will reach to you soon")
+            }
+            console.log("hell",data);
+            // Handle success message or redirect
+        } catch (error) {
+            console.log('Failed to submit form:', error);
+            // Handle error
+        }
+    };
+
     return (
         <section class="relative z-10 overflow-hidden bg-white p-5 py-20 lg:py-[120px]">
             <div class="container mx-auto">
@@ -79,15 +132,21 @@ export default function contactus() {
                             <form>
                                 <div class="mb-6">
                                     <input
-                                        type="text"
+                                        type="name"
+                                        name="Name"
+                                        value={formData.Name}
                                         placeholder="Your Name"
+                                        onChange={handleChange}
                                         class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                     />
                                 </div>
                                 <div class="mb-6">
                                     <input
                                         type="email"
+                                        name="Email"
                                         placeholder="Your Email"
+                                        value={formData.Email}
+                                        onChange={handleChange}
                                         class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                     />
                                 </div>
@@ -95,22 +154,30 @@ export default function contactus() {
                                     <input
                                         type="text"
                                         placeholder="Your Phone"
+                                        value={formData.Phone}
+                                        name="Phone"
+                                        onChange={handleChange}
                                         class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                     />
                                 </div>
                                 <div class="mb-6">
                                     <textarea
                                         rows="6"
+                                        type="text"
                                         placeholder="Your Message"
+                                        name="Message"
+                                        value={formData.Message}
+                                        onChange={handleChange}
                                         class="text-body-color border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                     ></textarea>
                                 </div>
                                 <div>
                                     <button
-                                        type="submit"
+                                        type="button"
+                                        onClick={()=> handleSubmit()}
                                         class="bg-blue-700 border-primary w-full rounded border p-3 text-white transition hover:bg-opacity-90"
                                     >
-                                        Send Message
+                                       {loading ? <DotLoader color="#FFFFFF" size={26}/> : "Send Message"} 
                                     </button>
                                 </div>
                             </form>

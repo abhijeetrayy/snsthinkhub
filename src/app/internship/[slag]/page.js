@@ -6,6 +6,7 @@ import CourseHeader from "../../../components/couserHeader"
 export default function page() {
     return (
         <>
+            
             <CourseHeader title={"Internship"} />
             <InternshipInfo />
             <Contact />

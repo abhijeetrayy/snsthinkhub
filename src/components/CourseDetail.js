@@ -6,25 +6,27 @@ import Wave from "../public/img/waves.svg";
 import Image from "next/image";
 import Team from "./team"
 import Review from "./review"
-import PayButton from "./payPage"
+
+import Link from "next/link"
+import CourseRegistration from "./courseRegistration"
 export default function CourseDetail() {
     return (
         <div className="w-full flex justify-center">
             <div className="max-w-[1324px]">
                 <div className="flex flex-col mt-9 justify-between md:flex-row">
                     <div className="flex flex-col gap-5 px-10">
-                        <div className="flex flex-col gap-5">
-                            <h2 className="text-5xl font-bold">
+                        <div className="flex flex-col gap-5 bg-purple-600 p-3 rounded-lg">
+                            <h2 className="text-5xl font-bold text-white">
                                 Become a professional Web Developer from Scratch
                             </h2>
 
                             <div>
-                                <p className="text-md text-gray-500">
+                                <p className="text-md text-gray-200">
                                     This course covers all you need to know about becoming a top
                                     skilled web developer even if you never programmed before!
                                 </p>
                             </div>
-                            <div><span className="text-gray-500 hover:text-gray-700">1652 Rating | 4.3 Reviews</span></div>
+                            <div><span className="text-gray-200 hover:text-gray-300">1652 Rating | 4.3 Reviews</span></div>
                         </div>
                         <div className="flex flex-col gap-5">
                             <h2 className="text-2xl font-bold">What You will Learn</h2>
@@ -85,8 +87,8 @@ export default function CourseDetail() {
                         </div>
                     </div>
 
-                    <div className=" my-3 mx-auto sm:max-w-[370px] md:min-w-[420px] px-3">
-                        <div className=" shadow-md rounded-lg py-2">
+                    <div className=" my-3 mx-auto sm:max-w-[370px] md:min-w-[420px] px-3 ">
+                        <div className=" shadow-lg rounded-lg py-2">
 
                             <div>
                                 <img
@@ -98,7 +100,7 @@ export default function CourseDetail() {
                                 <div className="flex flex-col">
                                     <div className="flex flex-row justify-around items-center mt-6 mb-2">
                                         <div>
-                                            <h2 className="text-2xl font-bold text-indigo-600">
+                                            <h2 className="text-2xl font-bold text-gray-800">
                                                 Rs 150.00
                                             </h2>
                                         </div>
@@ -109,7 +111,8 @@ export default function CourseDetail() {
                                 </div>
                             </div>
                             <div className="w-full flex flex-col items-center my-5 gap-3">
-                                <PayButton />
+                            <CourseRegistration/>
+                                
                                 {/* <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
                                 Buy Now
                             </button> */}
@@ -152,10 +155,11 @@ export default function CourseDetail() {
                                         anywhere.
                                     </p>
                                     <div className="flex justify-center w-full my-3">
-
+                                        <Link href={"/contact-us"}>
                                         <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
                                             Try Bussiness
                                         </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

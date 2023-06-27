@@ -1,12 +1,64 @@
 'use client'
-import { Fragment, useRef, useState } from 'react'
+import { Fragment, useRef, useState, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import toast from 'react-hot-toast';
+import DotLoader from "react-spinners/DotLoader";
 
 export default function Example() {
+     let [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false)
 
     const cancelButtonRef = useRef(null)
+    const [formData, setFormData] = useState({
+       
+        Name: '',
+        Email: '',
+        Phone: '',
+        Linkedin: '',
+        Github: '',
+        about: '',
+        internshipId: '',
+        
+    });
+
+    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+         setFormData( (prevFormData) => ({ ...prevFormData, internshipId: "000111" }))
+
+    };
+
+    const handleSubmit = async () => {
+      
+        try {
+              setLoading(true)
+              console.log(formData)
+            const response = await fetch('/api/intershipData', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const data = await response.json();
+            if(data.message === "User You have already Filled the internship"){
+                 setLoading(false)
+                toast("You have already Filled the internship")
+            }
+            if(data.message === "Form data saved successfully"){
+                 setLoading(false)
+                toast("Good Wishes, Form Filled successfully")
+            }
+            console.log("hell",data);
+            // Handle success message or redirect
+        } catch (error) {
+            console.log('Failed to submit form:', error);
+            // Handle error
+        }
+    };
 
     return (
         <>
@@ -50,24 +102,7 @@ export default function Example() {
                                                     Intership Fill Form
                                                 </Dialog.Title>
                                                 <div className="mt-2 flex flex-col gap-3">
-                                                    <div className="">
-                                                        <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
-                                                            Your Profile
-                                                        </label>
-                                                        <div className="mt-2">
-                                                            <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 max-w-md">
-                                                                <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm">snsthinkhub.com/profile/</span>
-                                                                <input
-                                                                    type="text"
-                                                                    name="username"
-                                                                    id="username"
-                                                                    autoComplete="username"
-                                                                    className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                                                                    placeholder="janesmith"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <span>Intership Id: #000111</span>
                                                     <div className="">
                                                         <label htmlFor="Name" className="block text-sm font-medium leading-6 text-gray-900">
                                                             Name
@@ -79,6 +114,8 @@ export default function Example() {
                                                                 type="Name"
                                                                 autoComplete="Name"
                                                                 placeholder='Abhijeet Ray'
+                                                                onChange={handleChange}
+                                                                value={formData.Name}
                                                                 className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                             />
                                                         </div>
@@ -90,10 +127,12 @@ export default function Example() {
                                                         <div className="mt-2">
                                                             <input
                                                                 id="email"
-                                                                name="email"
+                                                                name="Email"
                                                                 type="email"
                                                                 autoComplete="email"
                                                                 placeholder='abc@gmail.com'
+                                                                onChange={handleChange}
+                                                                value={formData.Email}
                                                                 className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                             />
                                                         </div>
@@ -108,7 +147,43 @@ export default function Example() {
                                                                 name="Phone"
                                                                 type="Phone"
                                                                 autoComplete="phone"
-                                                                placeholder='999911111'
+                                                                placeholder='+91 999911111'
+                                                                value={formData.Phone}
+                                                                onChange={handleChange}
+                                                                className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="">
+                                                        <label htmlFor="Linkedin" className="block text-sm font-medium leading-6 text-gray-900">
+                                                            Linkedin Username / Link 
+                                                        </label>
+                                                        <div className="mt-2">
+                                                            <input
+                                                                id="Linkedin"
+                                                                name="Linkedin"
+                                                                type="Linkedin"
+                                                                autoComplete="phone"
+                                                                onChange={handleChange}
+                                                                placeholder='https://linkedin.com/abhijeetrayy'
+                                                                value={formData.linkedin}
+                                                                className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="">
+                                                        <label htmlFor="Github" className="block text-sm font-medium leading-6 text-gray-900">
+                                                            Github Profile (Optional)
+                                                        </label>
+                                                        <div className="mt-2">
+                                                            <input
+                                                                id="Github"
+                                                                name="Github"
+                                                                type="Github"
+                                                                autoComplete="Github"
+                                                                placeholder='https://github.com/abhijeetrayy'
+                                                                value={formData.Github}
+                                                                onChange={handleChange}
                                                                 className="block w-full rounded-md border-0  pl-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                             />
                                                         </div>
@@ -124,6 +199,8 @@ export default function Example() {
                                                                 rows={3}
                                                                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                                 defaultValue={''}
+                                                                onChange={handleChange}
+                                                                value={formData.about}
                                                             />
                                                         </div>
                                                         <p className="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
@@ -136,14 +213,19 @@ export default function Example() {
                                         <button
                                             type="button"
                                             className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 sm:ml-3 sm:w-auto"
-                                            onClick={() => setOpen(false)}
+                                            onClick={async() =>{ 
+                                               
+                                                await handleSubmit()
+                                                setOpen(false)}}
                                         >
-                                            Submit
+                                             {loading ? <DotLoader color="#FFFFFF" size={26}/> : "Submit"}
                                         </button>
                                         <button
                                             type="button"
                                             className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-                                            onClick={() => setOpen(false)}
+                                            onClick={() => {
+                                               
+                                                setOpen(false)}}
                                             ref={cancelButtonRef}
                                         >
                                             Cancel

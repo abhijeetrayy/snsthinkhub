@@ -1,13 +1,13 @@
 import Link from "next/link";
-import "../css/background.css";
+import ClickButton from "./moreButton"
 
 import React from "react";
 
-export default function card({ id }) {
+export default function card() {
     return (
         <>
-            <div className="w-full " id={id}>
-                <div className="h-fit  flex justify-center items-center py-20 flex-col">
+            <div className="w-full " >
+                <div className="h-fit  flex justify-center items-center py-7  flex-col">
                     <div className="flex flex-col items-center mb-6 bg-white rounded-lg shadow-md px-8 py-3 bg-cover duration-500 hover:px-10">
                         <h2 className="text-5xl font-extrabold mb-5 float-left  text-indigo-600">
                             Course's
@@ -20,7 +20,7 @@ export default function card({ id }) {
                         </p>
                     </div>
                     <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
-                        <Link href={"/course"}>
+                      
                             <div className="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
                                 <h3 className="mb-3 text-xl font-bold text-indigo-600">
                                     Beginner Friendly
@@ -96,12 +96,15 @@ export default function card({ id }) {
                                         </span>
                                         <p>Vanilla JS</p>
                                     </div>
+                                      <Link href={"/courses/hello"}>
                                     <button className="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
-                                        Buy Lesson
+                                       <ClickButton data={"Buy Lesson"}/> 
                                     </button>
+                                     </Link>
                                 </div>
                             </div>
-                        </Link>
+                       
+                  
                         <div className="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
                             <h3 className="mb-3 text-xl font-bold text-indigo-600">
                                 Intermediate
@@ -180,11 +183,15 @@ export default function card({ id }) {
                                     </span>
                                     <p>TypeScript</p>
                                 </div>
+                                      <Link href={"/courses/WebDevelopment"}>
                                 <button className="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
-                                    Start Watching Now
+                                    <ClickButton data={"Start Watching Now"}/> 
                                 </button>
+                                   </Link>
                             </div>
                         </div>
+                     
+                        
                         <div className="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
                             <h3 className="mb-3 text-xl font-bold text-indigo-600">
                                 Beginner Friendly
@@ -260,11 +267,14 @@ export default function card({ id }) {
                                     </span>
                                     <p>Vanilla JS</p>
                                 </div>
+                                  <Link href={"/courses/WebDevelopment"}>
                                 <button className="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
-                                    Buy Lesson
+                                    <ClickButton data={"Buy Lesson"}/>
                                 </button>
+                                </Link>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>

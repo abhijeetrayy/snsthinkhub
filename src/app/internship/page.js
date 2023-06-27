@@ -1,8 +1,12 @@
+
 import React from "react";
 import Link from "next/link";
 import Contactus from "../../components/contactus"
 import CourseHeader from "../../components/couserHeader"
+import MoreButton from "../../components/moreButton"
+
 export default function page() {
+    
     const data = [
         "Remote",
         "Remote",
@@ -13,6 +17,7 @@ export default function page() {
         "Remote",
         "Remote",
     ];
+
     return (
         <>
             <CourseHeader title={"Intership"} />
@@ -107,10 +112,8 @@ export default function page() {
                                     </span>
                                 </div>
                                 <div>
-                                    <Link href={"/internship/safda"}>
-                                        <button class=" my-4  px-6 py-2 inline-flex items-center rounded-md bg-blue-500 text-sm font-medium text-white hover:bg-blue-700 ring-0 border-0">
-                                            More...
-                                        </button>
+                                    <Link href={"/internship/safda"} className="my-4  px-6 py-2 inline-flex items-center rounded-md bg-blue-500 text-sm font-medium text-white hover:bg-blue-700 ring-0 border-0">
+                                        <MoreButton data={"More..."} size={10}/>
                                     </Link>
                                 </div>
                             </div>

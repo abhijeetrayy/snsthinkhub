@@ -1,7 +1,24 @@
 import React from 'react'
 import Form from "../../../components/form"
 import CardPageVisits from '../../../components/Admin/Cards/CardPageVisits'
-export default function page() {
+import GetInternData from "../../../components/getInternData"
+
+
+
+const data=[{
+    name: "Abhijeet Ray",
+    email: "abhijeet@gmail.com"
+},
+    {
+    name: "Abhijeet Ray",
+    email: "abhijeet@gmail.com"
+}
+]
+
+export default  function page() {
+
+  
+
     return (
         <div className='overflow-x-hidden'>
             <div className='flex flex-col gap-1 mt-4'>
@@ -11,15 +28,9 @@ export default function page() {
                 </sapn>
                 <br />
 
-                <CardPageVisits title={"Current Active Internship"} />
-                <sapn className="text-2xl  font-bold text-gray-600 " >
-
-                    Create Internship
-                </sapn>
-                <div className='max-w-2xl lg:ml-16 shadow-lg '>
-
-                    <Form />
-                </div>
+               
+                <GetInternData/>
+                
             </div>
 
         </div>

@@ -18,6 +18,8 @@ function Navbar() {
     { name: "Course", url: "/courses" },
     { name: "Internship", url: "/internship" },
     { name: "About", url: "/about" },
+    { name: "Program", url: "/program"},
+    { name: "Success Story", url: "/success-story"},
   ];
 
   return (
@@ -104,7 +106,7 @@ function Navbar() {
                                 ))}
 
                               </div>
-                              <Image className="w-64 h-auto text-white bg-cover " src={Logosvg} />
+                              <Image className="w-64 h-fit text-white bg-cover" src={Logosvg} />
 
                             </div>
                           </div>
@@ -117,35 +119,13 @@ function Navbar() {
                           onClick={() => setOpen(false)}
                         >
                           <Link
-                            href="/about"
+                            href="/contact-us"
                             className="w-full px-6 py-2 text-center bg-white text-black r hover:bg-indigo-400 hover:text-white rounded-md "
                           >
                             Contact Us
                           </Link>
                         </button>
-                        <button
-                          type="button"
-                          onClick={() => setOpen(false)}
-                          ref={cancelButtonRef}
-                        >
-                          {session ? (
-                            <Link
-                              href="/profile"
-                              className="w-full px-6 py-2 text-center bg-white text-black  hover:bg-indigo-400 hover:text-white rounded-md "
-                            >
-                              <span className=" capitalize">
-                                {session?.user?.name}
-                              </span>
-                            </Link>
-                          ) : (
-                            <Link
-                              href="/api/auth/signin"
-                              className="w-full px-6 py-2 mt-3 text-center bg-white text-black  hover:bg-indigo-400 hover:text-white rounded-md "
-                            >
-                              Log In
-                            </Link>
-                          )}
-                        </button>
+                       
                       </div>
 
                     </Dialog.Panel>
@@ -182,26 +162,12 @@ function Navbar() {
 
         <div className="hidden mr-3 space-x-4 lg:flex items-center nav__item ">
           <Link
-            href="/about"
+            href="/contact-us"
             className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
           >
             Contact Us
           </Link>
-          {session ? (
-            <Link
-              href="/profile"
-              className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
-            >
-              <span className=" capitalize">{session?.user?.name}</span>
-            </Link>
-          ) : (
-            <Link
-              href="/api/auth/signin"
-              className="px-4 py-2 text-white content-center bg-indigo-600 rounded-md md:ml-5"
-            >
-              Log In
-            </Link>
-          )}
+        
         </div>
       </nav >
     </div >

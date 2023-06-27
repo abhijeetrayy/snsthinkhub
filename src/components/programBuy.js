@@ -1,9 +1,10 @@
-'use client'
+
 import React from 'react'
-import "../css/background.css"
+import Link from "next/link"
+
 
 export default function programBuy() {
-    const pre = "bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-purple-300 via-pink-50 to-blue-50"
+   
     return (
 
         < div className="" >
@@ -54,29 +55,8 @@ export default function programBuy() {
                             <div className='w-full flex justify-center'>
 
                                 {/* Open the modal using ID.showModal() method */}
-                                <button className="btn px-3 py-2 border border-gray-200 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white" onClick={() => window.my_modal_5.showModal()}>Contact Us</button>
-                                <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle rounded-lg">
-                                    <form method="dialog" className="modal-box p-7 flex flex-col gap-3 ">
-                                        <h3 className="font-bold text-lg">Hello Bussines</h3>
-                                        <p className="py-4">Thank You for contacting us.</p>
-                                        <div className='flex flex-col gap-3'>
-                                            <div>
-
-                                                <span className='text-lg text-gray-700 mr-3'>Name</span>
-                                                <input type='text' className='border border-gray-200 rounded-lg' />
-                                            </div>
-                                            <div>
-                                                <span className='text-lg text-gray-700 mr-3'>Email</span>
-                                                <input type='email' className='border border-gray-200 rounded-lg' />
-                                            </div>
-                                        </div>
-                                        <div className="modal-action flex flex-row gap-3">
-                                            {/* if there is a button in form, it will close the modal */}
-                                            <button className="btn px-3 py-1 border border-gray-200 rounded-lg " type='submit'>Submit</button>
-                                            <button className="btn px-3 py-1 border border-gray-200 rounded-lg" type='submit'>Close</button>
-                                        </div>
-                                    </form>
-                                </dialog>
+                                <Link href={"/contact-us"} className="btn px-3 py-2 border border-gray-200 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white">Contact Us</Link>
+                                
 
 
                             </div>

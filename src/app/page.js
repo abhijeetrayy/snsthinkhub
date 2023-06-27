@@ -9,6 +9,7 @@ import Header from "../components/header";
 import Features from "../components/features";
 import Card from "../components/card";
 import ProgramBuy from "../components/programBuy";
+import ContactUs from "../components/contactus"
 import "../css/background.css";
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
     <>
       <Header />
       <Features />
-      <Card id="backgroundpatter1" />
+      <Card />
       <ProgramBuy />
 
       <AboutReason />
@@ -41,6 +42,7 @@ const Home = () => {
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
+      <ContactUs/>
     </>
   );
 };
