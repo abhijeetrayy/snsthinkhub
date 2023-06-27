@@ -26,13 +26,13 @@ const handleSubmit = async () => {
                 body: JSON.stringify(formData),
             });
             const resWhichSave = await response.json();
-            if(resWhichSave.message === "User You have already Registered for the Course"){
-                setLoading(false)
-                toast("You have already Registered for the course")
-            }
+            
             if(resWhichSave.message === "Form data saved successfully"){
                 setLoading(false)
-                toast("Good Wishes, Registration successfull")
+                toast("Good Wishes, Registration successfull🥳")
+            }else{
+                setLoading(false)
+                toast("Something went wrong 😞")
             }
             console.log("hell",resWhichSave);
             // Handle success message or redirect
