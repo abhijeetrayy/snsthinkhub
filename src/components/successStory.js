@@ -2,7 +2,7 @@ export default function successStory(){
 	return(
 	<>
 		<div className="w-full flex justify-center">
-			<div className="max-w-[1024px] p-7 flex items-center justify-center flex-col">
+			<div className="max-w-[1024px] p-7 flex items-center justify-center flex-col gap-3">
 			<div>
 			<span className="relative inline-block sm:mb-8">
                         <svg
