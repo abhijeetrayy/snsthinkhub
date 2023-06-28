@@ -39,10 +39,10 @@ const Header = () => {
 
                         We have impacted the lives of thousands of <span className="text-indigo-500">students and teachers</span>, and we are committed to continuing to make a positive difference in the world.
                     </p>
-                    <div className="z-50 flex items-center">
+                    <div className="flex items-center">
                         <Link
                             href="/about"
-                            className="z-50 inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
+                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
                         >
                             About Us
                         </Link>

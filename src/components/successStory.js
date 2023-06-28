@@ -32,7 +32,7 @@ export default function successStory(){
 				</div>
 			
 
-			<div className="grid  gap-5 p-8">
+			<div className="grid  gap-5 sm:p-8">
 				
 				<div className="max-w-[700px] flex gap-3 flex-col p-7 border-2 border-gray-200 rounded-lg shadow-md">
 					<div className="flex sm:items-center justify-between flex-col sm:flex-row gap-3 bg-indigo-600 p-3 rounded-md">

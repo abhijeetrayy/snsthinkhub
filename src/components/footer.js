@@ -10,7 +10,9 @@ export default function Footer() {
     {name: "Internship", link:  "/internship"},
    { name: "Programs", link:  "/program"},
     {name: "Success Story", link:  "/success-story"},
+    {name: "Team", link: "/team"},
     {name: "About", link:  "/about"},
+
   ];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
