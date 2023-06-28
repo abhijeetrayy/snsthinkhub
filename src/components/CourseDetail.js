@@ -110,7 +110,7 @@ export default function CourseDetail() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full flex flex-col items-center my-5 gap-3">
+                            <div className="w-full flex flex-col items-center my-5 gap-3 transition-all">
                             <CourseRegistration/>
                                 
                                 {/* <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
