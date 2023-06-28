@@ -105,16 +105,7 @@ function Navbar() {
                                   </Link>
 
                                 ))}
-
-                              </div>
-                              <Image className="w-64 h-fit text-white bg-cover" src={Logosvg} />
-
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-col gap-6  sm:flex-row-reverse sm:px-6 my-6">
+                                 <div className="flex flex-col gap-6  sm:flex-row-reverse sm:px-6 my-6">
                         <button
                           type="button"
                           onClick={() => setOpen(false)}
@@ -128,6 +119,15 @@ function Navbar() {
                         </button>
                        
                       </div>
+                              </div>
+                              <Image className="w-64 h-fit text-white bg-cover" src={Logosvg} />
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
 
                     </Dialog.Panel>
                   </Transition.Child>
