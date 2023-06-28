@@ -87,8 +87,8 @@ export default function CourseDetail() {
                         </div>
                     </div>
 
-                    <div className=" my-3 mx-auto sm:max-w-[370px] md:min-w-[420px] px-3 w-full">
-                        <div className=" shadow-lg rounded-lg py-2">
+                    <div className=" my-3 flex items-center justify-center  px-3 w-full">
+                        <div className=" shadow-lg rounded-lg py-2 w-full sm:w-[370px]">
 
                             <div>
                                 <img
