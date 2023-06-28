@@ -88,7 +88,7 @@ export default function CourseDetail() {
                     </div>
 
                     <div className=" my-3 flex justify-center  px-3 w-full">
-                        <div className=" shadow-lg rounded-lg py-2 w-[320px] sm:w-[370px]">
+                        <div className=" shadow-lg rounded-lg py-2 w-[320px] sm:w-[370px] h-fit">
 
                             <div>
                                 <img
