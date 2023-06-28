@@ -148,7 +148,7 @@ const [formData, setFormData] = useState({
                                         </div>
                                                     </div>
 
-		: <button className='bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700' onClick={() => setClick(true)}>Enrol Now</button> }
+		: <button className=' transition-all bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700' onClick={() => setClick(true)}>Enrol Now</button> }
 
 	</>	
 	)
