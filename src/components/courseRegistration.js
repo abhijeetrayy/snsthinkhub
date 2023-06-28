@@ -26,6 +26,7 @@ const [formData, setFormData] = useState({
     };
 	return(
 	<>
+		<div className="transition delay-100 duration-200 ease-out">
 		{click ?   
 
 													<div className="w-full p-3 flex gap-3 flex-col transition delay-200 ease-in-out">
@@ -149,6 +150,7 @@ const [formData, setFormData] = useState({
                                                     </div>
 
 		: <button className=' transition-all bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700' onClick={() => setClick(true)}>Enrol Now</button> }
+			</div>
 
 	</>	
 	)
