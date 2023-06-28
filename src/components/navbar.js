@@ -73,8 +73,8 @@ function Navbar() {
                         <div className=" flex flex-col gap-2 h-full w-full">
 
                           <div className="flex flex-col gap-8 mt-3 sm:ml-4 sm:mt-0 text-left w-full">
-                            <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                              <div className="flex justify-between">
+                            <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 ">
+                              <div className="flex justify-between sm:pr-3">
 
                                 <Link href="/">
                                   <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
