@@ -26,7 +26,7 @@ const [formData, setFormData] = useState({
     };
 	return(
 	<>
-		<div className="transition-height delay-100 duration-200 ease-out w-full">
+		<div className="transition delay-100 duration-200 ease-out w-full">
 		{click ?   
 
 													<div className="w-full p-3 flex gap-3 flex-col transition delay-200 ease-in-out">
