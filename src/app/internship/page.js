@@ -47,7 +47,7 @@ export default function page() {
 
                 <div className="w-full flex justify-between items-center sm:w-[740px] lg:w-[1124px] p-6 m-3 shadow-md border-2 rounded-lg" >
                     <span>Filters</span>
-                    <div className="inline-block ml-3 flex flex-col sm:flex-row gap-3 ">
+                    <div className="ml-3 flex flex-col sm:flex-row gap-3 ">
                         <button onClick={()=> setFilter(data)} className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 mr-3 sm:text-sm hover:bg-indigo-200 hover:border-0 transition  text-xs">All</button>
                         <button onClick={()=> filterData("Remote")} className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 mr-3 sm:text-sm  hover:bg-indigo-200 hover:border-0 transition  text-xs">Remote</button>
                         <button onClick={()=> filterData("Inoffice")} className="z-50 px-3 py-2 rounded-md bg-indigo-50 text-indigo-400 sm:text-sm hover:bg-indigo-200 hover:border-0 transition  text-xs">Offline/In Office</button>
