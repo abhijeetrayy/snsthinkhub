@@ -28,7 +28,7 @@ const [formData, setFormData] = useState({
 	<>
 		{click ?   
 
-													<div className="w-full p-3 flex gap-3 flex-col">
+													<div className="w-full p-3 flex gap-3 flex-col transition delay-200 ease-in-out">
 													<div className="">
                                                         <label htmlFor="Name" className="block text-md font-medium leading-6 text-gray-900">
                                                             Name
