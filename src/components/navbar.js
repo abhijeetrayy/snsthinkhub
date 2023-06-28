@@ -68,8 +68,8 @@ function Navbar() {
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                   >
-                    <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around">
-                      <div className="px-4 pb-4  sm:p-6 sm:pb-4  w-full top-5">
+                    <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around items-start">
+                      <div className="px-4 pb-4  sm:p-6 sm:pb-4  w-full ">
                         <div className=" flex flex-col gap-2 h-full w-full">
 
                           <div className="flex flex-col gap-8 mt-3 sm:ml-4 sm:mt-0 text-left w-full">
