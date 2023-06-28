@@ -90,7 +90,7 @@ function Navbar() {
                                 </div>
                               </div>
                             </Dialog.Title>
-                            <div className="flex justify-between gap-6 h-full w-full mb-6">
+                            <div className="flex justify-between gap-6 h-full w-full">
                               <div className="flex flex-col gap-6 w-full">
 
                                 {navigation.map((item, index) => (
@@ -114,7 +114,7 @@ function Navbar() {
                         </div>
                       </div>
 
-                      <div className="flex flex-col gap-6  sm:flex-row-reverse sm:px-6">
+                      <div className="flex flex-col gap-6  sm:flex-row-reverse sm:px-6 my-6">
                         <button
                           type="button"
                           onClick={() => setOpen(false)}
