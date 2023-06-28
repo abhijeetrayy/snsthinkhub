@@ -76,7 +76,7 @@ function Navbar() {
                             <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 ">
                               <div className="flex justify-between sm:pr-3">
 
-                                <Link href="/">
+                                <Link href="/" onClick={()=> setOpen(false)}>
                                   <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
 
 
@@ -105,20 +105,20 @@ function Navbar() {
                                   </Link>
 
                                 ))}
-                                 <div className="flex flex-col gap-6  sm:flex-row-reverse sm:px-6 my-6">
-                        <button
-                          type="button"
-                          onClick={() => setOpen(false)}
-                        >
+                                 
+
+                                  
                           <Link
-                            href="/contact-us"
-                            className="w-full px-6 py-2 text-center bg-white text-black r hover:bg-indigo-400 hover:text-white rounded-md "
-                          >
-                            Contact Us
-                          </Link>
-                        </button>
+                                 
+                                    href={"/contact-us"}
+                                    onClick={() => setOpen(false)}
+                                    className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
+                                  >
+                                    {item.name}
+                                  </Link>
+                        
                        
-                      </div>
+                                    
                               </div>
                               <Image className="w-64 h-fit text-white bg-cover" src={Logosvg} />
 
