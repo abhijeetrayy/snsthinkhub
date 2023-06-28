@@ -11,7 +11,7 @@ import Link from "next/link"
 import CourseRegistration from "./courseRegistration"
 export default function CourseDetail() {
     return (
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center overflow-hidden">
             <div className="max-w-[1324px]">
                 <div className="flex flex-col mt-9 justify-between md:flex-row">
                     <div className="flex flex-col gap-5 px-10">
