@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <div className="z-50 w-full shadow-md">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto  lg:justify-between lg:px-0">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto">
         {/* Logo  */}
 
         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
@@ -68,8 +68,8 @@ function Navbar() {
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                   >
-                    <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around items-start">
-                      <div className="px-4 pb-4  sm:p-6 sm:pb-4  w-full ">
+                    <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around items-center">
+                      <div className="mt-9 px-4 pb-4  sm:p-6 sm:pb-4  w-full ">
                         <div className=" flex flex-col gap-2 h-full w-full">
 
                           <div className="flex flex-col gap-8 mt-3 sm:ml-4 sm:mt-0 text-left w-full">
@@ -152,7 +152,7 @@ function Navbar() {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={menu.url}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
+                  className="inline-block px-4 py-2 text-sm font-normal text-gray-800 no-underline rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                 >
                   {menu.name}
                 </Link>

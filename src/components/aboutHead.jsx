@@ -1,8 +1,6 @@
-import "../css/background.css";
-
 const AboutHeader = () => {
     return (
-        <div class="relative bg3 pt-[120px] pb-[110px] lg:pt-[150px] mb-8">
+        <div class="relative  pb-[110px] lg:pt-[150px] md:mb-8">
             <div class="container mx-auto">
                 <div class="flex flex-wrap justify-around md:flex-row">
                     <div class="group px-4 max-w-[700px] bg-cover  bg-indigo-600 p-6 rounded-lg shadow-md m-4  ">
@@ -22,7 +20,7 @@ const AboutHeader = () => {
                         </div>
                     </div>
                     {/* <div class="hidden px-4 lg:block lg:w-1/12"></div> */}
-                    <div class=" px-4 w-fit">
+                    <div class="hidden md:block px-4 w-fit">
                         <div class="lg:ml-auto lg:text-right">
                             <div class="relative z-10  pt-11 lg:pt-0">
                                 <img
