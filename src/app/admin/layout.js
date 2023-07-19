@@ -13,7 +13,7 @@ export default function Layout({ children }) {
     if (status == "loading") {
         return (<>Loading.. please wait</>)
     }
-    if (session?.user?.email === "abhijeet11ray@gmail.com") {
+    if (!session) {
         return (
             <Admin>
 
