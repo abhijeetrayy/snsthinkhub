@@ -2,3 +2,6 @@
 /.next
 package-lock.json
 .env.local
+.env
+env
+env.local
