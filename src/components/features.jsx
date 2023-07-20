@@ -57,7 +57,7 @@ const Statistic = () => {
               S&SThinkHub.
             </p>
           </div>
-          <div className="w-56 h-1 transition duration-300 transform bg-gray-300 rounded-full group-hover:bg-purple-400 group-hover:scale-110 sm:h-auto sm:w-1" />
+          <div className="w-56 h-1 transition duration-300 transform bg-gray-300 rounded-full group-hover:bg-indigo-400 group-hover:scale-110 sm:h-auto sm:w-1" />
           <div className="flex-1 px-12 py-8 text-center">
             <h6 className="text-4xl font-bold text-deep-purple-accent-400 sm:text-5xl mb-1">
               Opportunity
