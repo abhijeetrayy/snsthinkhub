@@ -38,14 +38,18 @@ const Header = () => {
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
               Welcome
             </p>
-            <h2 className=" mb-5 font-sans text-xl font-bold tracking-tight text-indigo-500 sm:text-2xl sm:leading-none object-cover">
+            <h2 className=" mb-5 font-sans text-xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-2xl sm:leading-none object-cover">
               <TypeAnimation
                 sequence={[
-                  `Welcome to my website!\nI'm a Developer\nand a Designer.`,
+                  `Looking for placement,\n Internsihp,\n Technical courses?.`,
                   1000,
                 ]}
                 speed={50}
-                style={{ whiteSpace: "pre-line", fontSize: "2em" }}
+                style={{
+                  whiteSpace: "pre-line",
+                  fontSize: "2em",
+                  lineHeight: "1.3em",
+                }}
               />
             </h2>
             <div className="flex items-center">
@@ -53,7 +57,7 @@ const Header = () => {
                 href="/about"
                 className="z-50 inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
               >
-                About Us
+                CheckOut Courses
               </Link>
             </div>
           </div>
