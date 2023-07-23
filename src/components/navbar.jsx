@@ -1,16 +1,16 @@
 "use client";
 import Link from "next/link";
-import { Fragment, useRef, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import { Fragment, useRef, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import Logosvg from "../public/logosnss.png"
+import Logosvg from "../public/logosnss.png";
 
 function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
-  const cancelButtonRef = useRef(null)
+  const cancelButtonRef = useRef(null);
   const { data: session } = useSession();
   console.log(session);
   const navigation = [
@@ -18,14 +18,14 @@ function Navbar() {
     { name: "Course", url: "/courses" },
     { name: "Internship", url: "/internship" },
     { name: "About", url: "/about" },
-    { name: "Program", url: "/program"},
-    { name: "Success Story", url: "/success-story"},
-    {name: "Team", url: "/team"},
+    { name: "Program", url: "/program" },
+    { name: "Success Story", url: "/success-story" },
+    { name: "Team", url: "/team" },
   ];
 
   return (
-    <div className="z-50 w-full shadow-md">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto">
+    <div className=" z-50 w-full shadow-md">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto bg-white">
         {/* Logo  */}
 
         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
@@ -40,11 +40,32 @@ function Navbar() {
               <span>SnSThinkHub</span>
             </span>
           </Link>
-          <button className='flex px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-500 rounded-lg lg:hidden' onClick={() => setOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg></button>
+          <button
+            className="flex px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-500 rounded-lg lg:hidden"
+            onClick={() => setOpen(true)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
           <Transition.Root show={open} as={Fragment} className="lg:hidden z-50">
-            <Dialog as="div" className="relative" initialFocus={cancelButtonRef} onClose={setOpen}>
+            <Dialog
+              as="div"
+              className="relative"
+              initialFocus={cancelButtonRef}
+              onClose={setOpen}
+            >
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -71,30 +92,43 @@ function Navbar() {
                     <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around items-center">
                       <div className="mt-9 px-4 pb-4  sm:p-6 sm:pb-4  w-full ">
                         <div className=" flex flex-col gap-2 h-full w-full">
-
                           <div className="flex flex-col gap-8 mt-3 sm:ml-4 sm:mt-0 text-left w-full">
-                            <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 ">
+                            <Dialog.Title
+                              as="h3"
+                              className="text-base font-semibold leading-6 text-gray-900 "
+                            >
                               <div className="flex justify-between sm:pr-3">
-
-                                <Link href="/" onClick={()=> setOpen(false)}>
+                                <Link href="/" onClick={() => setOpen(false)}>
                                   <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
-
-
                                     <span>SnSThinkHub</span>
                                   </span>
                                 </Link>
                                 <div>
-                                  <button className='flex px-4 py-2 bg-white text-indigo-700 hover:bg-gray-200 rounded-lg lg:hidden' onClick={() => setOpen(false)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                  </svg></button>
+                                  <button
+                                    className="flex px-4 py-2 bg-white text-indigo-700 hover:bg-gray-200 rounded-lg lg:hidden"
+                                    onClick={() => setOpen(false)}
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      strokeWidth={1.5}
+                                      stroke="currentColor"
+                                      className="w-6 h-6"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                      />
+                                    </svg>
+                                  </button>
                                 </div>
                               </div>
                             </Dialog.Title>
                             <div className="flex justify-between gap-6 h-full w-full">
                               <div className="flex flex-col gap-6 w-full">
-
                                 {navigation.map((item, index) => (
-
                                   <Link
                                     key={index}
                                     href={item.url}
@@ -103,47 +137,31 @@ function Navbar() {
                                   >
                                     {item.name}
                                   </Link>
-
                                 ))}
-                                 
 
-                                  
-                          <Link
-                                 
-                                    href={"/contact-us"}
-                                    onClick={() => setOpen(false)}
-                                    className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
-                                  >
-                                     Contact Us
-                                  </Link>
-                        
-                       
-                                    
+                                <Link
+                                  href={"/contact-us"}
+                                  onClick={() => setOpen(false)}
+                                  className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
+                                >
+                                  Contact Us
+                                </Link>
                               </div>
-                              <Image className="w-64 h-fit text-white bg-cover" src={Logosvg} />
-
+                              <Image
+                                className="w-64 h-fit text-white bg-cover"
+                                src={Logosvg}
+                              />
                             </div>
                           </div>
                         </div>
                       </div>
-
-                      
-
                     </Dialog.Panel>
                   </Transition.Child>
                 </div>
               </div>
             </Dialog>
           </Transition.Root>
-
-
-
-
-
-
-
         </div>
-
 
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
@@ -168,11 +186,10 @@ function Navbar() {
           >
             Contact Us
           </Link>
-        
         </div>
-      </nav >
-    </div >
+      </nav>
+    </div>
   );
-};
+}
 
 export default Navbar;

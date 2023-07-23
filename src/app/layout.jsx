@@ -4,14 +4,18 @@ import Navbar from "../components/navbar";
 import PopupWidget from "../components/popupWidget";
 import Footer from "../components/footer";
 import { usePathname } from "next/navigation";
-import { SessionProvider } from "next-auth/react"
+import { SessionProvider } from "next-auth/react";
 
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 
 export default function Layout({ children }) {
   const pathname = usePathname();
 
-  if (pathname !== "/admin" && pathname !== "/admin/internship" && pathname !== "/admin/program") {
+  if (
+    pathname !== "/admin" &&
+    pathname !== "/admin/internship" &&
+    pathname !== "/admin/program"
+  ) {
     return (
       <html>
         <head>
@@ -22,12 +26,12 @@ export default function Layout({ children }) {
         </head>
         <body>
           <SessionProvider>
-
             <div className="flex flex-col min-h-screen">
-              <Navbar />
+              <div className="z-50 sticky top-0">
+                <Navbar />
+              </div>
               <div className=" flex-grow">{children}</div>
               <Footer />
-            
             </div>
           </SessionProvider>
           <Toaster />
@@ -38,7 +42,9 @@ export default function Layout({ children }) {
   return (
     <html>
       <head></head>
-      <body><SessionProvider>{children}</SessionProvider></body>
+      <body>
+        <SessionProvider>{children}</SessionProvider>
+      </body>
     </html>
   );
 }
