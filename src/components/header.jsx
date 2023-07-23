@@ -38,10 +38,10 @@ const Header = () => {
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
               Welcome
             </p>
-            <h2 className=" mb-5 font-sans text-md  leading-5 font-bold tracking-tight text-indigo-500 md:text-2xl sm:leading-none object-cover">
+            <h2 className=" mb-5 font-sans text-sm  leading-5 font-bold tracking-tight text-indigo-500 md:text-2xl sm:leading-none object-cover">
               <TypeAnimation
                 sequence={[
-                  `Looking for placement,\n Internsihp,\n Technical courses?.`,
+                  `Looking for placement,\n Internsihp,\n Technical courses 😊`,
                   1000,
                 ]}
                 speed={50}

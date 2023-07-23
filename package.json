@@ -13,7 +13,7 @@
     "tailwindcss",
     "free"
   ],
-  "author": "Surjith S M",
+  "author": "Abhijeet Ray",
   "license": "ISC",
   "dependencies": {
     "@builder.io/partytown": "^0.8.0",
