@@ -41,7 +41,7 @@ const Header = () => {
             <h2 className=" mb-5 font-sans text-sm  leading-5 font-bold tracking-tight text-indigo-500 md:text-2xl sm:leading-none object-cover">
               <TypeAnimation
                 sequence={[
-                  `Looking for placement,\n Internsihp,\n Technical courses 😊`,
+                  `Looking for Placement,\n Internsihp,\n Technical courses 😊`,
                   1000,
                 ]}
                 speed={50}
