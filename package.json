@@ -47,6 +47,7 @@
     "react-icons": "^4.8.0",
     "react-loader-spinner": "^5.3.4",
     "react-spinners": "^0.13.8",
+    "react-type-animation": "^3.1.0",
     "shortid": "^2.2.16",
     "tailwind-scrollbar": "^3.0.4"
   },

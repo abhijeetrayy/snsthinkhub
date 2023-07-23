@@ -9,7 +9,7 @@ import Header from "../components/header";
 import Features from "../components/features";
 import Card from "../components/card";
 import ProgramBuy from "../components/programBuy";
-import ContactUs from "../components/contactus"
+import ContactUs from "../components/contactus";
 import "../css/background.css";
 
 const Home = () => {
@@ -24,9 +24,7 @@ const Home = () => {
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
-      >
-
-      </SectionTitle>
+      ></SectionTitle>
       <Video />
       <Team />
       <SectionTitle
@@ -34,7 +32,6 @@ const Home = () => {
         title="Here's what our Student said"
       >
         Testimonails is a great way to increase the brand trust and awareness.
-
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
@@ -42,7 +39,7 @@ const Home = () => {
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
-      <ContactUs/>
+      <ContactUs />
     </>
   );
 };
