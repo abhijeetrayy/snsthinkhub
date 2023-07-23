@@ -18,14 +18,14 @@ const Home = () => {
       <Header />
       <Features />
       <Card />
-      <ProgramBuy />
+      {/* <ProgramBuy /> */}
 
-      <AboutReason />
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
       ></SectionTitle>
       <Video />
+      <AboutReason />
       <Team />
       <SectionTitle
         pretitle="Testimonials"
