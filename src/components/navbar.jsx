@@ -78,7 +78,7 @@ function Navbar() {
                 <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
               </Transition.Child>
 
-              <div className="fixed h-screen w-screen bg-indigo-700 inset-0  overflow-y-auto ">
+              <div className="fixed h-screen w-screen bg-indigo-500 inset-0  overflow-y-auto ">
                 <div className="flex justify-start p-4 text-center items-center sm:p-0">
                   <Transition.Child
                     as={Fragment}
