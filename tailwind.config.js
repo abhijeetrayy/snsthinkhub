@@ -2,7 +2,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-
   mode: "jit",
   purge: [
     "./node_modules/flowbite-react/**/*.js",
@@ -13,7 +12,9 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
-
+      animation: {
+        "spin-slow": "spin 14s linear infinite",
+      },
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],

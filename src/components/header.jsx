@@ -63,7 +63,7 @@ const Header = () => {
                   ></animate>
                 </path>
               </svg>
-              <h2 className=" mb-5 font-sans text-2xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-4xl md:text-5xl  sm:leading-none object-cover">
+              <h2 className=" mb-5 font-sans text-2xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-3xl md:text-4xl xl:text-5xl  sm:leading-none object-cover">
                 <TypeAnimation
                   sequence={[
                     `Education \n for Excellence, \n'Placement' for Success`,

@@ -126,7 +126,7 @@ export default function contactus() {
               <form>
                 <div class="mb-6">
                   <input
-                    type="name"
+                    type="text"
                     name="Name"
                     value={formData.Name}
                     placeholder="Your Name"
