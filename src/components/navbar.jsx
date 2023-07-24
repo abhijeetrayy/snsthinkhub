@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <div className=" z-50 w-full shadow-md">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto bg-white">
+      <nav className="container relative flex flex-wrap items-center justify-between py-3 px-2  mx-auto bg-white max-w-6xl">
         {/* Logo  */}
 
         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">

@@ -27,7 +27,7 @@ export default function Layout({ children }) {
         <body>
           <SessionProvider>
             <div className="flex flex-col min-h-screen">
-              <div className="z-50 sticky top-0">
+              <div className="z-50 sticky top-0 bg-white w-full">
                 <Navbar />
               </div>
               <div className=" flex-grow">{children}</div>
