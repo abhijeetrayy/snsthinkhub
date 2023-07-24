@@ -140,7 +140,7 @@ export default function page() {
                       data={"More..."}
                       size={10}
                       style={
-                        "w-16 h-7  flex items-center justify-center rounded-md bg-blue-500 text-sm font-medium text-white hover:bg-blue-700 ring-0 border-0"
+                        "w-16 h-7  flex items-center justify-center rounded-md bg-indigo-500 text-sm font-medium text-white hover:bg-indigo-600 ring-0 border-0"
                       }
                     />
                   </Link>

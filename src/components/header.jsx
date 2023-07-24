@@ -39,16 +39,40 @@ const Header = () => {
               <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
                 Welcome
               </p>
-              <h2 className=" mb-5 font-sans text-sm  leading-5 font-bold tracking-tight text-indigo-500 md:text-2xl sm:leading-none object-cover">
+              <svg
+                className="absolute z-20 w-36 sm:w-52 right-0 top-0 lg:hidden"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 500 500"
+                width="100%"
+                id="blobSvg"
+                style={{ opacity: 100 }}
+                filter="blur(0px)"
+              >
+                <path
+                  id="blob"
+                  fill="#6366f1"
+                  className="bg-indigo-300"
+                  style={{ opacity: 0.35 }}
+                >
+                  <animate
+                    attributeName="d"
+                    dur="10s"
+                    repeatCount="indefinite"
+                    values="M390.7302,319.10952Q360.37524,388.21905,284.62068,409.39959Q208.86612,430.58014,161.11156,373.20082Q113.35701,315.8215,88.46857,238.04463Q63.58014,160.26776,136.76776,117.04463Q209.95537,73.8215,303.79007,69.52027Q397.62476,65.21905,409.35497,157.60952Q421.08517,250,390.7302,319.10952Z;M429.79847,339.54154Q392.67727,429.08308,294.97368,455.00137Q197.27008,480.91966,143.94598,403.56786Q90.62188,326.21607,83.52769,246.22992Q76.43351,166.24376,136.8518,92.77008Q197.27008,19.29641,287.1482,55Q377.02632,90.70359,421.97299,170.3518Q466.91966,250,429.79847,339.54154Z;M392.2525,331.53996Q379.05994,413.07992,285.7525,456.15485Q192.44505,499.22978,100.80019,432.44731Q9.15533,365.66484,30.81018,260.57493Q52.46503,155.48501,121.45005,74.10764Q190.43506,-7.26974,268.13261,60.97003Q345.83016,129.2098,375.63761,189.6049Q405.44505,250,392.2525,331.53996Z;M420.7122,331.4339Q380.09423,412.86779,301.16508,392.29219Q222.23594,371.7166,157.11322,349.24982Q91.99051,326.78305,53.64135,232.38203Q15.29219,137.98101,118.09898,129.47187Q220.90577,120.96273,294.67458,111.25967Q368.44339,101.55661,414.88678,175.77831Q461.33017,250,420.7122,331.4339Z;M390.7302,319.10952Q360.37524,388.21905,284.62068,409.39959Q208.86612,430.58014,161.11156,373.20082Q113.35701,315.8215,88.46857,238.04463Q63.58014,160.26776,136.76776,117.04463Q209.95537,73.8215,303.79007,69.52027Q397.62476,65.21905,409.35497,157.60952Q421.08517,250,390.7302,319.10952Z"
+                  ></animate>
+                </path>
+              </svg>
+              <h2 className=" mb-5 font-sans text-2xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-4xl md:text-5xl  sm:leading-none object-cover">
                 <TypeAnimation
                   sequence={[
-                    `Looking for Placement,\n Internsihp,\n Technical courses?`,
+                    `Education \n for Excellence, \n'Placement' for Success`,
                     1000,
                   ]}
                   speed={50}
                   style={{
                     whiteSpace: "pre-line",
-                    fontSize: "2em",
+
                     lineHeight: "1.3em",
                   }}
                 />

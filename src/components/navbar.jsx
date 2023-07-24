@@ -41,7 +41,7 @@ function Navbar() {
             </span>
           </Link>
           <button
-            className="flex px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-500 rounded-lg lg:hidden"
+            className="flex px-4 py-2 bg-indigo-500 text-white hover:bg-indigo-400 rounded-lg lg:hidden"
             onClick={() => setOpen(true)}
           >
             <svg
@@ -182,7 +182,7 @@ function Navbar() {
         <div className="hidden mr-3 space-x-4 lg:flex items-center nav__item ">
           <Link
             href="/contact-us"
-            className="px-4 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+            className="px-4 py-2 text-white bg-indigo-500 rounded-md md:ml-5"
           >
             Contact Us
           </Link>
