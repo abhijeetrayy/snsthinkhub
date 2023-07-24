@@ -82,15 +82,17 @@ const Testimonials = () => {
           <div class="relative  border-2 border-gray-100 mb-5 rounded-lg break-inside-avoid shadow-md md:shadow-lg hover:shadow-xl">
             <div class="p-5 relative  flex flex-col gap-1">
               <div className="flex flex-col mb-3">
-                <h1 class="test__title text-3xl text-indigo-500 font-bold">
+                <h1 class="test__title text-xl text-indigo-500 font-bold">
                   {items.name}
                 </h1>
-                <span className="text-gray-500 text-sm font-normal">
+                <span className="text-gray-500 text-xs font-normal">
                   {items.programAndCourse}
                 </span>
-                <span>Raiting: {items.stars}</span>
+                <span className="text-sm">Raiting: {items.stars}</span>
               </div>
-              <p class="test__author text-sm font-light">{items.description}</p>
+              <p class="test__author text-sm font-light text-gray-700">
+                {items.description}
+              </p>
             </div>
           </div>
         ))}
