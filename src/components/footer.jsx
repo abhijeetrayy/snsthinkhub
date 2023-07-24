@@ -97,7 +97,7 @@ export default function Footer() {
 
 const Twitter = ({ size = 24 }) => (
   <svg
-    className=" hover:text-blue-500"
+    className="text-indigo-500 hover:text-indigo-600"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
@@ -110,7 +110,7 @@ const Twitter = ({ size = 24 }) => (
 
 const Facebook = ({ size = 24 }) => (
   <svg
-    className=" hover:text-blue-500"
+    className="text-indigo-500 hover:text-indigo-600"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
@@ -122,7 +122,7 @@ const Facebook = ({ size = 24 }) => (
 );
 const Instagram = ({ size = 24 }) => (
   <svg
-    className=" hover:text-blue-500"
+    className="text-indigo-500 hover:text-indigo-600"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
@@ -135,7 +135,7 @@ const Instagram = ({ size = 24 }) => (
 
 const Linkedin = ({ size = 24 }) => (
   <svg
-    className=" hover:text-blue-500"
+    className="text-indigo-500 hover:text-indigo-600"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}

@@ -25,7 +25,7 @@ const Home = () => {
         title="Learn how to fullfil your needs"
       ></SectionTitle>
       <Video />
-      <AboutReason />
+      {/* <AboutReason /> */}
       <Team />
       <SectionTitle
         pretitle="Testimonials"
