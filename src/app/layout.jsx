@@ -26,12 +26,14 @@ export default function Layout({ children }) {
         </head>
         <body>
           <SessionProvider>
-            <div className="flex flex-col min-h-screen">
+            <div className="w-full flex flex-col min-h-screen justify-center ">
               <div className="z-50 sticky top-0 bg-white w-full">
                 <Navbar />
               </div>
-              <div className=" flex-grow">{children}</div>
-              <Footer />
+              <div className=" flex-grow ">{children}</div>
+              <div className="w-full flex justify-center">
+                <Footer />
+              </div>
             </div>
           </SessionProvider>
           <Toaster />

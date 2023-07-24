@@ -76,11 +76,11 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div>
-      <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 p-7">
+    <div className="w-full flex justify-center">
+      <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 px-2 md:px-5 max-w-7xl">
         {testimonials.map((items) => (
           <div class="relative  border-2 border-gray-100 mb-5 rounded-lg break-inside-avoid shadow-md md:shadow-lg hover:shadow-xl">
-            <div class=" p-8 relative  flex flex-col gap-1">
+            <div class="p-5 relative  flex flex-col gap-1">
               <div className="flex flex-col mb-3">
                 <h1 class="test__title text-3xl text-indigo-500 font-bold">
                   {items.name}
