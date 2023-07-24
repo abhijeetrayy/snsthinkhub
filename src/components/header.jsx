@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const Header = () => {
   return (
     <div className="">
-      <div className=" group relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 lg:h-[500px]">
+      <div className=" group relative flex flex-col-reverse py-8 lg:pt-0 lg:flex-col lg:pb-0 lg:h-[500px]">
         <div
           class="absolute inset-x-0 -top-40 z-20 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"

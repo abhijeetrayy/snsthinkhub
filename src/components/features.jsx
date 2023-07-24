@@ -2,7 +2,7 @@ const Statistic = () => {
   return (
     <div className="px-2 py-3 ">
       <section class="bg-white ">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py- lg:px-6">
           <div class="w-full flex flex-col items-center mb-8 lg:mb-16">
             <div className="max-w-2xl">
               <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
