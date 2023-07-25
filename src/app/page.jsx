@@ -42,7 +42,7 @@ const Home = () => {
           </div>
           <span
             style={{ fontFamily: `"Nano Sans", sans-serif` }}
-            className=" text-xl md:text-2xl font-medium  text-gray-800 text-center flex  "
+            className=" text-xl md:text-2xl md:font-medium  text-gray-800 text-center flex  p-2"
           >
             " From streamlined practical courses to job-ready certifications,
             high-paying placements and hands-on internships, S&S provides the

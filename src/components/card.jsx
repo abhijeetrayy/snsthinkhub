@@ -9,14 +9,16 @@ export default function card() {
       <div className="w-full ">
         <div className="h-fit  flex justify-center items-center py-7  flex-col">
           <div className="flex flex-col items-center mb-6 bg-white rounded-lg shadow-md px-8 py-3 bg-cover duration-500 hover:px-10">
-            <h2 className="text-5xl font-extrabold mb-5 float-left  text-indigo-500">
-              Course's
+            <h2 className="text-xl font-extrabold mb-5 float-left  text-indigo-500">
+              Our Courses
             </h2>
             <p>
-              Our Courses are Indurties expret fit, which{" "}
+              Exclusive, personalized and latest programs for you to sharpen
+              your skills.
+              {/* Our Courses are Indurties expret fit, which{" "}
               <span className="text-indigo-600">make our student</span> reach
               their{" "}
-              <span className="text-indigo-600">potential and career</span>.
+              <span className="text-indigo-600">potential and career</span>. */}
             </p>
           </div>
           <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
