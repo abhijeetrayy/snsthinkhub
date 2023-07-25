@@ -3,9 +3,9 @@ const Statistic = () => {
     <div className="px-2 py-3 w-full flex justify-center ">
       <section class="bg-white max-w-6xl">
         <div class="py-8 px-4 mx-auto sm:py- lg:px-6">
-          <div class="w-full flex flex-col items-center text-center mb-8 lg:mb-16">
+          <div class="w-full flex flex-col md:items-center md:text-center mb-8 lg:mb-16">
             <div className="max-w-6xl">
-              <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-700 ">
+              <h2 class="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
                 360* career guidence and mentorship
               </h2>
               <p class="text-gray-600 sm:text-md ">
@@ -15,7 +15,7 @@ const Statistic = () => {
             </div>
           </div>
           <div class="w-fit space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 justify-center items-center">
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col md:items-center md:text-center">
               <div class="flex justify-center items-center mb-4  rounded-md bg-primary-100 w-fit border border-gray-400 ">
                 <svg
                   class="w-10 h-10 text-indigo-500 m-3 "
@@ -38,7 +38,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </h4>
             </div>
-            <div className="flex flex-col text-center items-center">
+            <div className="flex flex-col md:text-center md:items-center">
               <div class="flex justify-center items-center mb-4  rounded-md bg-primary-100 w-fit border border-gray-400 ">
                 <svg
                   class="w-10 h-10 text-indigo-500 m-3 "
@@ -57,7 +57,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col text-center items-center">
+            <div className="flex flex-col md:text-center md:items-center">
               <div class="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
                 <svg
                   class="w-10 h-10 text-indigo-500 m-3 "
@@ -81,7 +81,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col text-center items-center">
+            <div className="flex flex-col md:text-center md:items-center">
               <div class="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
                 <svg
                   class="w-10 h-10 text-indigo-500 m-3 "
@@ -105,7 +105,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col text-center items-center">
+            <div className="flex flex-col md:text-center md:items-center">
               <div class="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
                 <svg
                   class="w-10 h-10 text-indigo-500 m-3 "
@@ -124,7 +124,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col text-center items-center">
+            <div className="flex flex-col md:text-center md:items-center">
               <div class="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
                 <svg
                   class="w-10 h-10 text-indigo-500 m-3 "

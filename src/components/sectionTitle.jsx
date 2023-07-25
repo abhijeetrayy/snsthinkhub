@@ -4,16 +4,18 @@ import Container from "./container";
 const SectionTitle = (props) => {
   return (
     <Container
-      className={`flex w-full flex-col mt-4 ${props.align === "left" ? "" : "items-center justify-center text-center"
-        }`}>
+      className={`flex w-full flex-col mt-4 ${
+        props.align === "left" ? "" : "items-center justify-center text-center"
+      }`}
+    >
       {props.pretitle && (
-        <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
+        <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase my-3">
           {props.pretitle}
         </div>
       )}
 
       {props.title && (
-        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl ">
+        <h2 class="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
           {props.title}
         </h2>
       )}
@@ -25,6 +27,6 @@ const SectionTitle = (props) => {
       )}
     </Container>
   );
-}
+};
 
 export default SectionTitle;

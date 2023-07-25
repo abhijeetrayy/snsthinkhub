@@ -63,19 +63,14 @@ const Home = () => {
       <Features />
       {/* <ProgramBuy /> */}
 
-      <SectionTitle
+      {/* <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
       ></SectionTitle>
-      <Video />
+      <Video /> */}
       {/* <AboutReason /> */}
       <Team />
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our Student said"
-      >
-        Testimonails is a great way to increase the brand trust and awareness.
-      </SectionTitle>
+
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
