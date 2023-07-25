@@ -20,7 +20,7 @@ const Home = () => {
       <div className="w-fll flex  justify-center">
         <div className="max-w-3xl my-3">
           <div className="flex w-full justify-between mb-10">
-            <div className="animate-spin-slow  md:flex">
+            <div className="animate-spin-slow hidden md:flex">
               <svg
                 width="80px"
                 height="80px"
