@@ -82,7 +82,7 @@ const Header = () => {
                   href="/courses"
                   className=" z-40 inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
                 >
-                  CheckOut Courses
+                  Join Course
                 </Link>
               </div>
             </div>
