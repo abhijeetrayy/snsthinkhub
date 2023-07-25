@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       animation: {
         "spin-slow": "spin 14s linear infinite",
+        "spin-super-slow": "spin 20s linear infinite",
       },
     },
     fontFamily: {
