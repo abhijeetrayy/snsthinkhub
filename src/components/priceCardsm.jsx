@@ -1,18 +1,18 @@
 export default function priceCardsm() {
   return (
-    <div class="w-64 p-4 bg-indigo-500 shadow-lg rounded-2xl dark:bg-gray-800">
-      <div class="flex items-center justify-between text-white">
-        <p class="mb-4 text-4xl font-medium">Pro</p>
-        <p class="flex flex-col text-3xl font-bold">
+    <div className="w-64 p-4 bg-indigo-500 shadow-lg rounded-2xl dark:bg-gray-800">
+      <div className="flex items-center justify-between text-white">
+        <p className="mb-4 text-4xl font-medium">Pro</p>
+        <p className="flex flex-col text-3xl font-bold">
           $99
-          <span class="text-sm font-thin text-right">month</span>
+          <span className="text-sm font-thin text-right">month</span>
         </p>
       </div>
-      <p class="mt-4 text-white text-md">Plan include :</p>
-      <ul class="w-full mt-6 mb-6 text-sm text-white">
-        <li class="mb-3 flex items-center ">
+      <p className="mt-4 text-white text-md">Plan include :</p>
+      <ul className="w-full mt-6 mb-6 text-sm text-white">
+        <li className="mb-3 flex items-center ">
           <svg
-            class="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2"
             xmlns="http://www.w3.org/2000/svg"
             width="6"
             height="6"
@@ -24,9 +24,9 @@ export default function priceCardsm() {
           </svg>
           All illimited components
         </li>
-        <li class="mb-3 flex items-center ">
+        <li className="mb-3 flex items-center ">
           <svg
-            class="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2"
             xmlns="http://www.w3.org/2000/svg"
             width="6"
             height="6"
@@ -38,9 +38,9 @@ export default function priceCardsm() {
           </svg>
           Own custom Tailwind styles
         </li>
-        <li class="mb-3 flex items-center ">
+        <li className="mb-3 flex items-center ">
           <svg
-            class="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2"
             xmlns="http://www.w3.org/2000/svg"
             width="6"
             height="6"
@@ -52,9 +52,9 @@ export default function priceCardsm() {
           </svg>
           Unlimited Templates
         </li>
-        <li class="mb-3 flex items-center ">
+        <li className="mb-3 flex items-center ">
           <svg
-            class="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2"
             xmlns="http://www.w3.org/2000/svg"
             width="6"
             height="6"
@@ -66,9 +66,9 @@ export default function priceCardsm() {
           </svg>
           Free premium dashboard
         </li>
-        <li class="mb-3 flex items-center ">
+        <li className="mb-3 flex items-center ">
           <svg
-            class="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2"
             xmlns="http://www.w3.org/2000/svg"
             width="6"
             height="6"
@@ -80,12 +80,12 @@ export default function priceCardsm() {
           </svg>
           Best ranking
         </li>
-        <li class="mb-3 flex items-center opacity-50">
+        <li className="mb-3 flex items-center opacity-50">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="6"
             height="6"
-            class="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2"
             fill="white"
             viewBox="0 0 1792 1792"
           >
@@ -93,12 +93,12 @@ export default function priceCardsm() {
           </svg>
           Prenium svg
         </li>
-        <li class="mb-3 flex items-center opacity-50">
+        <li className="mb-3 flex items-center opacity-50">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="6"
             height="6"
-            class="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2"
             fill="white"
             viewBox="0 0 1792 1792"
           >
@@ -109,7 +109,7 @@ export default function priceCardsm() {
       </ul>
       <button
         type="button"
-        class="w-full px-3 py-3 text-sm text-indigo-500 bg-white rounded-lg shadow hover:bg-gray-100 "
+        className="w-full px-3 py-3 text-sm text-indigo-500 bg-white rounded-lg shadow hover:bg-gray-100 "
       >
         Choose plan
       </button>

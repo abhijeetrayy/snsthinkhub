@@ -31,7 +31,7 @@ export default function getCourseData() {
         <div className="flex flex-col gap-2">
           {data
             ? data.map((item, index) => (
-                <div className="flex flex-row gap-6 justify-around">
+                <div key={index} className="flex flex-row gap-6 justify-around">
                   <Link
                     className=""
                     href={`/admin/courses/${item.CourseId}`}

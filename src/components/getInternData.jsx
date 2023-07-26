@@ -29,7 +29,7 @@ export default function getInternData() {
         <hr className="border-1 border-gray-700 my-2" />
         {data
           ? data.map((item, index) => (
-              <div className="flex flex-row gap-6 justify-around">
+              <div key={index} className="flex flex-row gap-6 justify-around">
                 <Link
                   className=""
                   href={`/admin/internships/${item.internshipId}`}

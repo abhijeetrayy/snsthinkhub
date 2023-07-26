@@ -37,7 +37,6 @@ export default function registaration() {
                   type="text"
                   value={formData.Name}
                   onChange={handleChange}
-                  required="true"
                   autoComplete="Name"
                   placeholder="Abhijeet Ray"
                   className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -58,7 +57,6 @@ export default function registaration() {
                   type="email"
                   value={formData.Email}
                   onChange={handleChange}
-                  required="true"
                   autoComplete="Email"
                   placeholder="abc@gmail.com"
                   className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -79,7 +77,6 @@ export default function registaration() {
                   type="number"
                   value={formData.Phone}
                   onChange={handleChange}
-                  required="true"
                   autoComplete="Phone"
                   placeholder="+91 9876543211"
                   className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -100,7 +97,6 @@ export default function registaration() {
                   type="text"
                   value={formData.College}
                   onChange={handleChange}
-                  required="true"
                   autoComplete="College"
                   placeholder="Delhi University"
                   className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -121,7 +117,6 @@ export default function registaration() {
                   type="text"
                   value={formData.Course}
                   onChange={handleChange}
-                  required="true"
                   autoComplete="Course"
                   placeholder="B-tech CSE"
                   className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -142,7 +137,6 @@ export default function registaration() {
                   type="text"
                   value={formData.Year}
                   onChange={handleChange}
-                  required="true"
                   autoComplete="Year"
                   placeholder="2025-2029"
                   className="block w-full rounded-md border-0 pl-2  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"

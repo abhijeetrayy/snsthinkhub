@@ -12,7 +12,7 @@ function Navbar() {
 
   const cancelButtonRef = useRef(null);
   const { data: session } = useSession();
-  console.log(session);
+
   const navigation = [
     { name: "Home", url: "/home" },
     { name: "Course", url: "/home/courses" },
@@ -31,7 +31,7 @@ function Navbar() {
         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
           <Link href="/">
             <span className="flex  flex-row space-x-2 text-2xl font-medium text-indigo-500">
-              {/* <Image
+              {/* <Image alt=""
                       width={44}
                       height={44}
                       src={Logo}
@@ -148,6 +148,7 @@ function Navbar() {
                                 </Link>
                               </div>
                               <Image
+                                alt=""
                                 className="w-64 h-fit text-white bg-cover"
                                 src={Logosvg}
                               />

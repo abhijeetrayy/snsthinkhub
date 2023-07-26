@@ -311,7 +311,7 @@ export default function Example() {
                 show
               </button>
             </div>
-            {number.map((item) => {
+            {number.map((item, index) => {
               const name = item.name;
               const detail = item.detail;
               return (

@@ -1,17 +1,19 @@
 "use client";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
+import HeaderImg from "../public/img/header.jpg";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <div className="">
       <div className=" group relative flex flex-col-reverse py-8 lg:pt-0 lg:flex-col lg:pb-0 lg:h-[500px]">
         <div
-          class="absolute inset-x-0 -top-40 z-20 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className="absolute inset-x-0 -top-40 z-20 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
           <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -27,10 +29,12 @@ const Header = () => {
           >
             <path d="M50 0H100L50 100H0L50 0Z" />
           </svg>
-          <img
-            className="-z-20 object-cover  w-full h-56 lg:group-hover:scale-105 duration-1000 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          <Image
+            className="-z-20 object-cover scale-100 lg:group-hover:scale-105 w-full h-56  duration-1000 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+            src={HeaderImg}
             alt=""
+            width={1000}
+            height={1000}
           />
         </div>
         <div className="group relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl justify-center lg:justify-normal">

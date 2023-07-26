@@ -151,7 +151,7 @@ export default function CourseDetail() {
                   </ul>
                 </div>
                 <div className="">
-                  <Image className=" p-0 m-0" width={100} src={Wave} />
+                  <Image alt="" className=" p-0 m-0" width={100} src={Wave} />
                 </div>
                 <div className="mb-6">
                   <h2 className="text-2xl font-bold">Traning Student</h2>
