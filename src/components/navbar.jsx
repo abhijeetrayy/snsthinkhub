@@ -140,7 +140,7 @@ function Navbar() {
                                 ))}
 
                                 <Link
-                                  href={"/contact-us"}
+                                  href={"/home/contact-us"}
                                   onClick={() => setOpen(false)}
                                   className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
                                 >
@@ -181,7 +181,7 @@ function Navbar() {
 
         <div className="hidden mr-3 space-x-4 lg:flex items-center nav__item ">
           <Link
-            href="/contact-us"
+            href="/home/contact-us"
             className="px-4 py-2 text-white bg-indigo-500 rounded-md md:ml-5"
           >
             Contact Us
