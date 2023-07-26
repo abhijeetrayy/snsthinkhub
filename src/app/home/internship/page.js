@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Contactus from "../../components/contactus";
-import CourseHeader from "../../components/couserHeader";
-import MoreButton from "../../components/moreButton";
+import Contactus from "../../../components/contactus";
+import CourseHeader from "../../../components/couserHeader";
+import MoreButton from "../../../components/moreButton";
 import { useState } from "react";
 
 export default function page() {
@@ -78,7 +78,7 @@ export default function page() {
 
                 <span className=" font-sans">Perl Organization</span>
                 <div className="mb-2">
-                  <Link href={"/"}>
+                  <Link href={"/home"}>
                     <span className="text-sm underline decoration-dotted">
                       Dehradun,India
                     </span>
@@ -135,7 +135,7 @@ export default function page() {
                   </span>
                 </div>
                 <div className="mt-3">
-                  <Link href={"/internship/WebDevelopment"}>
+                  <Link href={"/home/internship/WebDevelopment"}>
                     <MoreButton
                       data={"More..."}
                       size={10}

@@ -5,13 +5,13 @@ import Container from "./container";
 
 export default function Footer() {
   const navigation = [
-    { name: "Home", link: "/" },
-    { name: "Course", link: "/courses" },
-    { name: "Internship", link: "/internship" },
-    { name: "Programs", link: "/program" },
-    { name: "Success Story", link: "/success-story" },
-    { name: "Team", link: "/team" },
-    { name: "About", link: "/about" },
+    { name: "Home", link: "/home" },
+    { name: "Course", link: "/home/courses" },
+    { name: "Internship", link: "/home/internship" },
+    { name: "Programs", link: "/home/program" },
+    { name: "Success Story", link: "/home/success-story" },
+    { name: "Team", link: "/home/team" },
+    { name: "About", link: "/home/about" },
   ];
   const legal = ["Terms", "Privacy", "Legal"];
   return (

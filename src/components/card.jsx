@@ -101,7 +101,7 @@ export default function card() {
                 </div>
                 <div className="flex-grow">{""}</div>
                 <div>
-                  <Link href={"/courses/hello"}>
+                  <Link href={"/home/courses/hello"}>
                     <ClickButton
                       style={
                         "mt-4 text-lg w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"
@@ -193,7 +193,7 @@ export default function card() {
                 </div>
                 <div className="flex-grow">{""}</div>
                 <div className="">
-                  <Link href={"/courses/WebDevelopment"}>
+                  <Link href={"/home/courses/WebDevelopment"}>
                     <ClickButton
                       style={
                         "mt-4 text-lg w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"
@@ -282,7 +282,7 @@ export default function card() {
                 </div>
                 <div className="flex-grow">{""}</div>
                 <div>
-                  <Link href={"/courses/WebDevelopment"}>
+                  <Link href={"/home/courses/WebDevelopment"}>
                     <ClickButton
                       style={
                         "mt-4 text-lg w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg"

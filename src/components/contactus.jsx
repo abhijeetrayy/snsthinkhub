@@ -52,10 +52,10 @@ export default function contactus() {
         <div class="-mx-4 flex flex-wrap lg:justify-between">
           <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
             <div class="mb-12 max-w-[570px] lg:mb-0">
-              <span class="text-blue-500 mb-4 block text-base font-semibold">
+              <span class="text-indigo-500 mb-4 block text-base font-semibold">
                 Contact Us
               </span>
-              <h2 class="text-gray-700 mb-6 text-md font-bold uppercase text-[1.6em] ">
+              <h2 class="text-gray-700 mb-6 font-bold uppercase  ">
                 GET IN TOUCH WITH US
               </h2>
               <p class="text-body-color mb-9 text-base leading-relaxed">

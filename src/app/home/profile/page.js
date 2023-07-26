@@ -1,10 +1,11 @@
 import React from "react";
-import ProgramForm from "../../../../components/programform";
+
+import Profile from "../../../components/profile";
 
 export default function page() {
   return (
     <>
-      <ProgramForm />
+      <Profile />
     </>
   );
 }

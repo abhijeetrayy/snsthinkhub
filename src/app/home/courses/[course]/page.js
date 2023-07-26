@@ -1,10 +1,11 @@
 import React from "react";
-import ProgramForm from "../../../../components/programform";
+
+import CourseDetail from "../../../../components/CourseDetail";
 
 export default function page() {
   return (
     <>
-      <ProgramForm />
+      <CourseDetail />
     </>
   );
 }

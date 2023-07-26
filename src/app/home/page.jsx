@@ -1,17 +1,16 @@
-import SectionTitle from "../components/sectionTitle";
-import { benefitOne, benefitTwo } from "../components/data";
-import Video from "../components/video";
-import AboutReason from "../components/aboutReason";
-import Testimonials from "../components/testimonials";
-import Faq from "../components/faq";
-import Team from "../components/team";
-import Header from "../components/header";
-import Features from "../components/features";
-import Card from "../components/card";
-import ProgramBuy from "../components/programBuy";
-import ContactUs from "../components/contactus";
+import SectionTitle from "../../components/sectionTitle";
+import { benefitOne, benefitTwo } from "../../components/data";
+import Video from "../../components/video";
+import AboutReason from "../../components/aboutReason";
+import Testimonials from "../../components/testimonials";
+import Faq from "../../components/faq";
+import Team from "../../components/team";
+import Header from "../../components/header";
+import Features from "../../components/features";
+import Card from "../../components/card";
+import ProgramBuy from "../../components/programBuy";
+import ContactUs from "../../components/contactus";
 import Link from "next/link";
-import "../css/background.css";
 
 const Home = () => {
   return (
@@ -42,7 +41,7 @@ const Home = () => {
           </div>
           <span
             style={{ fontFamily: `"Nano Sans", sans-serif` }}
-            className=" text-xl md:text-2xl md:font-medium  text-gray-800 text-center flex  p-2"
+            className=" text-xl md:text-2xl md:font-medium  text-gray-700 text-center flex  p-2"
           >
             " From streamlined practical courses to job-ready certifications,
             high-paying placements and hands-on internships, S&S provides the
@@ -54,10 +53,13 @@ const Home = () => {
       <Card />
       <div className=" w-full flex items-center justify-center">
         <Link
-          href={"/courses"}
-          className="text-indigo-500 py-3 px-8 border-2 border-gray-600 rounded-md hover:border-indigo-400"
+          href={"/home/courses"}
+          className="group relative text-indigo-500 w-36 h-10 flex items-center justify-center gap-2 text-sm border-2 border-gray-600 rounded-md hover:border-indigo-400"
         >
-          More courses {"->"}
+          <span>More courses</span>
+          <span className="object-cover transform duration-500 group-hover:rotate-180">
+            {"->"}
+          </span>
         </Link>
       </div>
       <Features />
@@ -72,10 +74,8 @@ const Home = () => {
       <Team />
 
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
+      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions" />
+
       <Faq />
       <ContactUs />
     </>

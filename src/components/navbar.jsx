@@ -14,13 +14,13 @@ function Navbar() {
   const { data: session } = useSession();
   console.log(session);
   const navigation = [
-    { name: "Home", url: "/" },
-    { name: "Course", url: "/courses" },
-    { name: "Internship", url: "/internship" },
-    { name: "About", url: "/about" },
-    { name: "Program", url: "/program" },
-    { name: "Success Story", url: "/success-story" },
-    { name: "Team", url: "/team" },
+    { name: "Home", url: "/home" },
+    { name: "Course", url: "/home/courses" },
+    { name: "Internship", url: "/home/internship" },
+    { name: "About", url: "/home/about" },
+    { name: "Program", url: "/home/program" },
+    { name: "Success Story", url: "/home/success-story" },
+    { name: "Team", url: "/home/team" },
   ];
 
   return (

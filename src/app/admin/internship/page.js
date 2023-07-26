@@ -1,19 +1,7 @@
 import React from "react";
-import Form from "../../../components/form";
-import CardPageVisits from "../../../components/Admin/Cards/CardPageVisits";
-import GetInternData from "../../../components/getInternData";
-
-const data = [
-  {
-    name: "Abhijeet Ray",
-    email: "abhijeet@gmail.com",
-  },
-  {
-    name: "Abhijeet Ray",
-    email: "abhijeet@gmail.com",
-  },
-];
-
+import Form from "../../../../components/form";
+import CardPageVisits from "../../../../components/Admin/Cards/CardPageVisits";
+import GetInternData from "../../../../components/getInternData";
 export default function page() {
   return (
     <div className="overflow-x-hidden">
