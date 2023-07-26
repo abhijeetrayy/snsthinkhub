@@ -10,7 +10,7 @@ export default function registaration() {
     University: "",
     Year: "",
     Course: "",
-    CourseId: "#100001",
+    CourseId: "100001",
   });
 
   const handleChange = (e) => {

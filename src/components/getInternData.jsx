@@ -23,18 +23,24 @@ export default function getInternData() {
       <div className="w-full flex flex-col">
         <div>Internship List</div>
         <div className="flex flex-row gap-6  justify-around">
-          <div>InternshipId</div>
+          <div>Internship Id</div>
           <div>Internship Name</div>
         </div>
+        <hr className="border-1 border-gray-700 my-2" />
         {data
-          ? data.map((item) => (
+          ? data.map((item, index) => (
               <div className="flex flex-row gap-6 justify-around">
                 <Link
-                  className="underline pointer"
-                  href={`/admin/internship/${item.internshipId}`}
+                  className=""
+                  href={`/admin/internships/${item.internshipId}`}
                   key={item._id}
                 >
-                  {item.internshipId}
+                  <span>
+                    {index + 1} {"->"}
+                  </span>{" "}
+                  <span className="underline pointer px-4 py-1 rounded-md bg-indigo-200 hover:bg-indigo-300">
+                    {item.internshipId}
+                  </span>
                 </Link>
                 <span>web devlopment</span>
               </div>

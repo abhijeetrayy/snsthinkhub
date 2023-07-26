@@ -1,11 +1,9 @@
-"use client";
 import "../../css/tailwind.css";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 
-import { SessionProvider } from "next-auth/react";
-
 import { Toaster } from "react-hot-toast";
+import AuthProvider from "../../context/sessionProvider";
 
 export default function Layout({ children }) {
   return (
@@ -23,7 +21,7 @@ export default function Layout({ children }) {
         />
       </head>
       <body>
-        <SessionProvider>
+        <AuthProvider>
           <div className="w-full flex flex-col min-h-screen justify-center ">
             <div className="z-50 sticky top-0 bg-white w-full">
               <Navbar />
@@ -33,7 +31,7 @@ export default function Layout({ children }) {
               <Footer />
             </div>
           </div>
-        </SessionProvider>
+        </AuthProvider>
         <Toaster />
       </body>
     </html>

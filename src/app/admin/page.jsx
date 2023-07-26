@@ -1,9 +1,10 @@
 import React from "react";
+import Programform from "../../components/programform";
 
 export default function Dashboard() {
   return (
     <>
-      <div>hello</div>
+      <div>Admin Page!</div>
     </>
   );
 }
