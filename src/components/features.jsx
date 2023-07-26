@@ -3,7 +3,7 @@ const Statistic = () => {
     <div className="px-2 py-3 w-full flex justify-center ">
       <section className="bg-white max-w-6xl">
         <div className="py-8 px-4 mx-auto sm:py- lg:px-6">
-          <div className="w-full flex flex-col md:items-center md:text-center mb-8 lg:mb-16">
+          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16">
             <div className="max-w-6xl">
               <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
                 360* career guidence and mentorship
@@ -14,9 +14,9 @@ const Statistic = () => {
               </p>
             </div>
           </div>
-          <div className="w-fit space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 justify-center items-center">
-            <div className="flex flex-col md:items-center md:text-center">
-              <div className="flex justify-center items-center mb-4  rounded-md bg-primary-100 w-fit border border-gray-400 ">
+          <div className=" space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 justify-center items-center">
+            <div className="flex flex-col  ">
+              <div className="flex mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
                   fill="currentColor"
@@ -38,8 +38,8 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </h4>
             </div>
-            <div className="flex flex-col md:text-center md:items-center">
-              <div className="flex justify-center items-center mb-4  rounded-md bg-primary-100 w-fit border border-gray-400 ">
+            <div className="flex flex-col    ">
+              <div className="w-fit flex  mb-4  rounded-md bg-primary-100 border border-gray-400  ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
                   fill="currentColor"
@@ -57,8 +57,8 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col md:text-center md:items-center">
-              <div className="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
+            <div className="flex flex-col    ">
+              <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
                   fill="currentColor"
@@ -81,8 +81,8 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col md:text-center md:items-center">
-              <div className="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
+            <div className="flex flex-col    ">
+              <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
                   fill="currentColor"
@@ -105,8 +105,8 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col md:text-center md:items-center">
-              <div className="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
+            <div className="flex flex-col    ">
+              <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
                   fill="currentColor"
@@ -124,8 +124,8 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col md:text-center md:items-center">
-              <div className="flex justify-center items-center mb-4 wmdh-10 rounded-md bg-primary-100 w-fit border border-gray-400 ">
+            <div className="flex flex-col    ">
+              <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
                   fill="currentColor"
