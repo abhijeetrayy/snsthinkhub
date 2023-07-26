@@ -1,7 +1,7 @@
 import React from "react";
-import Form from "../../../../components/form";
-import CardPageVisits from "../../../../components/Admin/Cards/CardPageVisits";
-import GetInternData from "../../../../components/getInternData";
+import Form from "../../../components/form";
+import CardPageVisits from "../../../components/Admin/Cards/CardPageVisits";
+import GetInternData from "../../../components/getInternData";
 export default function page() {
   return (
     <div className="overflow-x-hidden">
