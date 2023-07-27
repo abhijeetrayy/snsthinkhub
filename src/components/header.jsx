@@ -151,7 +151,7 @@ const Header = () => {
       </span>
       <h2 className=" mb-5 font-sans text-2xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-3xl md:text-4xl xl:text-5xl  sm:leading-none object-cover">
         <TypeAnimation
-          sequence={[`Placement for Success 🥇`, 1000]}
+          sequence={[`Placement for Success 🥇`, 2000]}
           speed={50}
           style={{
             whiteSpace: "pre-line",
