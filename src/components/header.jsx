@@ -163,24 +163,55 @@ const Header = () => {
       </span>
       <h2 className=" mb-5 font-sans text-2xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-3xl md:text-4xl xl:text-5xl  sm:leading-none object-cover">
         <TypeAnimation
-          sequence={[`Placement for Success 🥇`, 2000]}
+          sequence={[`Placement for Success \n🥇`, 2000]}
           speed={50}
           style={{
             whiteSpace: "pre-line",
-
+            display: "flex",
+            textAlign: "center",
             lineHeight: "1.3em",
           }}
         />
       </h2>
       <span
         style={{ fontFamily: `"Nano Sans", sans-serif` }}
-        className="max-w-[800px] text-md md:text-lg md:font-medium  text-gray-700 text-center flex  p-2"
+        className="max-w-[800px] text-md md:font-medium  text-gray-700 text-center flex  p-2"
       >
         " From streamlined practical courses to job-ready certifications,
         high-paying placements and hands-on internships, S&S provides the most
         sought after skills you need to succeed "
       </span>
-      <hr className="mt-4 h-[2px] bg-gray-400 rounded-md" />
+
+      <div className="flex w-full justify-center mt-10 px-3">
+        <div className="flex flex-col sm:flex-row max-w-[700px] items-center grow border border-gray-400 rounded-xl  px-7 py-5">
+          <div className="flex-1 flex flex-col justify-center p-3">
+            <span className="font-bold text-gray-600">Course/Program</span>
+            <span className="text-xs text-gray-700">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
+              nostrum.
+            </span>
+          </div>
+          <div
+            after={"->"}
+            className="text-indigo-500 px-2 before:content-[attr(after)]"
+          ></div>
+          <div className="flex-1 flex flex-col justify-center p-3">
+            <span className="font-bold text-gray-600">Preparation</span>
+            <span className="text-xs text-gray-700">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
+              nostrum.
+            </span>
+          </div>
+          <div className="text-indigo-500 px-2">{"->"}</div>
+          <div className="flex-1 flex flex-col justify-center p-3">
+            <span className="font-bold text-gray-600">Success</span>
+            <span className="text-xs text-gray-700">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
+              nostrum.
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

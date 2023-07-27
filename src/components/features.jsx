@@ -15,7 +15,7 @@ const Statistic = () => {
             </div>
           </div>
           <div className="max-w-[900px] space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-7 md:space-y-0 justify-center items-center">
-            <div className="flex flex-col  ">
+            <div className="flex flex-col border border-indigo-400 p-3 rounded-md  ">
               <div className="flex mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
@@ -38,7 +38,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </h4>
             </div>
-            <div className="flex flex-col    ">
+            <div className="flex flex-col border border-indigo-400 p-3 rounded-md    ">
               <div className="w-fit flex  mb-4  rounded-md bg-primary-100 border border-gray-400  ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
@@ -57,7 +57,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col    ">
+            <div className="flex flex-col border border-indigo-400 p-3 rounded-md    ">
               <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
@@ -74,14 +74,14 @@ const Statistic = () => {
                 </svg>
               </div>
               <h3 className="mb-2 text-lg font-bold text-gray-700 ">
-                Placements Training
+                Interview Prep
               </h3>
               <p className="text-gray-500 text-sm ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col    ">
+            <div className="flex flex-col border border-indigo-400 p-3 rounded-md    ">
               <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
@@ -98,14 +98,14 @@ const Statistic = () => {
                 </svg>
               </div>
               <h3 className="mb-2 text-lg font-bold text-gray-700 ">
-                Market Ready
+                Placement Support
               </h3>
               <p className="text-gray-500 text-sm ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col    ">
+            <div className="flex flex-col border border-indigo-400 p-3 rounded-md    ">
               <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
@@ -124,7 +124,7 @@ const Statistic = () => {
                 distinctio suscipit corrupti fuga velit iusto?
               </p>
             </div>
-            <div className="flex flex-col    ">
+            <div className="flex flex-col border border-indigo-400 p-3 rounded-md    ">
               <div className=" mb-4 w-fit rounded-md bg-primary-100 border border-gray-400   ">
                 <svg
                   className="w-10 h-10 text-indigo-500 m-3 "
