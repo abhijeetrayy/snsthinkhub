@@ -100,8 +100,8 @@ function Navbar() {
                                   <Image
                                     className="w-36 h-auto"
                                     alt=""
-                                    width={440}
-                                    height={440}
+                                    width={100}
+                                    height={100}
                                     src={Logo}
                                   />
                                   {/* <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">

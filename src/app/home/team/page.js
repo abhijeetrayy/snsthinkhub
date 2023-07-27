@@ -3,13 +3,15 @@ import img2 from "../../../public/img/team/harshit_munjal.jpg";
 
 import Image from "next/image";
 import Contactus from "../../../components/contactus";
+import Atoshi from "../../../public/img/team/Atoshi.jpg";
+
+import Sir from "../../../public/img/team/Sir.jpg";
 const data = [
-  { Name: "Harshit Munjal", Position: "Technical Trainer", Image: img2 },
-  { Name: "Atoshi Roy", Position: "Aptitude Trainer", Image: img1 },
-  { Name: "Harshit Munjal", Position: "Technical Trainer", Image: img2 },
-  { Name: "Atoshi Roy", Position: "Aptitude Trainer", Image: img1 },
-  { Name: "Harshit Munjal", Position: "Technical Trainer", Image: img2 },
-  { Name: "Atoshi Roy", Position: "Aptitude Trainer", Image: img1 },
+  { Name: "Sangita Badoni", Position: "Founder", Image: img1 },
+  { Name: "Harshit Munjal", Position: "Technical Coordinator", Image: img2 },
+  { Name: "Atoshi Roy", Position: "SoftSkill Trainer", Image: Atoshi },
+  { Name: "Sharad Gupta", Position: "Technical Trainer", Image: Sir },
+
 ];
 
 export default function page() {
