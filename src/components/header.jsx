@@ -194,7 +194,7 @@ const Header = () => {
           </div>
           <div
             after={"->"}
-            className="text-indigo-500 px-2 before:content-[attr(after)]"
+            className="text-indigo-500 px-2 before:content-[attr(after)] tranfrom rotate-90 sm:rotate-0 duration-300"
           ></div>
           <div className="flex-1 flex flex-col justify-center p-3">
             <span className="font-bold text-gray-600">Preparation</span>
@@ -203,7 +203,9 @@ const Header = () => {
               nostrum.
             </span>
           </div>
-          <div className="text-indigo-500 px-2">{"->"}</div>
+          <div className="text-indigo-500 px-2 tranfrom rotate-90 sm:rotate-0 duration-300">
+            {"->"}
+          </div>
           <div className="flex-1 flex flex-col justify-center p-3">
             <span className="font-bold text-gray-600">Success</span>
             <span className="text-xs text-gray-700">
