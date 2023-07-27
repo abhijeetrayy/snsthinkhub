@@ -2,10 +2,11 @@
 import Link from "next/link";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
+import { signIn } from "next-auth/react";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Logosvg from "../public/logosnss.png";
+import Logo from "../public/img/logo.jpg";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -24,21 +25,18 @@ function Navbar() {
   ];
 
   return (
-    <div className=" z-50 w-full shadow-md">
-      <nav className="container relative flex flex-wrap items-center justify-between py-3 px-2  mx-auto bg-white max-w-6xl">
+    <div className=" z-50 w-full shadow-md flex justify-center">
+      <nav className="container relative flex flex-wrap items-center px-6 justify-around md:justify-between py-3 md:px-2  mx-auto bg-white max-w-6xl">
         {/* Logo  */}
 
         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
           <Link href="/">
-            <span className="flex  flex-row space-x-2 text-2xl font-medium text-indigo-500">
-              {/* <Image alt=""
-                      width={44}
-                      height={44}
-                      src={Logo}
-                    /> */}
+            <Image alt="" width={44} height={44} src={Logo} />
+            {/* <span className="flex   flex-row space-x-2 text-2xl font-medium text-indigo-500">
+              
 
               <span>SnSThinkHub</span>
-            </span>
+            </span> */}
           </Link>
           <button
             className="flex px-4 py-2 bg-indigo-500 text-white hover:bg-indigo-400 rounded-lg lg:hidden"
@@ -99,9 +97,15 @@ function Navbar() {
                             >
                               <div className="flex justify-between sm:pr-3">
                                 <Link href="/" onClick={() => setOpen(false)}>
-                                  <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
+                                  <Image
+                                    alt=""
+                                    width={44}
+                                    height={44}
+                                    src={Logo}
+                                  />
+                                  {/* <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
                                     <span>SnSThinkHub</span>
-                                  </span>
+                                  </span> */}
                                 </Link>
                                 <div>
                                   <button
@@ -139,13 +143,12 @@ function Navbar() {
                                   </Link>
                                 ))}
 
-                                <Link
-                                  href={"/home/contact-us"}
-                                  onClick={() => setOpen(false)}
+                                <button
+                                  onClick={signIn}
                                   className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
                                 >
-                                  Contact Us
-                                </Link>
+                                  SignIn
+                                </button>
                               </div>
                               <Image
                                 alt=""
@@ -181,12 +184,12 @@ function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex items-center nav__item ">
-          <Link
-            href="/home/contact-us"
-            className="px-4 py-2 text-white bg-indigo-500 rounded-md md:ml-5"
+          <button
+            onClick={signIn}
+            className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
           >
-            Contact Us
-          </Link>
+            SignIn
+          </button>
         </div>
       </nav>
     </div>
