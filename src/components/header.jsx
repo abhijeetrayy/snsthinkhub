@@ -158,10 +158,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <span className="z-20 text-gray-600 text-xl md:text-4xl font-bold block">
+      <span className="z-20 text-gray-600 text-2xl md:text-4xl font-bold block">
         Education for Excellence
       </span>
-      <h2 className=" mb-5 font-sans text-2xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-3xl md:text-4xl xl:text-5xl  sm:leading-none object-cover">
+      <h2 className=" mb-5 font-sans text-3xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-3xl md:text-4xl xl:text-5xl  sm:leading-none object-cover">
         <TypeAnimation
           sequence={[`Placement for Success \n🥇`, 2000]}
           speed={50}
