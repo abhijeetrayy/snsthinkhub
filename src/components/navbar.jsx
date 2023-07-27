@@ -76,7 +76,7 @@ function Navbar() {
                 <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
               </Transition.Child>
 
-              <div className="fixed h-screen w-screen bg-indigo-500 inset-0  overflow-y-auto ">
+              <div className="fixed h-screen w-screen bg-white inset-0  overflow-y-auto ">
                 <div className="flex justify-start p-4 text-center items-center sm:p-0">
                   <Transition.Child
                     as={Fragment}
@@ -95,12 +95,13 @@ function Navbar() {
                               as="h3"
                               className="text-base font-semibold leading-6 text-gray-900 "
                             >
-                              <div className="flex justify-between sm:pr-3">
+                              <div className="flex justify-between items-center sm:pr-3">
                                 <Link href="/" onClick={() => setOpen(false)}>
                                   <Image
+                                    className="w-36 h-auto"
                                     alt=""
-                                    width={44}
-                                    height={44}
+                                    width={440}
+                                    height={440}
                                     src={Logo}
                                   />
                                   {/* <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
@@ -109,7 +110,7 @@ function Navbar() {
                                 </Link>
                                 <div>
                                   <button
-                                    className="flex px-4 py-2 bg-white text-indigo-700 hover:bg-gray-200 rounded-lg lg:hidden"
+                                    className="flex px-4 py-2 bg-inidigo-500 text-white bg-indigo-500 hover:bg-indigo-600 rounded-lg lg:hidden"
                                     onClick={() => setOpen(false)}
                                   >
                                     <svg
@@ -137,22 +138,32 @@ function Navbar() {
                                     key={index}
                                     href={item.url}
                                     onClick={() => setOpen(false)}
-                                    className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
+                                    className=" px-4 py-2 -ml-4  bg-white text-gray-700 rounded-md border border-indigo-600 hover:border-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
                                   >
                                     {item.name}
                                   </Link>
                                 ))}
 
-                                <button
-                                  onClick={signIn}
-                                  className=" px-4 py-2 -ml-4  bg-white text-black rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
-                                >
-                                  SignIn
-                                </button>
+                                {session ? (
+                                  <Link
+                                    href={"/home/profile"}
+                                    onClick={() => setOpen(false)}
+                                    className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
+                                  >
+                                    {session?.user?.name}
+                                  </Link>
+                                ) : (
+                                  <button
+                                    onClick={signIn}
+                                    className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
+                                  >
+                                    SignIn
+                                  </button>
+                                )}
                               </div>
                               <Image
                                 alt=""
-                                className="w-64 h-fit text-white bg-cover"
+                                className="w-64 h-fit text-indigo-400 bg-indigo-500 rounded-lg bg-cover"
                                 src={Logosvg}
                               />
                             </div>
@@ -184,12 +195,21 @@ function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex items-center nav__item ">
-          <button
-            onClick={signIn}
-            className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
-          >
-            SignIn
-          </button>
+          {session ? (
+            <Link
+              href={"/home/profile"}
+              className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
+            >
+              {session?.user?.name}
+            </Link>
+          ) : (
+            <button
+              onClick={signIn}
+              className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
+            >
+              SignIn
+            </button>
+          )}
         </div>
       </nav>
     </div>

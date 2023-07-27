@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import Logo from "../public/img/logo.jpg";
 
 export default function Footer() {
   const navigation = [
@@ -24,7 +25,13 @@ export default function Footer() {
               href="/"
               className="flex items-center space-x-2 text-2xl font-medium text-indigo-500"
             >
-              <span>SnSThinkHub</span>
+              <Image
+                className="w-16 h-auto"
+                alt=""
+                width={440}
+                height={440}
+                src={Logo}
+              />
             </Link>
           </div>
 

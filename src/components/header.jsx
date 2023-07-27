@@ -163,14 +163,15 @@ const Header = () => {
       </span>
       <h2 className=" mb-5 font-sans text-3xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-3xl md:text-4xl xl:text-5xl  sm:leading-none object-cover">
         <TypeAnimation
-          sequence={[`Placement for Success \n🥇`, 2000]}
-          speed={50}
+          sequence={[`Placement for Success \n🥇`, 1000]}
+          speed={30}
           style={{
             whiteSpace: "pre-line",
             display: "flex",
             textAlign: "center",
             lineHeight: "1.3em",
           }}
+          cursor={true}
         />
       </h2>
       <span
