@@ -77,7 +77,7 @@ export default function page() {
                       src={item.Image}
                     />
                   </div>
-                  <div className="transition ease-in-out delay-200 group-hover:translate-x-5 duration-300 col-span-1 sm:col-span-4  sm:border-2 sm:border-l-indigo-800 sm:border-transparent pl-3 flex flex-col gap-2">
+                  <div className="transition ease-in-out delay-200 md:group-hover:translate-x-5 duration-300 col-span-1 sm:col-span-4  sm:border-2 sm:border-l-indigo-800 sm:border-transparent pl-3 flex flex-col gap-2">
                     <div>
                       <h1 className="text-lg font-medium text-indigo-800">
                         {item.Name}
