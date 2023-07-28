@@ -5,10 +5,11 @@ const Statistic = () => {
         <div className="py-8 px-4 mx-auto sm:py- lg:px-6">
           <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16">
             <div className="max-w-6xl">
-              <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
+              <hr className="border border-r-gray-950" />
+              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
                 360* career guidence and mentorship
               </h2>
-              <p className="text-gray-600 sm:text-md ">
+              <p className="text-gray-600 sm:text-sm ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 nulla nobis porro quam, necessitatibus quisquam?
               </p>
