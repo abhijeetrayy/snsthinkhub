@@ -7,7 +7,7 @@ function joinUs() {
   return (
     <div className="flex justify-center">
       <div className="relative max-w-[999px] h-auto flex flex-col justify-center items-center  p-10  my-8 ">
-        <div className="flex flex-col md:gap-3 items-center absolute  top-5">
+        <div className="flex flex-col md:gap-3 items-center ">
           <h1 className="text-[1.2em] md:text-5xl font-bold text-gray-700">
             Join Our Team
           </h1>
@@ -19,7 +19,7 @@ function joinUs() {
           </Link>
         </div>
 
-        <div className="flex-1 grow w-full   ">
+        {/* <div className="flex-1 grow w-full   ">
           <Image
             className="w-[950px]"
             src={JoinUsImg}
@@ -27,7 +27,7 @@ function joinUs() {
             height={1000}
             alt="JoinUs Image"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

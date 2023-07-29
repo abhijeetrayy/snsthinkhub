@@ -60,7 +60,7 @@ export default function page() {
           <div className="z-20 max-w-5xl flex flex-col items-center p-3 mt-16">
             <div className=" w-full p-3 bg-white sm:bg-opacity-0 sm:p-6 flex items-center justify-center rounded-md m-4 sm:text-white shadow-lg">
               <span className=" text-3xl sm:text-5xl font-bold">
-                Our talented team of professionals 😎
+                Our team 😎
               </span>
             </div>
             <div className="grid  grid-cols-1 gap-4">

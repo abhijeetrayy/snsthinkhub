@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import SangitaImg from "../public/img/user1.jpg";
 
 export default function qoute() {
   return (
@@ -23,17 +25,19 @@ export default function qoute() {
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
-            <img
-              className="w-6 h-6 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+            <Image
+              className="w-6 h-6 rounded-full object-cover scale-110"
+              width={100}
+              height={100}
+              src={SangitaImg}
               alt="profile picture"
             />
             <div className="flex items-center divide-x-2 divide-gray-500">
               <div className="pr-3 font-medium text-gray-900">
-                Dale Carnegie
+                Sangita Badoni
               </div>
               <div className="pl-3 text-sm font-light text-gray-500 ">
-                Author
+                Founder
               </div>
             </div>
           </figcaption>
