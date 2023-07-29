@@ -18,10 +18,10 @@ function Navbar() {
     { name: "Home", url: "/home" },
     { name: "Course", url: "/home/courses" },
     { name: "Internship", url: "/home/internship" },
-    { name: "About", url: "/home/about" },
-    { name: "Program", url: "/home/program" },
-    { name: "Success Story", url: "/home/success-story" },
+    // { name: "Program", url: "/home/program" },
+    // { name: "Success Story", url: "/home/success-story" },
     { name: "Team", url: "/home/team" },
+    { name: "About", url: "/home/about" },
   ];
 
   return (
@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="container relative flex flex-wrap items-center px-6 justify-around md:justify-between py-3 md:px-2  mx-auto bg-white max-w-6xl">
         {/* Logo  */}
 
-        <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
+        <div className="flex flex-wrap items-center justify-between w-full  lg:w-32">
           <Link href="/">
             <Image alt="" width={44} height={44} src={Logo} />
             {/* <span className="flex   flex-row space-x-2 text-2xl font-medium text-indigo-500">
@@ -179,7 +179,7 @@ function Navbar() {
         </div>
 
         {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center lg:justify-center">
+        <div className="hidden text-center lg:flex lg:items-center lg:justify-center w-fit">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
