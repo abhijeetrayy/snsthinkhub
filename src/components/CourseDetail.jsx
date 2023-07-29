@@ -160,7 +160,7 @@ export default function CourseDetail() {
                     anywhere.
                   </p>
                   <div className="flex justify-center w-full my-3">
-                    <Link href={"/contact-us"}>
+                    <Link href={"/home/contact-us"}>
                       <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
                         Try Bussiness
                       </button>
