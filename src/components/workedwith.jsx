@@ -2,10 +2,10 @@ import React from "react";
 
 export default function workedwith() {
   return (
-    <section className="bg-white  ">
-      <div className="max-w-screen-xl px-4 pb-8  mx-auto lg:pb-16 flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 text-sm md:text-md">
-          <a href="#" className="flex items-center lg:justify-center">
+    <section className="flex flex-col max-w-5xl mx-auto justify-center ">
+      <div className=" px-3 py-2  ">
+        <div className="flex flex-row gap-9 justify-between items-center text-sm md:text-md overflow-y-auto md:no-scrollbar scrollbar-thumb-slate-500 scrollbar-thin scrollbar-rounded-[30px] p-3">
+          <a href="#" className="">
             <svg
               className="h-9 text-blue-400 hover:text-gray-900 "
               viewBox="0 0 125 35"
@@ -20,7 +20,7 @@ export default function workedwith() {
               />
             </svg>
           </a>
-          <a href="#" className="flex items-center lg:justify-center">
+          <a href="#" className="">
             <svg
               className="h-9 text-red-400 hover:text-gray-900 "
               viewBox="0 0 86 29"
@@ -35,7 +35,7 @@ export default function workedwith() {
               />
             </svg>
           </a>
-          <a href="#" className="flex items-center lg:justify-center">
+          <a href="#" className="">
             <svg
               className="h-8 text-blue-700 hover:text-gray-900 "
               viewBox="0 0 151 34"
@@ -61,7 +61,7 @@ export default function workedwith() {
             </svg>
           </a>
 
-          <a href="#" className="flex items-center lg:justify-center">
+          <a href="#" className="">
             <svg
               className="h-9 text-green-400 hover:text-gray-900 "
               viewBox="0 0 124 38"
@@ -74,7 +74,7 @@ export default function workedwith() {
               />
             </svg>
           </a>
-          <a href="#" className="flex items-center lg:justify-center">
+          <a href="#" className="">
             <svg
               className="h-9 text-yellow-500 hover:text-gray-900 "
               viewBox="0 0 137 37"
@@ -155,7 +155,7 @@ export default function workedwith() {
               />
             </svg>
           </a>
-          <a href="#" className="flex items-center lg:justify-center">
+          <a href="#" className="">
             <svg
               className="h-6 text-gray-600 hover:text-gray-900 "
               viewBox="0 0 124 21"

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
@@ -16,8 +16,9 @@ const Faq = () => {
                   <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75">
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${open ? "transform rotate-180" : ""
-                        } w-5 h-5 text-indigo-500`}
+                      className={`${
+                        open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-indigo-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500">
@@ -31,26 +32,28 @@ const Faq = () => {
       </div>
     </Container>
   );
-}
+};
 
 const faqdata = [
   {
-    question: "Doing accadmics only worng?",
-    answer: "Yes.",
-  },
-  {
-    question: "Can I do this course alongside my college?",
-    answer: "Yes, you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "Can I do the course alongside my college ?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Yes you can continue our courses alongside your college curriculum.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "What is your refund policy ?",
     answer:
-      "yes, weoffer technical support . Please purchase a support plan to get 6 months of support.",
+      "We provide you a trial period of 15 days, if in that period you feel unsatisfied for whatever reason we refund you fully, no questions asked",
+  },
+  {
+    question: "Do you offer technical support ?",
+    answer:
+      "Yes, we offer tech support. In case of any technical difficulty you can email us or contact us on our helpline number and we will do our best to resolve your issue.",
+  },
+  {
+    question: "Do I get a certificate at the end ?",
+    answer:
+      "At the end of every course you receive a comprehensive job ready certificate.",
   },
 ];
 

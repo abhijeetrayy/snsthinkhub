@@ -1,66 +1,39 @@
-import React from 'react'
-import img1 from "../public/icon/icon-and-text/02/01.png"
+import React from "react";
+import img1 from "../public/icon/icon-and-text/02/01.png";
 
 export default function aboutReason() {
-    return (
-        <section className=" py-2 px-6 md:px-16">
-            <div className="flex ">
-                <div className="hidden lg:flex bg-cover">
-                    <img className=' object-cover' src='https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
-                </div>
-
-
-                <div className="flex items-center justify-center bg-purple-200">
-                    <div className="flex gap-4 flex-col md:w-1/2 m-6">
-                        <div className="">
-                            <h4 className="text-black text-5xl font-extrabold mb-4">Why chose us</h4>
-                            <p className="text-black">People learning for professional
-                                development
-                                report
-                                career benefits</p>
-                        </div>
-
-                        <div className="">
-                            <ul className="flex flex-col gap-5">
-
-                                <li className="flex flex-row gap-4 items-center">
-                                    <div className="">
-                                        <img className='max-w-[50px]' src="https://img.icons8.com/?size=512&id=e15fFKUU7Zwv&format=png" alt="" />
-                                    </div>
-                                    <div className="">
-                                        <h4 className="text-gray-600 text-xl font-bold">Our Mission</h4>
-                                        <p className="text-gray-600 leading-8">Our mission is to provide students with the skills and knowledge they need to succeed in the workforce and create a more prosperous future for everyone.
-
-                                        </p>
-                                    </div>
-                                </li>
-                                <li className="flex flex-row gap-4 items-center">
-                                    <div className="">
-                                        <img className='max-w-[50px]' src="https://img.icons8.com/?size=512&id=XHK06L6pZveA&format=png" alt="" />
-                                    </div>
-                                    <div className="">
-                                        <h4 className="text-gray-600 text-xl font-bold">Our Vision</h4>
-                                        <p className="text-gray-600 leading-8">We believe that by working together, we can create a more educated and prosperous world.
-
-                                        </p>
-                                    </div>
-                                </li>
-                                <li className="flex flex-row gap-4 items-center">
-                                    <div className="">
-                                        <img className='max-w-[50px]' src="https://img.icons8.com/?size=512&id=119287&format=png" alt="" />
-                                    </div>
-                                    <div className="">
-                                        <h4 className="text-gray-600 text-xl font-bold">Our Goal</h4>
-                                        <p className="text-gray-600 leading-8">We have impacted the lives of thousands of students and teachers, and we are committed to continuing to make a positive difference in the world.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <div className=" p-3 w-full flex justify-center pt-16 sm:px-10">
+      <div className="max-w-[900px]">
+        <div className="w-full flex justify-center">
+          <h1 className="text-[2.5em] sm:text-7xl font-bold text-indigo-500 md:text-8xl">
+            SandSThinkHub
+          </h1>
+        </div>
+        <div className="py-7 text-sm px-5 md:px-2 text-center text-gray-600">
+          Education brings change. It lays the foundation for human progress.
+          Learning has the power to transform lives not only of an individual, a
+          family or a community but it's capable of revolutionizing the course
+          of an entire nation.
+          <br />
+          <br />
+          No matter who we are,where we come from, education and right guidance
+          bestows us with power to shape our lives however we want. Receiving
+          quality education should be one’s right and not a privilege.
+          <br />
+          <br />
+          That’s why S&S Thinkhub was established in 2019. We provide an
+          academic platform to make technical and behavioral education more
+          accessible to the masses.
+          <br />
+          <br />
+          Based on a holistic research and understanding of both students and
+          industry requirements, we worked diligently to develop highly specific
+          educational programs and courses, taught by the industry's finest
+          educators. Ensuring that our students have everything they need to
+          succeed.
+        </div>
+      </div>
+    </div>
+  );
 }

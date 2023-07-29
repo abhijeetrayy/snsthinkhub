@@ -184,7 +184,7 @@ const Header = () => {
       </span>
 
       <div className="flex w-full justify-center mt-10 px-3">
-        <div className="flex flex-col sm:flex-row max-w-[700px] items-center grow border border-gray-400 rounded-xl  px-7 py-5">
+        <div className="flex flex-col sm:flex-row max-w-[900px] items-center grow border border-gray-400 rounded-xl  px-7 py-5">
           <div className="flex-1 flex flex-col justify-center p-3">
             <span className="font-bold text-gray-600">Course/Program</span>
             <span className="text-xs text-gray-700">
