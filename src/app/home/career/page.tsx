@@ -61,36 +61,36 @@ function page() {
                 </div>
                 <div className="">
                     <div className="w-full h-full flex gap-3 overflow-x-scroll overflow-y-hidden whitespace-nowrap scroll-smooth scrollbar-thin scrollbar-thumb-indigo-500 py-4">
-                        <button onClick={() => setfiltered(data)} className="'w-[220px] border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                        <button onClick={() => setfiltered(data)} className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300">
                             All
                         </button>
                         <button
                             onClick={() => result("freelance")}
-                            className="'w-[220px] border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                            className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
                         >
                             Freelance
                         </button>
                         <button
                             onClick={() => result("software")}
-                            className="'w-[220px] border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                            className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
                         >
                             Software_Developer
                         </button>
                         <button
                             onClick={() => result("content")}
-                            className="'w-[220px] border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                            className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
                         >
                             Content/Design
                         </button>
                         <button
                             onClick={() => result("marketing")}
-                            className="'w-[220px] border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                            className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
                         >
                             Marketing
                         </button>
                         <button
                             onClick={() => result("ui/ux")}
-                            className="'w-[220px] border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                            className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
                         >
                             UI/UX
                         </button>
