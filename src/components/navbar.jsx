@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="container relative flex flex-wrap items-center px-6 justify-around md:justify-between py-3 md:px-2  mx-auto bg-white max-w-6xl">
         {/* Logo  */}
 
-        <div className="flex flex-wrap items-center justify-between w-full  lg:w-32">
+        <div className="flex flex-wrap items-start justify-between w-full  lg:w-32">
           <Link href="/">
             <Image alt="" width={44} height={44} src={Logo} />
             {/* <span className="flex   flex-row space-x-2 text-2xl font-medium text-indigo-500">
@@ -77,7 +77,7 @@ function Navbar() {
               </Transition.Child>
 
               <div className="fixed h-screen w-screen bg-white inset-0  overflow-y-auto ">
-                <div className="flex justify-start p-4 text-center items-center sm:p-0">
+                <div className="flex justify-start p-4 text-center items-start sm:p-0">
                   <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"
@@ -87,21 +87,21 @@ function Navbar() {
                     leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                     leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                   >
-                    <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around items-center">
+                    <Dialog.Panel className="flex  w-screen h-screen flex-col justify-around items-start">
                       <div className="mt-9 px-4 pb-4  sm:p-6 sm:pb-4  w-full ">
-                        <div className=" flex flex-col gap-2 h-full w-full">
+                        <div className=" flex flex-col gap-2 h-screen w-full">
                           <div className="flex flex-col gap-8 mt-3 sm:ml-4 sm:mt-0 text-left w-full">
                             <Dialog.Title
                               as="h3"
                               className="text-base font-semibold leading-6 text-gray-900 "
                             >
-                              <div className="flex justify-between items-center sm:pr-3">
+                              <div className="flex justify-between items-start sm:pr-3">
                                 <Link href="/" onClick={() => setOpen(false)}>
                                   <Image
-                                    className="w-36 h-auto"
+                                    className="w-16 h-auto"
                                     alt=""
-                                    width={100}
-                                    height={100}
+                                    width={50}
+                                    height={50}
                                     src={Logo}
                                   />
                                   {/* <span className="flex  flex-row space-x-2 text-2xl font-medium text-white">
