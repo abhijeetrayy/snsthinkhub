@@ -8,11 +8,11 @@ function joinUs() {
     <div className="flex justify-center">
       <div className="relative max-w-[999px] h-auto flex flex-col justify-center items-center  p-10  my-8 ">
         <div className="flex flex-col md:gap-3 items-center ">
-          <h1 className="text-[1.2em] md:text-5xl font-bold text-gray-700">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-700">
             Join Our Team
           </h1>
           <Link
-            href={""}
+            href={"/home/career"}
             className=" scale-50 md:scale-100 px-7 py-2 text-lg text-white bg-indigo-500 hover:bg-indigo-600 w-fit rounded-md"
           >
             Join

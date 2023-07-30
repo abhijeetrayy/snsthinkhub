@@ -30,7 +30,7 @@ export default function Layout({ children }) {
             <div className="z-50 sticky top-0 bg-white w-full">
               <Navbar />
             </div>
-            <div className=" flex-grow ">{children}</div>
+            <div className="flex-grow ">{children}</div>
             <div className="w-full flex justify-center">
               <Footer />
             </div>

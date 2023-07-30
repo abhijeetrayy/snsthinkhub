@@ -56,8 +56,7 @@ const Statistic = () => {
                 360* career guidence and mentorship
               </h2>
               <p className="text-gray-600 sm:text-sm ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                nulla nobis porro quam, necessitatibus quisquam?
+                What makes S&S different ?
               </p>
             </div>
           </div>

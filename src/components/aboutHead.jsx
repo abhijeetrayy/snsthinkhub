@@ -17,7 +17,7 @@ const AboutHeader = () => {
               Guidence.
             </p>
             <Link
-              className="w-fit px-3 py-2 md:px-5 md:py-3 font-bold text-lg rounded-md bg-indigo-500 hover:bg-indigo-600 text-white"
+              className="w-fit px-3 py-2 md:px-5 md:py-3 md:font-bold text-lg rounded-md bg-indigo-500 hover:bg-indigo-600 text-white"
               href={"/home/courses"}
             >
               Join Course
