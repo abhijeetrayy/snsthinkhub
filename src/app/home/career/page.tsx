@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Workwith from "../../../components/workedwith";
+
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const data = [
@@ -45,7 +45,7 @@ function page() {
     }
     return (
         <div className="w-full md:flex md:justify-center md:items-center">
-            <div className=" flex flex-col gap-4  p-4">
+            <div className=" flex flex-col gap-4  p-4 min-h-screen">
                 <div className="flex flex-col gap-3 max-w-2xl ">
                     <span className="px-3 py-1 border-2 border-gray-600 rounded-2xl w-fit">
                         We're Hiring

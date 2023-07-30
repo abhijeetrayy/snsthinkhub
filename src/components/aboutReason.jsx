@@ -10,7 +10,7 @@ export default function aboutReason() {
             SandSThinkHub
           </h1>
         </div>
-        <div className="py-7 text-sm px-5 md:px-2 text-center text-gray-600">
+        <div className="py-7 text-sm px-5 md:px-2  text-gray-600">
           Education brings change. It lays the foundation for human progress.
           Learning has the power to transform lives not only of an individual, a
           family or a community but it's capable of revolutionizing the course

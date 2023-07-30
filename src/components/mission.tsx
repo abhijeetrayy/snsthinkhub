@@ -3,7 +3,7 @@ import React from "react";
 function mission() {
   return (
     <div className="flex justify-center py-6 ">
-      <div className="flex flex-col md:flex-row max-w-[990px] items-stretch gap-5 border rounded-md p-5 md:py-9">
+      <div className="flex flex-col mx-3 md:flex-row max-w-[990px] items-stretch gap-5 border rounded-md p-5 md:py-9">
         <div className=" flex-1 text-center">
           <div>
             <h2 className="text-3xl">Mission</h2>
