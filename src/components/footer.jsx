@@ -12,6 +12,7 @@ export default function Footer() {
     { name: "Programs", link: "/home/program" },
     { name: "Success Story", link: "/home/success-story" },
     { name: "Team", link: "/home/team" },
+    { name: "Career", link: "/home/career" },
     { name: "About", link: "/home/about" },
   ];
   const legal = ["Terms", "Privacy", "Legal"];
