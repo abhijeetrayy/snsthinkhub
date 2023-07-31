@@ -63,25 +63,23 @@ function page() {
           </p>
           <div className="text-sm flex flex-col gap-3 p-3">
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill className="w-2 h-2" /> Give back to the
-              community via open source and blog posts
+              • Give back to the community via open source and blog posts
             </span>
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill className="w-2 h-2" /> Travel and meet great
-              people- as part of our remote-first lifestyle, it's important that
-              we come together as needed to work together, meet each other in
-              person and have fun together. Please keep that in mind when you
-              apply
+              • Travel and meet great people- as part of our remote-first
+              lifestyle, it's important that we come together as needed to work
+              together, meet each other in person and have fun together. Please
+              keep that in mind when you apply
             </span>
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill className="w-2 h-2" /> Teach and be taught:
-              Modus creates active teams that work in internal and external
-              projects together, giving opportunities to stay relevant with the
-              latest technologies and learning from experts worldwide
+              • Teach and be taught: Modus creates active teams that work in
+              internal and external projects together, giving opportunities to
+              stay relevant with the latest technologies and learning from
+              experts worldwide
             </span>
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill className="w-2 h-2" /> Interact directly with
-              internal and external clients to represent Modus and its values
+              • Interact directly with internal and external clients to
+              represent Modus and its values
             </span>
           </div>
         </div>
