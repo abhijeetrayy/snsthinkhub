@@ -1,11 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { HtmlHTMLAttributes, useEffect, useRef, useState } from "react";
+import "../../../css/background.css";
 
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const data = [
     {
-        title: "Freelace Technical tutor",
+        title: "Freelace Technical Trainer",
         detail:
             "We're looking for experinced Technical teacher with required technical knowdlege",
         tag: "freelance",
@@ -24,8 +25,7 @@ const data = [
     },
     {
         title: "Content Writter",
-        detail:
-            "We're looking for Content writter with required knowdlege",
+        detail: "We're looking for Content writter with required knowdlege",
         tag: "content",
     },
     {
@@ -38,11 +38,36 @@ const data = [
 
 function page() {
     const [filtered, setfiltered] = useState(data);
+    const [isAnimating, setIsAnimating] = useState(false);
 
-    function result(tags: string) {
-        const newArray = data.filter((obj) => obj.tag == tags)
-        return setfiltered(newArray)
+    useEffect(() => {
+        setIsAnimating(!isAnimating);
+        const clear = setTimeout(() => {
+            setIsAnimating(false);
+        }, 300);
+        return () => {
+            clearInterval(clear);
+        };
+    }, []);
+
+    function changeAgain() {
+        setIsAnimating(!isAnimating);
+        const clear = setTimeout(() => {
+            setIsAnimating(false);
+        }, 300);
+        return () => {
+            clearInterval(clear);
+        };
     }
+    function result(tags: string) {
+        const newArray = data.filter((obj) => obj.tag == tags);
+        console.log(newArray);
+
+        setfiltered(newArray);
+
+        return changeAgain();
+    }
+
     return (
         <div className="w-full md:flex md:justify-center md:items-center">
             <div className=" flex flex-col gap-4  p-4 min-h-screen">
@@ -61,7 +86,13 @@ function page() {
                 </div>
                 <div className="">
                     <div className="w-full h-full flex gap-3 overflow-x-scroll overflow-y-hidden whitespace-nowrap scroll-smooth scrollbar-thin scrollbar-thumb-indigo-500 py-4">
-                        <button onClick={() => setfiltered(data)} className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                        <button
+                            onClick={() => {
+                                setfiltered(data);
+                                changeAgain();
+                            }}
+                            className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                        >
                             All
                         </button>
                         <button
@@ -96,9 +127,12 @@ function page() {
                         </button>
                     </div>
                 </div>
-                <div className="flex flex-col gap-4">
-                    {filtered.map((item) => (
-                        <div className="flex flex-col gap-8 max-w-3xl flex-1">
+                <div className={` flex flex-col gap-4 ${isAnimating ? "fade-in" : ""}`}>
+                    {filtered.map((item, index) => (
+                        <div
+                            key={index}
+                            className=" flex flex-col gap-8 w-full translate-x-0 md:hover:translate-x-3 duration-300"
+                        >
                             <hr className="bg-black border border-gray-400  rounded-xl" />
                             <div className="w-full flex flex-row gap-5 justify-between items-center">
                                 <div className="flex flex-col gap-3">
@@ -108,13 +142,14 @@ function page() {
                                     <p className="text-gray-700 text-sm">{item.detail}</p>
                                 </div>
                                 <div className="">
-                                    <button className="text-lg flex flex-row items-center md:hover:-mt-2 transform duration-300">
+                                    <button className="text-lg flex flex-row items-center  transform duration-300">
                                         Apply <BiRightArrowAlt />
                                     </button>
                                 </div>
                             </div>
                         </div>
                     ))}
+                    <hr className="bg-black border border-gray-400  rounded-xl" />
                 </div>
             </div>
         </div>

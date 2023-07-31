@@ -188,8 +188,7 @@ const Header = () => {
           <div className="flex-1 flex flex-col justify-center p-3">
             <span className="font-bold text-gray-600">Course/Program</span>
             <span className="text-xs text-gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
-              nostrum.
+              Explore Diverse Courses and Programs for Your Growth.
             </span>
           </div>
           <div
@@ -199,8 +198,7 @@ const Header = () => {
           <div className="flex-1 flex flex-col justify-center p-3">
             <span className="font-bold text-gray-600">Preparation</span>
             <span className="text-xs text-gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
-              nostrum.
+              Prepare with Expert Guidance for Your Dream Career.
             </span>
           </div>
           <div className="text-indigo-500 px-2 tranfrom rotate-90 sm:rotate-0 duration-300">
@@ -209,8 +207,7 @@ const Header = () => {
           <div className="flex-1 flex flex-col justify-center p-3">
             <span className="font-bold text-gray-600">Success</span>
             <span className="text-xs text-gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
-              nostrum.
+              Internship Opportunities and Career Placements Await.
             </span>
           </div>
         </div>

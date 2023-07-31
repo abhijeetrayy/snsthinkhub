@@ -11,7 +11,7 @@ export default function Team() {
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
             <p className="text-sm font-bold tracking-wider text-indigo-600 uppercase leading-10">
-              Core Team
+              Team
             </p>
           </div>
           <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
