@@ -2,7 +2,7 @@
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
-import { Bars } from "react-loader-spinner";
+import { FiCloudRain } from "react-icons/fi";
 import { signIn } from "next-auth/react";
 
 export default function ProfilePage() {
@@ -10,26 +10,18 @@ export default function ProfilePage() {
   if (status == "loading") {
     return (
       <div className="h-screen w-screen flex justify-center items-center">
-        <Bars
-          type="Puff"
-          color="gray"
-          height={100}
-          width={100}
-          timeout={3000}
-        />
+        <div className="m-10 text-6xl animate-pulse text-gray-700 flex justify-center items-center">
+          <FiCloudRain />
+        </div>
       </div>
     );
   }
   if (!session) {
     return (
       <div className="h-screen w-screen flex justify-center items-center flex-col text-indigo-500">
-        <Bars
-          type="Puff"
-          color="gray"
-          height={100}
-          width={100}
-          timeout={3000}
-        />
+        <div className="text-6xl animate-pulse text-gray-700 flex justify-center items-center m-10">
+          <FiCloudRain />
+        </div>
         You are loged Out, Please check
         <button
           className="p-2  rounded-md text-white bg-indigo-600"
