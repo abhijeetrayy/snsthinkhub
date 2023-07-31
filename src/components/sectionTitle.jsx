@@ -3,8 +3,8 @@ import Container from "./container";
 
 const SectionTitle = (props) => {
   return (
-    <Container
-      className={`flex w-full flex-col mt-4 md:items-center justify-center md:text-center`}
+    <div
+      className={`flex w-full flex-col mt-4 md:items-center md:justify-center md:text-center px-4 sm:p-3`}
     >
       {props.pretitle && (
         <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase my-3">
@@ -23,7 +23,7 @@ const SectionTitle = (props) => {
           {props.children}
         </p>
       )}
-    </Container>
+    </div>
   );
 };
 

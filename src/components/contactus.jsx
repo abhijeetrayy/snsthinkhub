@@ -58,14 +58,14 @@ export default function contactus() {
               <h2 className="text-gray-700 mb-6 font-bold uppercase  ">
                 GET IN TOUCH WITH US
               </h2>
-              <p className="text-body-color mb-9 text-base leading-relaxed">
+              <p className="text-body-color mb-9 text-sm sm:text-base leading-relaxed">
                 Quries and issue on website, feedback or Business related.
               </p>
               <div className="mb-8 flex w-full max-w-[370px]">
                 <div className="bg-blue-500 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">
                   <svg
-                    width="24"
-                    height="24"
+                    width="19"
+                    height="16"
                     viewBox="0 0 24 24"
                     className="fill-current text-blue-800"
                   >
@@ -73,10 +73,10 @@ export default function contactus() {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-dark mb-1 text-lg font-semibold">
+                  <h4 className="text-dark mb-1 text-md font-semibold">
                     Our Location
                   </h4>
-                  <p className="text-body-color text-base">
+                  <p className="text-body-color text-sm text-base">
                     Maka Wala, Dehradun, Uttarakhand, India
                   </p>
                 </div>
@@ -84,8 +84,8 @@ export default function contactus() {
               <div className="mb-8 flex w-full max-w-[370px]">
                 <div className="bg-blue-500 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">
                   <svg
-                    width="24"
-                    height="26"
+                    width="18"
+                    height="16"
                     viewBox="0 0 24 26"
                     className="fill-current text-blue-800"
                   >
@@ -95,10 +95,10 @@ export default function contactus() {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-dark mb-1 text-lg font-semibold">
+                  <h4 className="text-dark mb-1 text-md font-semibold">
                     Phone Number
                   </h4>
-                  <p className="text-body-color text-base">
+                  <p className="text-body-color text-sm">
                     (+91)81 414 257 9980
                   </p>
                 </div>
@@ -106,8 +106,8 @@ export default function contactus() {
               <div className="mb-8 flex w-full max-w-[370px]">
                 <div className="bg-blue-500 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">
                   <svg
-                    width="28"
-                    height="19"
+                    width="19"
+                    height="16"
                     viewBox="0 0 28 19"
                     className="fill-current text-blue-800"
                   >
@@ -115,10 +115,10 @@ export default function contactus() {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-dark mb-1 text-lg font-semibold">
+                  <h4 className="text-dark mb-1 text-md font-semibold">
                     Email Address
                   </h4>
-                  <p className="text-body-color text-base">
+                  <p className="text-body-color text-sm text-base">
                     info.snsthinkhub.com
                   </p>
                 </div>
