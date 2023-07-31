@@ -4,10 +4,10 @@ import IntershihfillButton from "../../../../components/intershipfillform";
 
 function page() {
   return (
-    <div className="w-full flex justify-center">
-      <div className="flex flex-col gap-5 max-w-4xl p-4">
+    <div className="w-full flex justify-center p-3">
+      <div className="flex flex-col gap-5 max-w-4xl p-4 border rounded-md">
         <div className="py-5">
-          <h1 className="text-4xl font-bold text-gray-700">
+          <h1 className="text-2xl sm:text-4xl font-bold text-gray-700">
             Engineering Manager Developer Experience
           </h1>
         </div>
@@ -63,24 +63,25 @@ function page() {
           </p>
           <div className="text-sm flex flex-col gap-3 p-3">
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill /> Give back to the community via open source
-              and blog posts
+              <PiDotOutlineFill className="w-2 h-2" /> Give back to the
+              community via open source and blog posts
             </span>
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill /> Travel and meet great people- as part of our
-              remote-first lifestyle, it's important that we come together as
-              needed to work together, meet each other in person and have fun
-              together. Please keep that in mind when you apply
+              <PiDotOutlineFill className="w-2 h-2" /> Travel and meet great
+              people- as part of our remote-first lifestyle, it's important that
+              we come together as needed to work together, meet each other in
+              person and have fun together. Please keep that in mind when you
+              apply
             </span>
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill /> Teach and be taught: Modus creates active
-              teams that work in internal and external projects together, giving
-              opportunities to stay relevant with the latest technologies and
-              learning from experts worldwide
+              <PiDotOutlineFill className="w-2 h-2" /> Teach and be taught:
+              Modus creates active teams that work in internal and external
+              projects together, giving opportunities to stay relevant with the
+              latest technologies and learning from experts worldwide
             </span>
             <span className="flex flex-row  gap-2">
-              <PiDotOutlineFill /> Interact directly with internal and external
-              clients to represent Modus and its values
+              <PiDotOutlineFill className="w-2 h-2" /> Interact directly with
+              internal and external clients to represent Modus and its values
             </span>
           </div>
         </div>
