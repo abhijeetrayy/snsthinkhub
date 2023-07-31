@@ -37,9 +37,12 @@ export default function card() {
                     FREE
                   </p>
                 </div>
-                <h1 className="mt-4 text-gray-800 text-xl font-bold cursor-pointer">
+                <Link
+                  href={"/home/courses/web-development-2023"}
+                  className="mt-4 text-gray-800 text-xl font-bold cursor-pointer"
+                >
                   Javascript Bootcamp for Absolute Beginners
-                </h1>
+                </Link>
                 <div className="mt-4 text-sm">
                   <div className="flex space-x-1 items-center">
                     <span>
@@ -129,9 +132,12 @@ export default function card() {
                     %20 Discount
                   </p>
                 </div>
-                <h1 className="mt-4 text-gray-800 text-xl font-bold cursor-pointer">
+                <Link
+                  href={"/home/courses/web-development-2023"}
+                  className="mt-4 text-gray-800 text-xl font-bold cursor-pointer"
+                >
                   Write a Gatsby plugin using Typescript
-                </h1>
+                </Link>
                 <div className="text-sm mt-4 ">
                   <div className="flex space-x-1 items-center">
                     <span>
@@ -218,9 +224,12 @@ export default function card() {
                     $50
                   </p>
                 </div>
-                <h1 className="mt-4 text-gray-800 text-xl font-bold cursor-pointer">
+                <Link
+                  href={"/home/courses/web-development-2023"}
+                  className="mt-4 text-gray-800 text-xl font-bold cursor-pointer"
+                >
                   Advanced React Native for Sustainability
-                </h1>
+                </Link>
                 <div className="text-sm mt-4">
                   <div className="flex space-x-1 items-center">
                     <span>

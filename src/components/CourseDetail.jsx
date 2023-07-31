@@ -13,9 +13,9 @@ export default function CourseDetail() {
   return (
     <div className="w-full flex justify-center overflow-hidden">
       <div className="max-w-[1324px]">
-        <div className="flex flex-col mt-9 justify-between md:flex-row">
+        <div className="flex flex-col-reverse  mt-9 justify-between md:flex-row">
           <div className="flex flex-col gap-5 px-10">
-            <div className="flex flex-col gap-5 bg-indigo-600 p-3 rounded-lg">
+            <div className="hidden md:flex flex-col gap-5 bg-indigo-600 p-3 rounded-lg">
               <h2 className="text-5xl font-bold text-white">
                 Become a professional Web Developer from Scratch
               </h2>
@@ -93,13 +93,30 @@ export default function CourseDetail() {
             </div>
           </div>
 
-          <div className=" my-3 flex justify-center  px-3 w-full">
-            <div className=" shadow-lg rounded-lg py-2 w-[320px] sm:w-[370px] h-fit">
+          <div className="  my-3 flex justify-center  px-3 w-full">
+            <div className="w-full shadow-lg rounded-lg py-2 md:w-[320px]  h-fit">
               <div>
                 <img
                   className="w-full h-64 object-cover rounded-t-lg"
                   src="https://images.pexels.com/photos/6816529/pexels-photo-6816529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 />
+              </div>
+              <div className="md:hidden flex flex-col gap-5 p-3 rounded-lg">
+                <h2 className="text-3xl font-semibold text-gray-700">
+                  Become a professional Web Developer from Scratch
+                </h2>
+
+                <div>
+                  <p className="text-md text-gray-600">
+                    This course covers all you need to know about becoming a top
+                    skilled web developer even if you never programmed before!
+                  </p>
+                </div>
+                <div>
+                  <span className="text-gray-600 hover:text-gray-700">
+                    1652 Rating | 4.3 Reviews
+                  </span>
+                </div>
               </div>
               <div className="w-full">
                 <div className="flex flex-col">
@@ -159,7 +176,7 @@ export default function CourseDetail() {
                     Get your team access to 16,000+ top Udemy courses anytime,
                     anywhere.
                   </p>
-                  <div className="flex justify-center w-full my-3">
+                  <div className="hidden md:flex justify-center w-full my-3">
                     <Link href={"/home/contact-us"}>
                       <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
                         Try Bussiness
