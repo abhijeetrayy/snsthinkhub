@@ -14,14 +14,14 @@ const Testimonials = () => {
           Here's what our Student says
         </h2>
       </div>
-      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 px-2 md:px-5 max-w-7xl">
+      <div className="overflow-x-scroll flex  sm:block w-full gap-3  sm:overflow-auto   sm:columns-2 md:columns-3 lg:columns-4 px-2 md:px-5 max-w-7xl">
         {TestimonialsData.map((items, index) => (
           <div
             key={index}
-            className="relative  border-2 border-gray-100 mb-5 rounded-lg break-inside-avoid shadow-md md:shadow-lg hover:shadow-xl"
+            className="relative  sm:border-2 border-gray-100 mb-5 rounded-lg break-inside-avoid sm:shadow-md md:shadow-lg sm:hover:shadow-xl"
           >
-            <div className="p-5 relative  flex flex-col gap-1">
-              <div className="flex flex-col mb-3">
+            <div className="p-5 relative  flex flex-col gap-1 border-2 border-gray-100 sm:border-0 shadow-lg sm:shadow-none">
+              <div className="flex flex-col mb-3 ">
                 <h1 className="test__title text-xl text-indigo-500 font-bold">
                   {items.name}
                 </h1>
@@ -30,7 +30,7 @@ const Testimonials = () => {
                 </span>
                 <span className="text-sm">Raiting: ⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="test__author text-sm font-normal text-gray-700">
+              <p className=" w-56 sm:w-auto test__author text-sm font-normal text-gray-700">
                 {items.data}
               </p>
             </div>
