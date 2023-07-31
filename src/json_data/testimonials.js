@@ -1,5 +1,13 @@
 const testimonials = [
   {
+    data: "Thanks to the teachers, for all the extraordinary efforts they make to make our training more fun and interesting. I have never met such good and cheerful teachers. The courses helped me in overcoming my fears of public speaking. It helped me and guided me in making myself more skillful. I feel more confident and able after all these training sessions. Thanks a lot for all your efforts and the training sessions.",
+    name: "Rubal Yadav",
+  },
+  {
+    data: "Thank you sir for sharing your valuable time with us. I have learned many things from this course like  public speaking, communication, leadership and how to be motivated. I have also overcome many of my fears. The games conducted during the class were so interesting. It was a great honor to be a part of this training course.",
+    name: "Mohammad Zaki khan",
+  },
+  {
     data: "The patience, kindness, and understanding I have experienced, helped me grow and succeed in ways that I never thought was possible. Thanks to the teachers. Thank you for being more than just a teacher—you were a friend, and a mentor. I am so grateful for everything.",
     name: "Yash Patel",
   },
@@ -19,10 +27,6 @@ const testimonials = [
     name: "Siddhi Saraf",
   },
 
-  {
-    data: "Thanks to the teachers, for all the extraordinary efforts they make to make our training more fun and interesting. I have never met such good and cheerful teachers. The courses helped me in overcoming my fears of public speaking. It helped me and guided me in making myself more skillful. I feel more confident and able after all these training sessions. Thanks a lot for all your efforts and the training sessions.",
-    name: "Rubal Yadav",
-  },
 
   {
     data: "In the training I have learnt how we should give personal interviews, how to prepare & give presentations. The holistic guidance helped me to improve myself. Along with that I learnt Microsoft excel. Thank you so much to the teachers for prompt response and support.",
@@ -39,10 +43,6 @@ const testimonials = [
     name: "Roopal Sharma",
   },
 
-  {
-    data: "Thank you sir for sharing your valuable time with us. I have learned many things from this course like  public speaking, communication, leadership and how to be motivated. I have also overcome many of my fears. The games conducted during the class were so interesting. It was a great honor to be a part of this training course.",
-    name: "Mohammad Zaki khan",
-  },
 
   {
     data: "This is my feedback regarding training. So I would like to say that this training was very helpful for me in public speaking, and provided me with confidence to present myself on stage, PD, GD, and PI etc. I have learnt valuable skills like Excel, and how to make amazing and convincing PPT. Thank you so much for this training and thank you sir for helping me to improve myself.",
