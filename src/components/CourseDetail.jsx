@@ -14,7 +14,7 @@ export default function CourseDetail() {
     <div className="w-full flex justify-center overflow-hidden">
       <div className="max-w-[1324px]">
         <div className="flex flex-col-reverse  mt-9 justify-between md:flex-row">
-          <div className="flex flex-col gap-5 px-10">
+          <div className="flex flex-col gap-5 md:px-10 px-4">
             <div className="hidden md:flex flex-col gap-5 bg-indigo-600 p-3 rounded-lg">
               <h2 className="text-5xl font-bold text-white">
                 Become a professional Web Developer from Scratch
@@ -32,7 +32,7 @@ export default function CourseDetail() {
                 </span>
               </div>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 w-full">
               <h2 className="text-2xl font-bold">What You will Learn</h2>
               <div>
                 <p className=" text-gray-500">
@@ -44,7 +44,7 @@ export default function CourseDetail() {
                 </p>
               </div>
               <div>
-                <ul className="flex gap-5 flex-col pl-6">
+                <ul className="flex gap-5 flex-col pl-3">
                   <li className="flex flex-row">
                     <TiTick className="text-indigo-500 text-2xl" /> "The
                     Complete Freelancer Guide" e-Book
@@ -87,7 +87,7 @@ export default function CourseDetail() {
                   3 sections • 190 lectures • 26h 41m total length
                 </p>
               </div>
-              <div className="max-w-[700px] p-5 border rounded-lg">
+              <div className="max-w-[700px] p-3 border rounded-lg">
                 <Accordion />
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function CourseDetail() {
           </div>
         </div>
 
-        <div className="max-w-[790px] p-7 flex flex-col gap-7">
+        <div className="max-w-[790px] px-5 py-3 flex flex-col gap-7">
           <div className="flex flex-col gap-5">
             <h2 className="text-2xl font-bold">Course Description</h2>
             <div>
