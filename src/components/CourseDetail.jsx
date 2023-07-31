@@ -91,9 +91,111 @@ export default function CourseDetail() {
                 <Accordion />
               </div>
             </div>
+            <div className="max-w-[790px] px-5 py-3 flex flex-col gap-7">
+              <div className="flex flex-col gap-5">
+                <h2 className="text-2xl font-bold">Course Description</h2>
+                <div>
+                  <p className=" text-gray-500">
+                    Become a Web Developer from Scratch" is probably one of the
+                    most complete and comprehensive online courses you will ever
+                    get to see covering web development from top to bottom. In
+                    more than 30 hours of content, this course will cover all
+                    you need to know about how to become a top skilled web
+                    developer even if you never programmed before.
+                  </p>
+                </div>
+                <div>
+                  <ul className="flex gap-5 flex-col pl-6 ">
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> "The
+                      Complete Freelancer Guide" e-Book
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> 30 Free
+                      Responsive Templates
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> Make REAL
+                      life web apps with our final projects
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> PDF
+                      Manuals and Guides
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> Massive
+                      Q&A Community
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />{" "}
+                      Improvement Suggestions for Course
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> Learn to
+                      get free hosting forever
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> All
+                      Lectures and Projects Source Codes
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex flex-col gap-5">
+                <h2 className="text-2xl font-bold">Who this course is for:</h2>
+                <div>
+                  <p className=" text-gray-500">
+                    Charles tickety-boo squiffy nice one cockup pardon you get
+                    stuffed mate my good sir geeza. Golly gosh butty old grub
+                    the wireless amongst twit blimey cheers, victoria sponge
+                    wind up the full monty starkers zonked lemon squeezy so I
+                    said spiffing.!
+                  </p>
+                </div>
+                <div>
+                  <ul className="flex gap-5 flex-col pl-6">
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> "The
+                      Complete Freelancer Guide" e-Book
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> 30 Free
+                      Responsive Templates
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> Make REAL
+                      life web apps with our final projects
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> PDF
+                      Manuals and Guides
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> Massive
+                      Q&A Community
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />{" "}
+                      Improvement Suggestions for Course
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> Learn to
+                      get free hosting forever
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" /> All
+                      Lectures and Projects Source Codes
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* <div>
+          <Review />
+        </div> */}
           </div>
 
-          <div className="  my-3 flex justify-center  px-3 w-full">
+          <div className=" my-3 flex justify-center  px-3 w-full ">
             <div className="w-full shadow-lg rounded-lg py-2 md:w-[320px]  h-fit">
               <div>
                 <img
@@ -187,108 +289,6 @@ export default function CourseDetail() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="max-w-[790px] px-5 py-3 flex flex-col gap-7">
-          <div className="flex flex-col gap-5">
-            <h2 className="text-2xl font-bold">Course Description</h2>
-            <div>
-              <p className=" text-gray-500">
-                Become a Web Developer from Scratch" is probably one of the most
-                complete and comprehensive online courses you will ever get to
-                see covering web development from top to bottom. In more than 30
-                hours of content, this course will cover all you need to know
-                about how to become a top skilled web developer even if you
-                never programmed before.
-              </p>
-            </div>
-            <div>
-              <ul className="flex gap-5 flex-col pl-6 ">
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> "The Complete
-                  Freelancer Guide" e-Book
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> 30 Free
-                  Responsive Templates
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Make REAL life
-                  web apps with our final projects
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> PDF Manuals
-                  and Guides
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Massive Q&A
-                  Community
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Improvement
-                  Suggestions for Course
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Learn to get
-                  free hosting forever
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> All Lectures
-                  and Projects Source Codes
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5">
-            <h2 className="text-2xl font-bold">Who this course is for:</h2>
-            <div>
-              <p className=" text-gray-500">
-                Charles tickety-boo squiffy nice one cockup pardon you get
-                stuffed mate my good sir geeza. Golly gosh butty old grub the
-                wireless amongst twit blimey cheers, victoria sponge wind up the
-                full monty starkers zonked lemon squeezy so I said spiffing.!
-              </p>
-            </div>
-            <div>
-              <ul className="flex gap-5 flex-col pl-6">
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> "The Complete
-                  Freelancer Guide" e-Book
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> 30 Free
-                  Responsive Templates
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Make REAL life
-                  web apps with our final projects
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> PDF Manuals
-                  and Guides
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Massive Q&A
-                  Community
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Improvement
-                  Suggestions for Course
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> Learn to get
-                  free hosting forever
-                </li>
-                <li className="flex flex-row">
-                  <TiTick className="text-indigo-500 text-2xl" /> All Lectures
-                  and Projects Source Codes
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <Review />
         </div>
         <div className=" w-full px-3 m-auto">
           <Team />
