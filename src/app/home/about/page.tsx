@@ -20,7 +20,7 @@ export default function page() {
       <div className="w-full flex justify-center">
         <hr className="border-2 my-3 px-4 max-w-[999px] border-gray-700 rounded-md" />
       </div>
-      <JoinUs />
+      {/* <JoinUs /> */}
 
       <ContactUs />
     </>
