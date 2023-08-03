@@ -71,7 +71,7 @@ function page() {
 
   return (
     <div className="w-full md:flex md:justify-center md:items-center">
-      <div className=" flex flex-col gap-4  p-4 max-w-7xl">
+      <div className=" flex flex-col gap-4  p-4 min-h-screen">
         <div className="flex flex-col gap-3 max-w-2xl ">
           <span className="px-3 py-1 border-2 border-gray-600 rounded-2xl w-fit">
             We're Hiring
@@ -145,7 +145,7 @@ function page() {
                 <div className="">
                   <Link
                     href={"/home/career/decription"}
-                    className="text-lg flex flex-row items-center "
+                    className="text-lg flex flex-row items-center  transform duration-300"
                   >
                     Apply <BiRightArrowAlt />
                   </Link>
