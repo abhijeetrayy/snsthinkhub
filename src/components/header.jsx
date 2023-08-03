@@ -110,7 +110,7 @@ const Header = () => {
         ></div>
       </div>
       <div className="z-10 w-full flex justify-center items-center">
-        <div className="max-w-3xl grow my-3">
+        <div className="max-w-5xl grow my-3">
           <div className="flex w-full justify-between  mb-10">
             <svg
               className="absolute z-20 w-36 sm:w-52 right-0 top-0 md:hidden"
