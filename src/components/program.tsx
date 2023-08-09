@@ -146,10 +146,10 @@ function program() {
         </div>
 
         <div ref={ref}>
-          <div className="">
+          <div className=" w-full flex flex-col justify-center items-center">
             <div className="mb-10 w-full flex justify-center ">
               <div className="flex flex-col justify-center items-center">
-                <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
+                <h2 className="mb-4  text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
                   Campus Program's
                 </h2>
                 <p className="text-gray-600 sm:text-sm ">
