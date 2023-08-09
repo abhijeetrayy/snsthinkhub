@@ -227,6 +227,8 @@ function program() {
                           src={HeaderImg}
                           width={230}
                           height={100}
+                          quality={80}
+                          placeholder="blur"
                           alt=""
                         />
                       </div>
