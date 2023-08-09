@@ -51,7 +51,7 @@ const Statistic = () => {
         <div className="py-8 px-4 mx-auto sm:py- lg:px-6">
           <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16">
             <div className="max-w-6xl">
-              <hr className="border border-r-gray-950" />
+              <hr className="border" />
               <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
                 360* career guidence and mentorship
               </h2>

@@ -1,0 +1,28 @@
+.marquee-outer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .marquee-inner {
+    animation-name: marquee;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+  }
+  
+  @keyframes marquee {
+    0% {
+      left: 100%;
+    }
+  
+    100% {
+      left: 0%;
+    }
+    
+  }

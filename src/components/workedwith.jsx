@@ -2,10 +2,10 @@ import React from "react";
 
 export default function workedwith() {
   return (
-    <section className="flex flex-col max-w-5xl mx-auto justify-center ">
-      <div className=" px-3 py-2  ">
-        <div className="flex flex-row gap-9 justify-between items-center text-sm md:text-md overflow-y-auto md:no-scrollbar scrollbar-thumb-slate-500 scrollbar-thin scrollbar-rounded-[30px] p-3">
-          <a href="#" className="">
+    <section className="lg:flex flex-col items-center ">
+      <div className="">
+        <div className="min-w-full h-full flex gap-5 items-center overflow-x-scroll overflow-y-scroll whitespace-nowrap scroll-smooth scrollbar-thin scrollbar-thumb-indigo-500 py-4">
+          <div href="#" className="">
             <svg
               className="h-9 text-blue-400 hover:text-gray-900 "
               viewBox="0 0 125 35"
@@ -19,8 +19,8 @@ export default function workedwith() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" className="">
+          </div>
+          <div href="#" className="">
             <svg
               className="h-9 text-red-400 hover:text-gray-900 "
               viewBox="0 0 86 29"
@@ -34,8 +34,8 @@ export default function workedwith() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" className="">
+          </div>
+          <div href="#" className="">
             <svg
               className="h-8 text-blue-700 hover:text-gray-900 "
               viewBox="0 0 151 34"
@@ -59,9 +59,9 @@ export default function workedwith() {
                 </clipPath>
               </defs>
             </svg>
-          </a>
+          </div>
 
-          <a href="#" className="">
+          <div href="#" className="">
             <svg
               className="h-9 text-green-400 hover:text-gray-900 "
               viewBox="0 0 124 38"
@@ -73,8 +73,8 @@ export default function workedwith() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" className="">
+          </div>
+          <div href="#" className="">
             <svg
               className="h-9 text-yellow-500 hover:text-gray-900 "
               viewBox="0 0 137 37"
@@ -154,8 +154,8 @@ export default function workedwith() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" className="">
+          </div>
+          <div href="#" className="">
             <svg
               className="h-6 text-gray-600 hover:text-gray-900 "
               viewBox="0 0 124 21"
@@ -211,7 +211,7 @@ export default function workedwith() {
                 fill="currentColor"
               />
             </svg>
-          </a>
+          </div>
         </div>
       </div>
     </section>

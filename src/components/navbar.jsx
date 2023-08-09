@@ -18,7 +18,7 @@ function Navbar() {
     { name: "Home", url: "/home" },
     { name: "Course", url: "/home/courses" },
     { name: "Internship", url: "/home/internship" },
-    // { name: "Program", url: "/home/program" },
+    { name: "Program", url: "/home/program" },
     // { name: "Success Story", url: "/home/success-story" },
     { name: "Team", url: "/home/team" },
     { name: "About", url: "/home/about" },
