@@ -157,8 +157,8 @@ function program() {
                 </p>
               </div>
             </div>
-            <div className=" flex flex-row   gap-10   justify-around max-w-5xl h-full">
-              <div className="w-1/3 ">
+            <div className=" grid grid-cols-3   gap-10   justify-around max-w-5xl h-full">
+              <div className=" col-span-1">
                 <div className="flex flex-col gap-3  h-full">
                   <div
                     onClick={() => {
@@ -214,7 +214,7 @@ function program() {
                 </div>
               </div>
               <div
-                className={` flex  flex-col gap-4 ${
+                className={`col-span-2 flex  flex-col gap-4 ${
                   isAnimating ? "fade-in" : ""
                 }`}
               >
@@ -225,7 +225,7 @@ function program() {
                         <Image
                           className="w-full h-56 object-cover rounded-md"
                           src={HeaderImg}
-                          width={500}
+                          width={230}
                           height={100}
                           alt=""
                         />
