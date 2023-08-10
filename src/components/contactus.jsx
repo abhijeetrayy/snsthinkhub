@@ -76,7 +76,7 @@ export default function contactus() {
                   <h4 className="text-dark mb-1 text-md font-semibold">
                     Our Location
                   </h4>
-                  <p className="text-body-color text-sm text-base">
+                  <p className="text-body-color text-sm ">
                     Maka Wala, Dehradun, Uttarakhand, India
                   </p>
                 </div>
@@ -118,7 +118,7 @@ export default function contactus() {
                   <h4 className="text-dark mb-1 text-md font-semibold">
                     Email Address
                   </h4>
-                  <p className="text-body-color text-sm text-base">
+                  <p className="text-body-color text-sm ">
                     info.snsthinkhub.com
                   </p>
                 </div>

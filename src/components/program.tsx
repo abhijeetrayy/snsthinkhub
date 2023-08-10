@@ -291,7 +291,7 @@ function program() {
           </div>
         </div>
         <div>
-          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16">
+          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16 px-3">
             <div className="max-w-6xl">
               <hr className="border" />
               <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
