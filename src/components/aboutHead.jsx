@@ -28,7 +28,7 @@ const AboutHeader = () => {
           <Image
             className="rounded-md  "
             width={700}
-            height={700}
+            height={100}
             quality={70}
             src={AboutImg}
             placeholder="blur"
