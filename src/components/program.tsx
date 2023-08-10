@@ -255,7 +255,7 @@ function program() {
                           alt=""
                         />
                       </div>
-                      <div className="flex  flex-col gap-3">
+                      <div className="flex  flex-col gap-3 px-4">
                         <h1 className=" text-2xl text-gray-600 font-bold">
                           {item.title}
                         </h1>
