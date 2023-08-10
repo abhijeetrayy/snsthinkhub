@@ -97,7 +97,7 @@ function program() {
             /> */}
           </div>
           <div className=" z-10 w-full flex flex-col gap-5 items-center justify-center">
-            <div className="flex items-center flex-col">
+            <div className="flex items-center flex-col gap-3">
               <h1 className="z-10 text-5xl sm:text-6xl font-bold text-gray-800 text-center">
                 One Membership
               </h1>
@@ -182,7 +182,7 @@ function program() {
             </div>
             <div className="md:grid md:grid-cols-3  gap-5  justify-evenly max-w-5xl h-full">
               <div className=" md:col-span-1 md:w-full mb-5 md:mb-0 ">
-                <div className="flex md:flex-col gap-3 md:h-full overflow-x-scroll md:overflow-visible">
+                <div className="flex md:flex-col gap-3 md:h-full overflow-x-scroll md:overflow-visible scrollbar-none">
                   <div
                     onClick={() => {
                       result("freelance");
