@@ -18,7 +18,7 @@ function Navbar() {
     { name: "Home", url: "/home" },
     { name: "Course", url: "/home/courses" },
     { name: "Internship", url: "/home/internship" },
-    { name: "Program", url: "/home/program" },
+    // { name: "Program", url: "/home/program" },
     // { name: "Success Story", url: "/home/success-story" },
     { name: "Team", url: "/home/team" },
     { name: "About", url: "/home/about" },
@@ -145,22 +145,14 @@ function Navbar() {
                                   </Link>
                                 ))}
 
-                                {session ? (
+                                
                                   <Link
-                                    href={"/home/profile"}
-                                    onClick={() => setOpen(false)}
+                                      href={"/home/program"}
                                     className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
                                   >
-                                    {session?.user?.name}
+                                    Try Business
                                   </Link>
-                                ) : (
-                                  <button
-                                    onClick={signIn}
-                                    className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
-                                  >
-                                    SignIn
-                                  </button>
-                                )}
+                                
                               </div>
                               <Image
                                 alt=""
@@ -196,21 +188,14 @@ function Navbar() {
         </div>
 
         <div className="hidden  lg:flex items-center nav__item ">
-          {session ? (
+          
             <Link
-              href={"/home/profile"}
+              href={"/home/program"}
               className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
             >
-              {session?.user?.name}
+              Try Business
             </Link>
-          ) : (
-            <button
-              onClick={signIn}
-              className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
-            >
-              SignIn
-            </button>
-          )}
+         
         </div>
       </nav>
     </div>

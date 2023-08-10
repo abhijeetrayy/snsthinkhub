@@ -39,8 +39,10 @@ const Home = () => {
       <Video /> */}
       {/* <AboutReason /> */}
       <Team />
+      <div className="w-full xl:flex justify-center px-3">
 
       <Testimonials />
+      </div>
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions" />
 
       <Faq />
