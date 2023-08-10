@@ -4,7 +4,7 @@ import Workwith from "./workedwith";
 import Features from "./features";
 import ContactUs from "./contactus";
 import ProgramAnimation from "./programAnimation";
-import HeaderImg from "../public/photos/trianer_university.png";
+import HeaderImg from "../public/photos/ceritficate_group.png";
 import Marquee from "react-double-marquee";
 import Image from "next/image";
 import "../css/patternProgram.css";
@@ -98,7 +98,7 @@ function program() {
           </div>
           <div className=" z-10 w-full flex flex-col gap-5 items-center justify-center">
             <div className="flex items-center flex-col">
-              <h1 className="z-10 text-5xl sm:text-6xl font-bold text-gray-800">
+              <h1 className="z-10 text-5xl sm:text-6xl font-bold text-gray-800 text-center">
                 One Membership
               </h1>
               <div
