@@ -180,8 +180,8 @@ function program() {
                 </p>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-3  md:gap-5 gap-10  justify-evenly max-w-5xl h-full">
-              <div className=" md:col-span-1 md:w-full ">
+            <div className="md:grid md:grid-cols-3  gap-5  justify-evenly max-w-5xl h-full">
+              <div className=" md:col-span-1 md:w-full mb-5 md:mb-0 ">
                 <div className="flex md:flex-col gap-3 md:h-full overflow-x-scroll md:overflow-visible">
                   <div
                     onClick={() => {
