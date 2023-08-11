@@ -12,7 +12,7 @@ export default function card() {
             <h2 className="text-2xl md:text-4xl font-extrabold mb-5 float-left  text-indigo-500">
               Our Courses
             </h2>
-            <p className="text-base">
+            <p className="sm:text-base flex text-center text-xs">
               Exclusive, personalized and latest programs for you to sharpen
               your skills.
               {/* Our Courses are Indurties expret fit, which{" "}

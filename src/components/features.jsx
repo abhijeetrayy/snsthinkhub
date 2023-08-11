@@ -49,15 +49,19 @@ const Statistic = () => {
     <div className="px-2 py-3 w-full flex justify-center ">
       <section className="bg-white max-w-6xl">
         <div className="py-8 px-4 mx-auto sm:py- lg:px-6">
+        <div className="w-full flex justify-center mb-4">
+
+              <hr className="border max-w-md w-full" />
+        </div>
           <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16">
             <div className="max-w-6xl">
-              <hr className="border" />
-              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-                360* career guidence and mentorship
-              </h2>
-              <p className="text-gray-600 sm:text-sm ">
-                What makes S&S different ?
+              <p className="text-indigo-600 sm:text-sm font-bold uppercase">
+              Key features
+
               </p>
+              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
+              What makes S&S different ?
+              </h2>
             </div>
           </div>
           <div className="max-w-[900px] space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-7 md:space-y-0 justify-center items-center">

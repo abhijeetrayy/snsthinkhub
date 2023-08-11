@@ -11,16 +11,14 @@ export default function Team() {
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
             <p className="text-sm font-bold tracking-wider text-indigo-600 uppercase leading-10">
-              Team
+              Our   Team
             </p>
           </div>
           <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-            Our talented team of professionals
+          Talent on board
           </h2>
           <p className="text-base text-gray-700 md:text-sm">
-            Our team is composed of experienced educators, industry
-            professionals, and thought leaders who are passionate about
-            education and making a difference in the world.
+          Dedicated to making the future you imagine, your reality.
           </p>
         </div>
         <div className="w-full grid gap-10 sm:grid-cols-2 lg:grid-cols-3">

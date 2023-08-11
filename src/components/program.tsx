@@ -86,7 +86,7 @@ function program() {
   return (
     <div className="block md:flex flex-col items-center justify-center">
       <div className="w-full flex lg:items-center flex-col gap-10">
-        <div className="relative flex flex-col justify-center items-center xl:w-[1124px] min-h-[450px] ">
+        <div className="relative flex flex-col justify-center items-center xl:w-[1124px] min-h-[500px] ">
           <div className="magicpattern absolute h-full w-full top-0 left-0 right-0 bottom-0">
             {/* <Image
               className="w-full h-full object-cover"
@@ -96,7 +96,13 @@ function program() {
               alt=""
             /> */}
           </div>
-          <div className=" z-10 w-full flex flex-col gap-5 items-center justify-center">
+          <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center">
+            <div className="z-10 w-full">
+              <p className="p-3 w-full bg-white shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
+                sapiente, quia sequi magnam harum voluptate.
+              </p>
+            </div>
             <div className="flex items-center flex-col gap-3">
               <h1 className="z-10 text-5xl sm:text-6xl font-bold text-gray-800 text-center">
                 One Membership
@@ -116,12 +122,7 @@ function program() {
                 </Marquee>
               </div>
             </div>
-            <div className="z-10 w-full">
-              <p className="p-3 w-full bg-white shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
-                sapiente, quia sequi magnam harum voluptate.
-              </p>
-            </div>
+
             <div className="flex flex-row gap-5">
               <button
                 onClick={handleClick}
@@ -136,32 +137,32 @@ function program() {
                 Contact Us
               </button>
             </div>
-          </div>
-        </div>
+            <div className="w-full">
+              <div className="w-full flex justify-center ">
+                <div className="flex flex-row justify-evenly items-center max-w-5xl w-full bg-gradient-to-r from-indigo-200 to-indigo-50  rounded-xl p-4 h-36">
+                  <div className="flex items-center flex-col gap-4">
+                    <span className="font-bold text-md">6+ year</span>
+                    <span className="text-xs">of Experience</span>
+                  </div>
 
-        <div className="w-full">
-          <div className="w-full flex justify-center ">
-            <div className="flex flex-row justify-evenly items-center max-w-5xl w-full bg-gradient-to-r from-indigo-200 to-indigo-50  border-2 rounded-xl p-4 h-36">
-              <div className="flex items-center flex-col gap-4">
-                <span className="font-bold text-md">6+ year</span>
-                <span className="text-xs">of Experience</span>
-              </div>
-
-              <div className="flex items-center flex-col gap-4">
-                <span className="font-bold text-md">5000+</span>
-                <span className="text-xs">Students</span>
-              </div>
-              <div className="flex items-center flex-col gap-4">
-                <span className="font-bold text-md">15+</span>
-                <span className="text-xs">Avg CTC</span>
-              </div>
-              <div className="flex items-center flex-col gap-4">
-                <span className="font-bold text-md">10+</span>
-                <span className="text-xs">Universities</span>
+                  <div className="flex items-center flex-col gap-4">
+                    <span className="font-bold text-md">5000+</span>
+                    <span className="text-xs">Students</span>
+                  </div>
+                  <div className="flex items-center flex-col gap-4">
+                    <span className="font-bold text-md">15+</span>
+                    <span className="text-xs">Avg CTC</span>
+                  </div>
+                  <div className="flex items-center flex-col gap-4">
+                    <span className="font-bold text-md">10+</span>
+                    <span className="text-xs">Universities</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="px-3 mt-5">
           <div className="text-xs">trusted with top universities.</div>
           <div className="pt-3">
