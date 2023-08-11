@@ -45,7 +45,7 @@ import MainImg from "../public/photos/New folder/main2.png";
 import group from "../public/photos/ceritficate_group.png";
 
 import certificate from "../public/photos/uni_ceritfate.png";
-import groupmain from "../public/photos/groupmain.png";
+import groupmain from "../public/photos/group2.png";
 import Image from "next/image";
 function App() {
   const slides = [

@@ -13,12 +13,34 @@ import ProgramBuy from "./priceCardsm";
 import Testimonials from "./testimonials";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Link from "next/link";
+import MainImg from "../public/photos/New folder/main2.png";
+import group from "../public/photos/trianer_university.png";
+import interviewImg from "../public/photos/interview2.png";
+import certificate from "../public/photos/uni_ceritfate.png";
+import groupmain from "../public/photos/group2.png";
 const data = [
   {
     title: "Technical Course",
     detail:
       "We're looking for experinced Technical teacher with required technical knowdlege",
-    tag: "freelance",
+    tag: "course",
+    image: groupmain,
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil explicabo minima ipsum culpa molestias?",
+  },
+  {
+    title: "Interview Prepration",
+    detail:
+      "We're looking for experinced Technical teacher with required technical knowdlege",
+    tag: "interview",
+    image: interviewImg,
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil explicabo minima ipsum culpa molestias?",
+  },
+  {
+    title: "Career Counceling",
+    detail:
+      "We're looking for experinced Technical teacher with required technical knowdlege",
+    tag: "career",
+    image: group,
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil explicabo minima ipsum culpa molestias?",
   },
 ];
@@ -32,6 +54,7 @@ function program() {
 
   useEffect(() => {
     setIsAnimating(!isAnimating);
+    result("course");
     const clear = setTimeout(() => {
       setIsAnimating(false);
       setBorder1(true);
@@ -132,7 +155,7 @@ function program() {
               </button>
               <button
                 onClick={handleClickContact}
-                className="z-10 py-1 px-3 text-md bg-white  hover:text-indigo-500 border-2 hover:border-indigo-600 rounded-lg border-gray-800 text-gray-900  duration-300"
+                className="z-10 py-1 px-3 text-md bg-white animationPulse  hover:text-indigo-500 border-2 hover:border-indigo-600 rounded-lg border-gray-800 text-gray-900  duration-300"
               >
                 Contact Us
               </button>
@@ -186,7 +209,7 @@ function program() {
                 <div className="flex md:flex-col gap-3 md:h-full overflow-x-scroll md:overflow-visible scrollbar-none">
                   <div
                     onClick={() => {
-                      result("freelance");
+                      result("course");
                       borderOne();
                     }}
                     className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
@@ -194,7 +217,7 @@ function program() {
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
-                      <h1>DSA Courses</h1>
+                      <h1>Course</h1>
                       <p className="text-xs">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. A nihil explicabo minima ipsum culpa molestias?
@@ -203,7 +226,7 @@ function program() {
                   </div>
                   <div
                     onClick={() => {
-                      result("freelance");
+                      result("interview");
                       borderTwo();
                     }}
                     className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
@@ -220,7 +243,7 @@ function program() {
                   </div>
                   <div
                     onClick={() => {
-                      result("freelance");
+                      result("career");
                       borderThree();
                     }}
                     className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
@@ -248,7 +271,7 @@ function program() {
                       <div className="w-full">
                         <Image
                           className="w-full h-56 object-cover rounded-md"
-                          src={HeaderImg}
+                          src={item.image}
                           width={230}
                           height={100}
                           quality={80}
