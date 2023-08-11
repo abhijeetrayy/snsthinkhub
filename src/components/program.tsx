@@ -132,7 +132,7 @@ function program() {
               </button>
               <button
                 onClick={handleClickContact}
-                className="z-10 py-1 px-3 text-md hover:text-indigo-500 border-2 hover:border-indigo-600 rounded-lg border-gray-800 text-gray-900  duration-300"
+                className="z-10 py-1 px-3 text-md bg-white  hover:text-indigo-500 border-2 hover:border-indigo-600 rounded-lg border-gray-800 text-gray-900  duration-300"
               >
                 Contact Us
               </button>
