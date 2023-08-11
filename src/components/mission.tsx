@@ -102,8 +102,9 @@ function App() {
             src={slides[currentIndex].url}
             width={200}
             height={100}
+            placeholder="blur"
             alt=""
-            className={`w-full h-full rounded-2xl bg-center bg-cover ${
+            className={`w-full h-full rounded-2xl bg-center bg-cover object-cover ${
               haan ? "fade-in" : ""
             }`}
           />
