@@ -41,24 +41,26 @@ import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import "../css/background.css";
+import MainImg from "../public/photos/New folder/main2.png";
+import group from "../public/photos/ceritficate_group.png";
 
+import certificate from "../public/photos/uni_ceritfate.png";
+import groupmain from "../public/photos/groupmain.png";
+import Image from "next/image";
 function App() {
   const slides = [
     {
-      url: "https://media.istockphoto.com/id/477633485/photo/team-of-successful-university-graduates-raising-their-convocation-caps.jpg?s=612x612&w=0&k=20&c=Cg9aAKKOFJkukureA3hzdnXin42O-GCBP60b4h5CLic=",
+      url: groupmain,
     },
     {
-      url: "https://media.istockphoto.com/id/1359662582/photo/group-of-happy-college-student-stock-photo.jpg?s=612x612&w=0&k=20&c=Oq4d6V5XJi9LayES7cH6n2obZWqVuzJOq2CtSBSiP6g=",
+      url: certificate,
     },
     {
-      url: "https://media.istockphoto.com/id/1143250095/photo/group-of-happy-friends-using-smartphones-for-taking-photos-and-watching-videos-teenagers.jpg?s=612x612&w=0&k=20&c=iMJyps43y2faXp889i5S60NZS1S3KDz7ue3gGqUfhhM=",
+      url: group,
     },
 
     {
-      url: "https://media.istockphoto.com/id/987130494/photo/group-of-students-joking-and-getting-to-know-each-other.jpg?s=612x612&w=0&k=20&c=xzBrI0krhgttDdaAAwvh6mPYLHjiP_vfF7CPvBTAqvo=",
-    },
-    {
-      url: "https://media.istockphoto.com/id/1028286416/photo/group-of-people-jumping-on-the-park-at-dusk-stock-image.jpg?s=612x612&w=0&k=20&c=yPuVL8HBdFtG-gGUJ9UAqHPJ6DYurllQWoeelsPFbkc=",
+      url: MainImg,
     },
   ];
 
@@ -96,12 +98,15 @@ function App() {
     <div className="flex  justify-center">
       <div className="max-w-6xl p-3 flex flex-col md:flex-row items-center">
         <div className="h-[500px] w-full m-auto py-16 px-4 relative group">
-          <div
-            style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+          <Image
+            src={slides[currentIndex].url}
+            width={200}
+            height={100}
+            alt=""
             className={`w-full h-full rounded-2xl bg-center bg-cover ${
               haan ? "fade-in" : ""
             }`}
-          ></div>
+          />
           {/* Left Arrow */}
           <div className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactLeft onClick={prevSlide} size={30} />
