@@ -68,11 +68,11 @@ const Statistic = () => {
             {features.map((item, index) => (
               <div
                 key={index}
-                className="group flex flex-col border  h-full border-indigo-400 p-3 rounded-md  "
+                className="group flex flex-col border  h-full border-indigo-400 p-3 rounded-md hover:bg-indigo-500 duration-300 hover:text-white cursor-default"
               >
                 <div className="flex mb-4 w-fit rounded-lg bg-primary-100 border  overflow-clip ">
                   <Image
-                    className="w-16 h-16 p-2 group-hover:scale-105 duration-300"
+                    className="w-16 h-16 p-2 group-hover:bg-white duration-300"
                     src={item.icon}
                     width={24}
                     height={24}
@@ -81,10 +81,10 @@ const Statistic = () => {
                   />
                 </div>
 
-                <h3 className="mb-2 text-lg font-bold text-gray-700 ">
+                <h3 className="mb-2 text-lg font-bold text-gray-700 group-hover:text-white duration-300">
                   {item.title}
                 </h3>
-                <h4 className="text-gray-500 text-sm ">{item.details}</h4>
+                <h4 className="text-gray-500 text-sm group-hover:text-white duration-300">{item.details}</h4>
               </div>
             ))}
           </div>
