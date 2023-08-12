@@ -66,7 +66,7 @@ function App() {
 
   // const [currentIndex, setCurrentIndex] = useState(0);
   // const [haan, setHaan] = useState(false);
-  const [isLoading, setLoading] = useState(true);
+  // const [isLoading, setLoading] = useState(true);
 
   // function fading() {
   //   setHaan(!haan);
@@ -107,12 +107,7 @@ function App() {
             objectFit="cover"
             className={`
           w-full h-full rounded-2xl duration-700 ease-in-out 
-              ${
-                isLoading
-                  ? "scale-110 blur-2xl grayscale"
-                  : "scale-100 blur-0 grayscale-0"
-              })`}
-            onLoadingComplete={() => setLoading(false)}
+              `}
           />
           {/* Left Arrow */}
           {/* <div className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">

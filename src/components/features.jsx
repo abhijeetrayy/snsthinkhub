@@ -68,11 +68,11 @@ const Statistic = () => {
             {features.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col border  h-full border-indigo-400 p-3 rounded-md  "
+                className="group flex flex-col border  h-full border-indigo-400 p-3 rounded-md  "
               >
                 <div className="flex mb-4 w-fit rounded-lg bg-primary-100 border  overflow-clip ">
                   <Image
-                    className="w-16 h-16 p-2"
+                    className="w-16 h-16 p-2 group-hover:scale-105 duration-300"
                     src={item.icon}
                     width={24}
                     height={24}

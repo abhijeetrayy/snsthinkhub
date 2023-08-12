@@ -110,7 +110,7 @@ function program() {
   return (
     <div className="block md:flex flex-col items-center justify-center">
       <div className="w-full flex lg:items-center flex-col gap-10">
-        <div className="relative flex flex-col justify-center items-center xl:w-[1124px] min-h-[500px] ">
+        <div className="relative flex flex-col justify-center items-center xl:max-w-[1924px] w-full min-h-[500px] ">
           <div className="magicpattern absolute h-full w-full top-0 left-0 right-0 bottom-0">
             {/* <Image
               className="w-full h-full object-cover"
@@ -121,8 +121,8 @@ function program() {
             /> */}
           </div>
           <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center">
-            <div className="z-10 w-full">
-              <p className="p-3 w-full bg-white shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
+            <div className="z-10 max-w-6xl w-full">
+              <p className="p-3  w-full bg-white shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
                 sapiente, quia sequi magnam harum voluptate.
               </p>
@@ -213,8 +213,10 @@ function program() {
                       result("course");
                       borderOne();
                     }}
-                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
-                      border1 ? "border-2 border-indigo-400" : "border-2"
+                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3  ${
+                      border1
+                        ? "border-2 border-indigo-500 bg-indigo-500 text-white"
+                        : "border-2"
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
@@ -231,7 +233,9 @@ function program() {
                       borderTwo();
                     }}
                     className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
-                      border2 ? "border-2 border-indigo-400" : "border-2"
+                      border2
+                        ? "border-2 border-indigo-500 bg-indigo-500 text-white"
+                        : "border-2"
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
@@ -248,7 +252,9 @@ function program() {
                       borderThree();
                     }}
                     className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
-                      border3 ? "border-2 border-indigo-400" : "border-2"
+                      border3
+                        ? "border-2 border-indigo-500 bg-indigo-500 text-white"
+                        : "border-2"
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
