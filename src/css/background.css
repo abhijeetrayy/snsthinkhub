@@ -1,25 +1,18 @@
 .fade-in {
   animation: fadeInAnimation ease-in-out;
   animation-duration: 400ms;
-  
 }
 
 @keyframes fadeInAnimation {
   0% {
-    
-    
     transform: translate(0px, 0px) rotateZ(0.001deg);
-    
-      }
-      50%{
-        opacity: .6;
-        
-        
-        transform: translate(0px, 6px) rotateZ(0.001deg);
-      }
+  }
+  50% {
+    opacity: 0.6;
+
+    transform: translate(0px, 6px) rotateZ(0.001deg);
+  }
   100% {
-    
     transform: translate(0px, 0px) rotateZ(0.001deg);
- 
   }
 }

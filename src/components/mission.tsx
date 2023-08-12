@@ -48,75 +48,81 @@ import certificate from "../public/photos/uni_ceritfate.png";
 import groupmain from "../public/photos/group2.png";
 import Image from "next/image";
 function App() {
-  const slides = [
-    {
-      url: groupmain,
-    },
-    {
-      url: certificate,
-    },
-    {
-      url: group,
-    },
+  // const slides = [
+  //   {
+  //     url: groupmain,
+  //   },
+  //   {
+  //     url: certificate,
+  //   },
+  //   {
+  //     url: group,
+  //   },
 
-    {
-      url: MainImg,
-    },
-  ];
+  //   {
+  //     url: MainImg,
+  //   },
+  // ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [haan, setHaan] = useState(false);
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const [haan, setHaan] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
-  function fading() {
-    setHaan(!haan);
-    const clear = setTimeout(() => {
-      setHaan(false);
-    }, 300);
-    return () => clearTimeout(clear);
-  }
+  // function fading() {
+  //   setHaan(!haan);
+  //   const clear = setTimeout(() => {
+  //     setHaan(false);
+  //   }, 300);
+  //   return () => clearTimeout(clear);
+  // }
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-    fading();
-  };
+  // const prevSlide = () => {
+  //   const isFirstSlide = currentIndex === 0;
+  //   const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+  //   setCurrentIndex(newIndex);
+  //   fading();
+  // };
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-    fading();
-  };
+  // const nextSlide = () => {
+  //   const isLastSlide = currentIndex === slides.length - 1;
+  //   const newIndex = isLastSlide ? 0 : currentIndex + 1;
+  //   setCurrentIndex(newIndex);
+  //   fading();
+  // };
 
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-    fading();
-  };
+  // const goToSlide = (slideIndex) => {
+  //   setCurrentIndex(slideIndex);
+  //   fading();
+  // };
 
   return (
     <div className="flex  justify-center">
-      <div className="max-w-6xl p-3 flex flex-col md:flex-row items-center">
+      <div className="max-w-7xl w-full p-3 flex flex-col md:flex-row items-center">
         <div className="h-[500px] w-full m-auto py-16 px-4 relative group">
           <Image
-            src={slides[currentIndex].url}
-            width={200}
-            height={100}
+            src={groupmain}
             placeholder="blur"
             alt=""
-            className={`w-full h-full rounded-2xl bg-center bg-cover object-cover ${
-              haan ? "fade-in" : ""
-            }`}
+            layout="fill"
+            objectFit="cover"
+            className={`
+          w-full h-full rounded-2xl duration-700 ease-in-out 
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+            onLoadingComplete={() => setLoading(false)}
           />
           {/* Left Arrow */}
-          <div className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+          {/* <div className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactLeft onClick={prevSlide} size={30} />
-          </div>
+          </div> */}
           {/* Right Arrow */}
-          <div className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+          {/* <div className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactRight onClick={nextSlide} size={30} />
-          </div>
-          <div className="flex top-4 justify-center py-2">
+          </div> */}
+          {/* <div className="flex top-4 justify-center py-2">
             {slides.map((slide, slideIndex) => (
               <div
                 key={slideIndex}
@@ -126,7 +132,7 @@ function App() {
                 <RxDotFilled className="text-indigo-600" />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center py-6 ">
           <div className="flex flex-col mx-3  max-w-[990px] items-stretch gap-5 rounded-md p-5 md:py-9">

@@ -51,6 +51,7 @@ function program() {
   const [border1, setBorder1] = useState(false);
   const [border2, setBorder2] = useState(false);
   const [border3, setBorder3] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     setIsAnimating(!isAnimating);
@@ -270,11 +271,15 @@ function program() {
                     <div className="w-full flex flex-col gap-5 justify-center items-start">
                       <div className="w-full">
                         <Image
-                          className="w-full h-56 object-cover rounded-md"
+                          className={`w-full h-56 object-cover rounded-md ${
+                            isLoading
+                              ? "scale-110 blur-2xl grayscale"
+                              : "scale-100 blur-0 grayscale-0"
+                          })`}
+                          onLoadingComplete={() => setLoading(false)}
                           src={item.image}
-                          width={230}
+                          width={400}
                           height={100}
-                          quality={80}
                           placeholder="blur"
                           alt=""
                         />
