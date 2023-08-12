@@ -120,7 +120,7 @@ function program() {
               alt=""
             /> */}
           </div>
-          <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center py-10">
+          <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center ">
             <div className="z-10 max-w-6xl w-full">
               <p className="p-3  w-full bg-indigo-500 text-white  shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab

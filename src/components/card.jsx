@@ -23,7 +23,7 @@ export default function card() {
           </div>
           <div className="w-full flex justify-center">
             <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0 ">
-              <div className="max-w-[300px] flex flex-col bg-indigo-500 p-4 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+              <div className="max-w-[300px] flex flex-col bg-indigo-500 p-4 rounded-xl shadow-lg transform md:hover:scale-105 transition duration-500">
                 <h3 className="mb-3 text-base font-bold text-white">
                   Beginner Friendly
                 </h3>
@@ -115,7 +115,7 @@ export default function card() {
                 </div>
               </div>
 
-              <div className="max-w-[300px] flex flex-col bg-indigo-500 p-4 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+              <div className="max-w-[300px] flex flex-col bg-indigo-500 p-4 rounded-xl shadow-lg transform md:hover:scale-105 transition duration-500">
                 <h3 className="mb-3 text-base font-bold text-white">
                   Intermediate
                 </h3>
@@ -210,7 +210,7 @@ export default function card() {
                 </div>
               </div>
 
-              <div className="max-w-[300px] flex flex-col bg-indigo-500 p-4 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+              <div className="max-w-[300px] flex flex-col bg-indigo-500 p-4 rounded-xl shadow-lg transform md:hover:scale-105 transition duration-500">
                 <h3 className="mb-3 text-base font-bold text-white">
                   Beginner Friendly
                 </h3>
