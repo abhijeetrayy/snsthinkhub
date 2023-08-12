@@ -18,9 +18,9 @@ const Testimonials = () => {
         {TestimonialsData.map((items, index) => (
           <div
             key={index}
-            className="relative   sm:border-2 border-gray-100 mb-5 rounded-lg break-inside-avoid sm:shadow-md md:shadow-lg "
+            className="relative   border-2 border-gray-100 mb-5 rounded-lg break-inside-avoid sm:shadow-md md:shadow-lg "
           >
-            <div className="p-5 relative w-[300px]  flex flex-col gap-1 rounded-md sm:rounded-none border-2 border-gray-100 sm:border-0 shadow-lg sm:shadow-none">
+            <div className="p-5 relative w-[300px]  flex flex-col gap-1 ">
               <div className="flex flex-col mb-3 ">
                 <h1 className="test__title text-xl text-indigo-500 font-bold">
                   {items.name}
