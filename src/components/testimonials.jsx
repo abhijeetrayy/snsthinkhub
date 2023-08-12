@@ -3,7 +3,7 @@ import TestimonialsData from "../json_data/testimonials";
 
 const Testimonials = () => {
   return (
-    <div className="xl:max-w-6xl">
+    <div className="group xl:max-w-6xl">
       <div className=" mb-10 md:mx-auto sm:text-center  md:mb-12">
         <div>
           <p className="text-sm font-bold tracking-wider text-indigo-600 uppercase leading-10">
@@ -14,7 +14,7 @@ const Testimonials = () => {
           Here's what our Student says
         </h2>
       </div>
-      <div className=" overflow-x-scroll scroll-smooth scrollbar-thumb-indigo-400 scrollbar-thin flex  gap-3 ">
+      <div className=" overflow-x-scroll scroll-smooth scrollbar-thumb-indigo-400 group-hover:scrollbar-thumb-gray-500 scrollbar-thin  flex  gap-3">
         {TestimonialsData.map((items, index) => (
           <div
             key={index}

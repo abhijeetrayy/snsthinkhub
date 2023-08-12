@@ -98,7 +98,7 @@ function App() {
   return (
     <div className="flex  justify-center">
       <div className="max-w-7xl w-full p-3 flex flex-col md:flex-row items-center">
-        <div className="h-[500px] w-full m-auto py-16 px-4 relative group">
+        <div className="max-h-[400px] h-full w-full m-auto py-16 px-4 relative group">
           <Image
             src={groupmain}
             placeholder="blur"
