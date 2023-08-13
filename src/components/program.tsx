@@ -27,7 +27,7 @@ const data = [
     image: groupmain,
     points: [
       {
-        tilte: "Technical programs",
+        title: "Technical programs",
         details: "Expert-led workshops for B.tech and BCA students.",
       },
       {
@@ -42,20 +42,44 @@ const data = [
     ],
   },
   {
-    title: "Interview Prepration",
+    title: "Career Mapping",
     detail:
-      "We're looking for experinced Technical teacher with required technical knowdlege",
+      "Empowering students with personalized career strategies and counseling.",
     tag: "interview",
     image: interviewImg,
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil explicabo minima ipsum culpa molestias?",
+    points: [
+      { title: "Personalized guidance", details: "" },
+      {
+        title: "Long term planning",
+        details: "",
+      },
+      {
+        title: "Work-life balance",
+        details: "",
+      },
+      {
+        title: "Job satisfaction",
+        details: "",
+      },
+    ],
   },
   {
-    title: "Career Counceling",
-    detail:
-      "We're looking for experinced Technical teacher with required technical knowdlege",
+    title: "Master mentoring",
+    detail: "Elevating potential under masterful mentors.",
     tag: "career",
     image: group,
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil explicabo minima ipsum culpa molestias?",
+    points: [
+      { title: "Skill development" },
+      {
+        title: "Long term support",
+      },
+      {
+        title: "Enhanced decision making",
+      },
+      {
+        title: "Faster learning curve",
+      },
+    ],
   },
 ];
 
@@ -275,13 +299,14 @@ function program() {
         </div>
         <div ref={ref} className="lg:flex lg:w-full justify-center p-3">
           <div className=" lg:max-w-6xl lg:flex flex-col justify-center items-center">
+            <hr className="border max-w-lg w-full" />
             <div className=" w-full flex justify-center my-5">
               <div className="flex flex-col justify-center items-center">
-                <h2 className="mb-4  text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
+                <h2 className="mb-2  text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
                   Campus Program's
                 </h2>
                 <p className="text-gray-600 sm:text-sm ">
-                  EMPOWERING STUDENTS WITH YOU
+                  Empowering students with you.
                 </p>
               </div>
             </div>
@@ -300,7 +325,7 @@ function program() {
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
-                      <h1>Professional Programs</h1>
+                      <h1>Programs</h1>
                       <p className="text-xs">
                         Providing students with advanced preparation and
                         career-focused courses.
@@ -369,18 +394,21 @@ function program() {
                           alt=""
                         />
                       </div>
-                      <div className="flex  flex-col gap-3 px-4">
+                      <div className="flex  flex-col gap-1 px-4">
                         <h1 className=" text-2xl text-gray-600 font-bold">
                           {item.title}
                         </h1>
                         <p className="text-gray-700 text-sm">{item.detail}</p>
                         <div>
-                          <ul>
-                            <li>hello</li>
-                            <li>hello</li>
-                            <li>hello</li>
-                            <li>hello</li>
-                          </ul>
+                          <div className="w-full">
+                            {item?.points?.map((items, index) => (
+                              <div className="">
+                                <span className="text-xs text-gray-700 ">
+                                  {index + 1} {items.title}
+                                </span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </div>
 
@@ -414,7 +442,7 @@ function program() {
             </div>
           </div>
           <div className="flex flex-wrap justify-center w-full gap-4 my-7">
-            <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
+            <div className=" start-0 columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
               <ProgramBuy
                 title={"Business Building Blocks"}
                 data={programs["Business Building Blocks"]}
@@ -452,9 +480,15 @@ function program() {
             </div>
           </div>
           <div className="flex flex-wrap justify-center w-full gap-4 my-7">
-            <ProgramBuy title={"Tech Titans"} data={programs["Tech Titans"]} />
+            <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
+              <ProgramBuy
+                title={"Tech Titans"}
+                data={programs["Tech Titans"]}
+              />
+            </div>
           </div>
         </div>
+
         <div className="xl:flex justify-center p-3">
           <div className="xl:max-w-6xl">
             <Testimonials />

@@ -42,9 +42,11 @@ export default function priceCardsm({ data, title }) {
           </li>
         ))}
       </ul>
-      <p className={` text-xs text-white ${value ? "block" : "hidden"}`}>
-        etc.
-      </p>
+      <div>
+        <p className={` text-xs text-white ${value ? "block" : "hidden"}`}>
+          etc.
+        </p>
+      </div>
       <button
         className={`group text-white ${value ? "hidden" : "block"}`}
         onClick={fullview}
