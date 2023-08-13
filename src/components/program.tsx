@@ -227,16 +227,15 @@ function program() {
           <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center c">
             <div className="z-10 max-w-6xl w-full">
               <p className="p-3  w-full bg-indigo-500 text-white  shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
-                sapiente, quia sequi magnam harum voluptate.
+                University programs - Business only
               </p>
             </div>
             <div className="flex items-center flex-col gap-3">
-              <h1 className="z-10 text-5xl sm:text-6xl font-bold text-gray-800 text-center">
-                One Membership
+              <h1 className="z-10 text-5xl  font-bold text-gray-800 text-center">
+                Want to increase your placement numbers ?
               </h1>
               <div
-                className="z-10 p-2 flex-wrap bg-gray-800 text-white rounded-xl text-[1.9rem] w-64 md:w-[400px]  bg-cover object-cover scrollbar-none "
+                className="z-10 p-2 flex-wrap bg-gray-800 text-white rounded-xl text-[1.9rem] max-w-2xl w-full  bg-cover object-cover scrollbar-none "
                 style={{
                   whiteSpace: "nowrap",
                 }}
@@ -245,8 +244,10 @@ function program() {
                   style={{ overflow: "hidden" }}
                   delay={0}
                   className="text-5xl"
+                  direction="left"
                 >
-                  360 needed solution
+                  S&S hub provides your students an extra edge that they need to
+                  get placed in the top most companies.
                 </Marquee>
               </div>
             </div>
