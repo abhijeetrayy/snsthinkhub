@@ -460,6 +460,8 @@ function program() {
                 title={"Finance and Accounting Wizards"}
                 data={programs["Finance and Accounting Wizards"]}
               />
+            </div>
+            <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
               <ProgramBuy
                 title={"People Powerhouse"}
                 data={programs["People Powerhouse"]}

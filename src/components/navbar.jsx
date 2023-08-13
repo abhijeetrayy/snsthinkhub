@@ -145,15 +145,13 @@ function Navbar() {
                                   </Link>
                                 ))}
 
-                                
-                                  <Link
-                                  onClick={()=> setOpen(false)}
-                                      href={"/home/program"}
-                                    className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
-                                  >
-                                    Try Business
-                                  </Link>
-                                
+                                <Link
+                                  onClick={() => setOpen(false)}
+                                  href={"/home/program"}
+                                  className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
+                                >
+                                  For Universities
+                                </Link>
                               </div>
                               <Image
                                 alt=""
@@ -189,15 +187,13 @@ function Navbar() {
         </div>
 
         <div className="hidden  lg:flex items-center nav__item ">
-          
-            <Link
-            onClick={()=> setOpen(false)}
-              href={"/home/program"}
-              className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
-            >
-              Try Business
-            </Link>
-         
+          <Link
+            onClick={() => setOpen(false)}
+            href={"/home/program"}
+            className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
+          >
+            For Universities
+          </Link>
         </div>
       </nav>
     </div>
