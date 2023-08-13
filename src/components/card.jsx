@@ -33,7 +33,7 @@ export default function card() {
                     src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt="Colors"
                   />
-                  <p className="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
+                  <p className="absolute top-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
                     FREE
                   </p>
                 </div>
@@ -107,7 +107,7 @@ export default function card() {
                   <Link href={"/home/courses/hello"}>
                     <ClickButton
                       style={
-                        "mt-4 text-lg w-full text-gray-800 bg-white  py-2 rounded-xl shadow-lg"
+                        "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white  py-2 rounded-lg shadow-lg"
                       }
                       data={"Buy Lesson"}
                     />
@@ -125,10 +125,10 @@ export default function card() {
                     src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
                     alt="Colors"
                   />
-                  <p className="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
+                  <p className="absolute top-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
                     $12
                   </p>
-                  <p className="absolute top-0 right-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">
+                  <p className="absolute top-0 right-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">
                     %20 Discount
                   </p>
                 </div>
@@ -202,7 +202,7 @@ export default function card() {
                   <Link href={"/home/courses/WebDevelopment"} className="">
                     <ClickButton
                       style={
-                        "mt-4 text-lg w-full text-gray-800 bg-white text-gray-900 py-2 rounded-xl shadow-lg"
+                        "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white py-2 rounded-lg shadow-lg"
                       }
                       data={"Start Watching Now"}
                     />
@@ -220,7 +220,7 @@ export default function card() {
                     src="https://images.unsplash.com/photo-1561835491-ed2567d96913?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
                     alt="Colors"
                   />
-                  <p className="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
+                  <p className="absolute top-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
                     $50
                   </p>
                 </div>
@@ -294,7 +294,7 @@ export default function card() {
                   <Link href={"/home/courses/WebDevelopment"}>
                     <ClickButton
                       style={
-                        "mt-4 text-lg w-full text-gray-800 bg-white text-gray-800 py-2 rounded-xl shadow-lg"
+                        "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white text-gray-100 py-2 rounded-lg shadow-lg"
                       }
                       data={"Buy Lesson"}
                     />

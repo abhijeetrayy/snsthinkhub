@@ -20,12 +20,26 @@ import certificate from "../public/photos/uni_ceritfate.png";
 import groupmain from "../public/photos/group2.png";
 const data = [
   {
-    title: "Technical Course",
+    title: "Professional Programs",
     detail:
-      "We're looking for experinced Technical teacher with required technical knowdlege",
+      "Providing students with advanced preparation and career-focused courses.",
     tag: "course",
     image: groupmain,
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil explicabo minima ipsum culpa molestias?",
+    points: [
+      {
+        tilte: "Technical programs",
+        details: "Expert-led workshops for B.tech and BCA students.",
+      },
+      {
+        title: "Soft skills enhancement programs",
+        details:
+          "Programs focused on enhancing student’s communication finesse.",
+      },
+      {
+        title: "Business programs",
+        details: "Business perspective enhancing skill-intensive MBA programs.",
+      },
+    ],
   },
   {
     title: "Interview Prepration",
@@ -44,6 +58,72 @@ const data = [
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nihil explicabo minima ipsum culpa molestias?",
   },
 ];
+
+const programs = {
+  "Business Building Blocks": [
+    "ChatGPT Masterclass",
+    "Fundamentals of Business Analytics",
+    "AI-Integrated Digital Marketing Masterclass for Beginners",
+    "Public Speaking from Scratch",
+    "Planning and Decision Making",
+    "Solving Complex Problems",
+  ],
+  "Marketing Mavericks": [
+    "Google Ads Masterclass",
+    "Microsoft Ads Masterclass",
+    "Facebook and Instagram Ads With AI Tools",
+    "Linkedin Ads Masterclass",
+    "Marketing Management Mastery",
+    "Google Analytics Masterclass: Beginners to Advanced",
+    "SEO With Content Marketing Masterclass",
+    "Google Ads Optimization",
+    "Email Marketing",
+    "WhatsApp Marketing and Automation",
+    "Canva Mastery",
+  ],
+  "Tech Titans": [
+    "Python for Everyone: Beginners Level",
+    "Python Intermediate Level",
+    "Microsoft SQL",
+    "Data Analysis Using Tableau",
+    "Excel Essentials For Beginners",
+    "Excel Skills for Intermediate Users",
+    "Microsoft Power BI: A Complete Hands-on Training",
+    "MS Excel For Data Science and Machine Learning",
+    "Artificial Intelligence and Machine Learning Using Python",
+    "Absolute Beginners Guide to AWS with Cloud Computing",
+    "Statistics for Data Science & Machine Learning",
+  ],
+  "Sales and Negotiation Ninjas": [
+    "Sales Mastery: Close Any Sale",
+    "Negotiate to Win",
+    "Inside Sales & Business Development Certificate Program",
+  ],
+  "Finance and Accounting Wizards": [
+    "Evaluation of Investment Projects",
+    "GST: The Complete Goods & Service Tax Course",
+    "Accounting for Beginners",
+    "Financial Literacy",
+    "Stock Market Basics for Beginners",
+    "Guide to General Banking",
+  ],
+  "Personal Growth and Empowerment": [
+    "Enhance Your Emotional Intelligence",
+    "Design Thinking for Innovation",
+    "Unlock Creativity",
+    "Unleash Your Potential",
+    "How to be a Master Communicator",
+    "Crack Your Next Interview",
+    "Oratory and Public Speaking Mastery",
+    "Beginners Guide to PowerPoint",
+    "Personality Development For Advancement in Career",
+  ],
+  "People Powerhouse": [
+    "Recruitment and Selection",
+    "Building High-Performing Teams",
+    "Delegation and Empowerment",
+  ],
+};
 
 function program() {
   const [filtered, setfiltered] = useState(data);
@@ -120,7 +200,7 @@ function program() {
               alt=""
             /> */}
           </div>
-          <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center ">
+          <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center c">
             <div className="z-10 max-w-6xl w-full">
               <p className="p-3  w-full bg-indigo-500 text-white  shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
@@ -165,17 +245,17 @@ function program() {
               <div className="w-full flex justify-center ">
                 <div className="flex flex-row justify-evenly items-center max-w-5xl w-full bg-gradient-to-r from-indigo-200 to-indigo-50  rounded-xl p-4 h-36">
                   <div className="flex items-center flex-col gap-4">
-                    <span className="font-bold text-md">6+ year</span>
-                    <span className="text-xs">of Experience</span>
+                    <span className="font-bold text-md">2019</span>
+                    <span className="text-xs">Founded</span>
                   </div>
 
                   <div className="flex items-center flex-col gap-4">
-                    <span className="font-bold text-md">5000+</span>
+                    <span className="font-bold text-md">3000+</span>
                     <span className="text-xs">Students</span>
                   </div>
                   <div className="flex items-center flex-col gap-4">
-                    <span className="font-bold text-md">15+</span>
-                    <span className="text-xs">Avg CTC</span>
+                    <span className="font-bold text-md">10+</span>
+                    <span className="text-xs">Faculty experience</span>
                   </div>
                   <div className="flex items-center flex-col gap-4">
                     <span className="font-bold text-md">10+</span>
@@ -201,7 +281,7 @@ function program() {
                   Campus Program's
                 </h2>
                 <p className="text-gray-600 sm:text-sm ">
-                  What your student needs
+                  EMPOWERING STUDENTS WITH YOU
                 </p>
               </div>
             </div>
@@ -213,17 +293,17 @@ function program() {
                       result("course");
                       borderOne();
                     }}
-                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3  ${
+                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:border-indigo-500 duration-300 border p-3  ${
                       border1
                         ? "border-2 border-indigo-500 bg-indigo-500 text-white"
                         : "border-2"
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
-                      <h1>Course</h1>
+                      <h1>Professional Programs</h1>
                       <p className="text-xs">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. A nihil explicabo minima ipsum culpa molestias?
+                        Providing students with advanced preparation and
+                        career-focused courses.
                       </p>
                     </div>
                   </div>
@@ -232,17 +312,17 @@ function program() {
                       result("interview");
                       borderTwo();
                     }}
-                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
+                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:border-indigo-500 duration-200 border p-3 ${
                       border2
                         ? "border-2 border-indigo-500 bg-indigo-500 text-white"
                         : "border-2"
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
-                      <h1>Interview Prepration</h1>
+                      <h1>Counseling </h1>
                       <p className="text-xs">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. A nihil explicabo minima ipsum culpa molestias?
+                        Empowering students with personalized career strategies
+                        and counseling.
                       </p>
                     </div>
                   </div>
@@ -251,17 +331,16 @@ function program() {
                       result("career");
                       borderThree();
                     }}
-                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:scale-105 duration-300 border p-3 ${
+                    className={`flex-1 rounded-lg cursor-pointer w-56 md:w-auto shadow-md md:hover:border-indigo-500 duration-300 border p-3 ${
                       border3
                         ? "border-2 border-indigo-500 bg-indigo-500 text-white"
                         : "border-2"
                     }`}
                   >
                     <div className="flex gap-3 w-56 md:w-auto flex-col">
-                      <h1>Career Counseling</h1>
+                      <h1>Mentoring </h1>
                       <p className="text-xs">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. A nihil explicabo minima ipsum culpa molestias?
+                        Elevating potential under masterful mentors.
                       </p>
                     </div>
                   </div>
@@ -320,9 +399,43 @@ function program() {
             </div>
           </div>
         </div>
-        <div className="xl:flex justify-center p-3">
-          <div className="xl:max-w-6xl">
-            <Testimonials />
+
+        <div>
+          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16 px-3">
+            <div className="max-w-6xl">
+              <hr className="border" />
+              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
+                Business/Finance Program's
+              </h2>
+              <p className="text-gray-600 sm:text-sm ">
+                Program's are tageted to Bachlor of Business and Finance or BBA,
+                BCOM, MBA etc.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center w-full gap-4 my-7">
+            <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
+              <ProgramBuy
+                title={"Business Building Blocks"}
+                data={programs["Business Building Blocks"]}
+              />
+              <ProgramBuy
+                title={"Marketing Mavericks"}
+                data={programs["Marketing Mavericks"]}
+              />
+              <ProgramBuy
+                title={"Personal Growth and Empowerment"}
+                data={programs["Personal Growth and Empowerment"]}
+              />
+              <ProgramBuy
+                title={"Finance and Accounting Wizards"}
+                data={programs["Finance and Accounting Wizards"]}
+              />
+              <ProgramBuy
+                title={"People Powerhouse"}
+                data={programs["People Powerhouse"]}
+              />
+            </div>
           </div>
         </div>
         <div>
@@ -330,19 +443,24 @@ function program() {
             <div className="max-w-6xl">
               <hr className="border" />
               <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-                Campus Program's
+                Technical Program's
               </h2>
               <p className="text-gray-600 sm:text-sm ">
-                What makes S&S different ?
+                Program's are tageted to Bachlor of technology or BCA, MCA,
+                MTECH etc.
               </p>
             </div>
           </div>
           <div className="flex flex-wrap justify-center w-full gap-4 my-7">
-            <ProgramBuy />
-            <ProgramBuy />
-            <ProgramBuy />
+            <ProgramBuy title={"Tech Titans"} data={programs["Tech Titans"]} />
           </div>
         </div>
+        <div className="xl:flex justify-center p-3">
+          <div className="xl:max-w-6xl">
+            <Testimonials />
+          </div>
+        </div>
+
         <div className="w-full">
           <div className="w-full" ref={contactRef}>
             <ContactUs />

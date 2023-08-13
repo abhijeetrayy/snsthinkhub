@@ -96,7 +96,7 @@ function App() {
   // };
 
   return (
-    <div className="flex  justify-center">
+    <div className="flex  justify-center my-7">
       <div className="max-w-7xl w-full p-3 flex flex-col md:flex-row items-center">
         <div className="max-h-[400px] h-full w-full m-auto py-16 px-4 relative group">
           <Image
