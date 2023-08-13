@@ -3,7 +3,7 @@ import TestimonialsData from "../json_data/testimonials";
 
 const Testimonials = () => {
   return (
-    <div className="group xl:max-w-6xl">
+    <div className="group max-w-6xl w-full">
       <div className=" mb-10 md:mx-auto sm:text-center  md:mb-12">
         <div>
           <p className="text-sm font-bold tracking-wider text-indigo-600 uppercase leading-10">

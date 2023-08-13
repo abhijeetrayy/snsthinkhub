@@ -214,7 +214,7 @@ function program() {
   return (
     <div className="block md:flex flex-col items-center justify-center">
       <div className="w-full flex lg:items-center flex-col gap-10">
-        <div className="relative flex flex-col justify-center items-center xl:max-w-[1524px] w-full min-h-[500px]">
+        <div className="relative flex flex-col justify-center items-center max-w-[1524px] w-full min-h-[500px]">
           <div className="   absolute h-full w-full top-0 left-0 right-0 bottom-0">
             {/* <Image
               className="w-full h-full object-cover"
@@ -225,17 +225,17 @@ function program() {
             /> */}
           </div>
           <div className=" z-10 w-full flex flex-col gap-10 items-center justify-center c">
-            <div className="z-10 max-w-6xl w-full">
+            <div className="z-10 max-w-6xl w-full px-3">
               <p className="p-3  w-full bg-indigo-500 text-white  shadow-xl rounded-lg sm:w-96 text-sm float-right hover:rotate-3 rotate-0 duration-500 cursor-pointer">
                 University programs - Business only
               </p>
             </div>
             <div className="flex items-center flex-col gap-3">
-              <h1 className="z-10 text-5xl  font-bold text-gray-800 text-center">
+              <h1 className="z-10 text-2xl smd:text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center">
                 Want to increase your placement numbers ?
               </h1>
               <div
-                className="z-10 p-2 flex-wrap bg-gray-800 text-white rounded-xl text-[1.9rem] max-w-2xl w-full  bg-cover object-cover scrollbar-none "
+                className="z-10 p-2 flex-wrap bg-gray-800 text-white rounded-xl text-[1.9rem] w-64 sm:w-[555px]  bg-cover object-cover scrollbar-none "
                 style={{
                   whiteSpace: "nowrap",
                 }}
@@ -279,7 +279,7 @@ function program() {
                     <span className="text-xs">Students</span>
                   </div>
                   <div className="flex items-center flex-col gap-4">
-                    <span className="font-bold text-md">10+</span>
+                    <span className="font-bold text-md">10+ year</span>
                     <span className="text-xs">Faculty experience</span>
                   </div>
                   <div className="flex items-center flex-col gap-4">
