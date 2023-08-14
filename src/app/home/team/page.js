@@ -7,8 +7,8 @@ import Atoshi from "../../../public/img/team/Atoshi.jpg";
 
 import Sir from "../../../public/img/team/Sir.jpg";
 const data = [
-  { Name: "Sangita Badoni", Position: "Founder", Image: img1 },
-  { Name: "Harshit Munjal", Position: "Technical Coordinator", Image: img2 },
+  { Name: "Sangita Badoni", Position: "Founder/CEO", Image: img1 },
+  { Name: "Harshit Munjal", Position: "Cheif Operating Officer", Image: img2 },
   { Name: "Atoshi Roy", Position: "SoftSkill Trainer", Image: Atoshi },
   { Name: "Sharad Gupta", Position: "Technical Trainer", Image: Sir },
 

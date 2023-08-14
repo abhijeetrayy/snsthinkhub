@@ -263,14 +263,14 @@ function program() {
                 onClick={handleClickContact}
                 className="z-10 py-1 px-3 text-md bg-white animationPulse  hover:text-indigo-500 border-2 hover:border-indigo-600 rounded-lg border-gray-800 text-gray-900  duration-300"
               >
-                Contact Us
+                Enquire now
               </button>
             </div>
             <div className="w-full">
               <div className="w-full flex justify-center ">
                 <div className="flex flex-row justify-evenly items-center max-w-5xl w-full bg-gradient-to-r from-indigo-200 to-indigo-50  rounded-xl p-4 h-36">
                   <div className="flex items-center flex-col gap-4">
-                    <span className="font-bold text-md">2019</span>
+                    <span className="font-bold text-md">2018</span>
                     <span className="text-xs">Founded</span>
                   </div>
 
@@ -292,7 +292,7 @@ function program() {
           </div>
         </div>
 
-        <div className="px-3 mt-5">
+        <div className="px-3 mt-5 max-w-5xl w-full">
           <div className="text-xs">trusted with top universities.</div>
           <div className="pt-3">
             <Workwith />

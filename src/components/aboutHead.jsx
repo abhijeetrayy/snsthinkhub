@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import AboutImg from "../public/img/header.jpg";
+import AboutImg from "../public/photos/groupMam.jpg";
 import Link from "next/link";
 
 const AboutHeader = () => {

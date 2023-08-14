@@ -103,6 +103,7 @@ function App() {
             src={groupmain}
             placeholder="blur"
             alt=""
+            quality={70}
             layout="fill"
             objectFit="cover"
             className={`
