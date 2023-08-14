@@ -477,7 +477,7 @@ function program() {
                 Technical Program's
               </h2>
               <p className="text-gray-600 sm:text-sm ">
-                Program's are tageted to Bachlor of technology or BCA, MCA,
+                Program's are tageted to Bachlor's of technology or BCA, MCA,
                 MTECH etc.
               </p>
             </div>
