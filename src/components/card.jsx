@@ -34,14 +34,14 @@ export default function card() {
                     alt="Colors"
                   />
                   <p className="absolute top-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
-                    FREE
+                    Enroll
                   </p>
                 </div>
                 <Link
                   href={"/home/courses/web-development-2023"}
                   className="mt-4 text-white text-xl font-bold cursor-pointer"
                 >
-                  Javascript Bootcamp for Absolute Beginners
+                  Java Full Stack - Complete Course
                 </Link>
                 <div className="mt-4 text-sm text-white flex flex-col gap-1">
                   <div className="flex space-x-1 items-center ">
@@ -61,7 +61,7 @@ export default function card() {
                         />
                       </svg>
                     </span>
-                    <p>1:34:23 Minutes</p>
+                    <p>80 Hours</p>
                   </div>
                   <div className="flex space-x-1 items-center ">
                     <span>
@@ -80,7 +80,7 @@ export default function card() {
                         />
                       </svg>
                     </span>
-                    <p>3 Parts</p>
+                    <p>15 Lesson's</p>
                   </div>
                   <div className="flex space-x-1 items-center ">
                     <span>
@@ -99,7 +99,7 @@ export default function card() {
                         />
                       </svg>
                     </span>
-                    <p>Vanilla JS</p>
+                    <p>Java</p>
                   </div>
                 </div>
                 <div className="flex-grow">{""}</div>
@@ -126,17 +126,17 @@ export default function card() {
                     alt="Colors"
                   />
                   <p className="absolute top-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
-                    $12
+                    Enroll
                   </p>
-                  <p className="absolute top-0 right-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">
+                  {/* <p className="absolute top-0 right-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">
                     %20 Discount
-                  </p>
+                  </p> */}
                 </div>
                 <Link
-                  href={"/home/courses/web-development-2023"}
+                  href={""}
                   className="mt-4 text-white text-xl font-bold cursor-pointer"
                 >
-                  Write a Gatsby plugin using Typescript
+                  Introduction to Data Structure
                 </Link>
                 <div className="text-sm mt-4 flex flex-col gap-1 text-white">
                   <div className="flex space-x-1 items-center ">
@@ -156,7 +156,7 @@ export default function card() {
                         />
                       </svg>
                     </span>
-                    <p>1:34:23 Minutes</p>
+                    <p>120 Hours</p>
                   </div>
                   <div className="flex space-x-1 items-center ">
                     <span>
@@ -194,17 +194,17 @@ export default function card() {
                         />
                       </svg>
                     </span>
-                    <p>TypeScript</p>
+                    <p>Java / C++</p>
                   </div>
                 </div>
                 <div className="flex-grow">{""}</div>
                 <div className="">
-                  <Link href={"/home/courses/WebDevelopment"} className="">
+                  <Link href={""} className="">
                     <ClickButton
                       style={
                         "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white py-2 rounded-lg shadow-lg"
                       }
-                      data={"Start Watching Now"}
+                      data={"Comming Soon ..."}
                     />
                   </Link>
                 </div>
@@ -221,14 +221,14 @@ export default function card() {
                     alt="Colors"
                   />
                   <p className="absolute top-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
-                    $50
+                    Enroll
                   </p>
                 </div>
                 <Link
-                  href={"/home/courses/web-development-2023"}
+                  href={""}
                   className="mt-4 text-white text-xl font-bold cursor-pointer"
                 >
-                  Advanced React Native for Sustainability
+                  Verbal Ability - Interview and Public speaking
                 </Link>
                 <div className="text-sm mt-4 flex flex-col gap-1 text-white">
                   <div className="flex space-x-1 items-center ">
@@ -248,7 +248,7 @@ export default function card() {
                         />
                       </svg>
                     </span>
-                    <p>1:34:23 Minutes</p>
+                    <p>30 Hours</p>
                   </div>
                   <div className="flex space-x-1 items-center ">
                     <span>
@@ -286,17 +286,17 @@ export default function card() {
                         />
                       </svg>
                     </span>
-                    <p>Vanilla JS</p>
+                    <p>Soft Skills</p>
                   </div>
                 </div>
                 <div className="flex-grow">{""}</div>
                 <div>
-                  <Link href={"/home/courses/WebDevelopment"}>
+                  <Link href={""}>
                     <ClickButton
                       style={
                         "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white text-gray-100 py-2 rounded-lg shadow-lg"
                       }
-                      data={"Buy Lesson"}
+                      data={"Comming Soon ..."}
                     />
                   </Link>
                 </div>

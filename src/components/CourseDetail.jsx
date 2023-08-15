@@ -13,69 +13,74 @@ export default function CourseDetail() {
   return (
     <div className="w-full flex justify-center overflow-hidden">
       <div className="max-w-[1324px]">
-        <div className="flex flex-col-reverse  mt-9 justify-between md:flex-row">
+        <div className="flex flex-col-reverse  mt-6 md:flex-row ">
           <div className="flex flex-col gap-5 md:px-10 px-4">
-            <div className="hidden md:flex flex-col gap-5 bg-indigo-600 p-3 rounded-lg">
+            <div className="hidden w-full md:flex flex-col gap-5 bg-indigo-600 p-3 rounded-lg">
               <h2 className="text-5xl font-bold text-white">
-                Become a professional Web Developer from Scratch
+                Java Full Stack - 2023 Complete Course
               </h2>
 
               <div>
                 <p className="text-md text-gray-200">
-                  This course covers all you need to know about becoming a top
-                  skilled web developer even if you never programmed before!
+                  No prior programming experience? No problem! This
+                  comprehensive Java Fullstack online course ensures you acquire
+                  all the essential skills to become a successful web developer.
                 </p>
               </div>
               <div>
-                <span className="text-gray-200 hover:text-gray-300">
-                  1652 Rating | 4.3 Reviews
-                </span>
+                {/* <span className="text-gray-200 hover:text-gray-300">
+                    1652 Rating | 4.3 Reviews
+                  </span> */}
               </div>
             </div>
             <div className="flex flex-col gap-5 w-full">
               <h2 className="text-2xl font-bold">What You will Learn</h2>
               <div>
                 <p className=" text-gray-500">
-                  Charles tickety-boo squiffy nice one cockup pardon you get
-                  stuffed mate my good sir geeza. Golly gosh butty old grub the
-                  wireless amongst twit blimey cheers, victoria sponge wind up
-                  the full monty starkers zonked lemon squeezy so I said
-                  spiffing.!
+                  This comprehensive course is designed to provide you with a strong foundation in Java programming and essential web development concepts.
                 </p>
               </div>
               <div>
                 <ul className="flex gap-5 flex-col pl-3">
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> "The
-                    Complete Freelancer Guide" e-Book
+                    <TiTick className="text-indigo-500 text-2xl" />  <span className="text-sm text-gray-600">
+
+                      "The Grasp
+                      Java essentials: OOPs, Arrays, testing, debugging,
+                      exceptions, API, and Collections for robust coding.
+                    </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> 30 Free
-                    Responsive Templates
+                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
+
+                      30 Free
+                      Advanced Java skills: Lambdas, Streams, SQL, JDBC,
+                      Hibernate, Spring, Restful services for modern development
+                    </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> Make REAL
-                    life web apps with our final projects
+                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
+
+                      Make REAL
+                      Web basics: CSS, XML, Servlets, JSP, Spring Boot for dynamic
+                      pages and Restful Microservices.
+                    </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> PDF Manuals
-                    and Guides
+                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
+
+                      PDF Manuals
+                      Database magic: SQL, SQL Joins, Hibernate mapping, advanced
+                      queries with Hibernate Query Language.
+                    </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> Massive Q&A
-                    Community
-                  </li>
-                  <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> Improvement
-                    Suggestions for Course
-                  </li>
-                  <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> Learn to get
-                    free hosting forever
-                  </li>
-                  <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> All Lectures
-                    and Projects Source Codes
+                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
+
+                      Massive Q&A
+                      Modern web: Angular, TypeScript, Components, Forms, Routing,
+                      SPA Framework for interactive interfaces.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -84,7 +89,7 @@ export default function CourseDetail() {
               <div>
                 <h2 className="text-2xl font-bold">Contet</h2>
                 <p className=" text-gray-500">
-                  3 sections • 190 lectures • 26h 41m total length
+                  5 sections • 80 Hours
                 </p>
               </div>
               <div className="max-w-[700px] p-3 border rounded-lg">
@@ -92,111 +97,123 @@ export default function CourseDetail() {
               </div>
             </div>
             <div className="max-w-[790px] px-5 py-3 flex flex-col gap-7">
+
               <div className="flex flex-col gap-5">
                 <h2 className="text-2xl font-bold">Course Description</h2>
                 <div>
                   <p className=" text-gray-500">
-                    Become a Web Developer from Scratch" is probably one of the
-                    most complete and comprehensive online courses you will ever
-                    get to see covering web development from top to bottom. In
-                    more than 30 hours of content, this course will cover all
-                    you need to know about how to become a top skilled web
-                    developer even if you never programmed before.
-                  </p>
-                </div>
-                <div>
-                  <ul className="flex gap-5 flex-col pl-6 ">
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> "The
-                      Complete Freelancer Guide" e-Book
-                    </li>
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> 30 Free
-                      Responsive Templates
-                    </li>
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> Make REAL
-                      life web apps with our final projects
-                    </li>
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> PDF
-                      Manuals and Guides
-                    </li>
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> Massive
-                      Q&A Community
-                    </li>
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />{" "}
-                      Improvement Suggestions for Course
-                    </li>
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> Learn to
-                      get free hosting forever
-                    </li>
-                    <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> All
-                      Lectures and Projects Source Codes
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="flex flex-col gap-5">
-                <h2 className="text-2xl font-bold">Who this course is for:</h2>
-                <div>
-                  <p className=" text-gray-500">
-                    Charles tickety-boo squiffy nice one cockup pardon you get
-                    stuffed mate my good sir geeza. Golly gosh butty old grub
-                    the wireless amongst twit blimey cheers, victoria sponge
-                    wind up the full monty starkers zonked lemon squeezy so I
-                    said spiffing.!
+                    Through a series of carefully structured lessons, you will progressively build your skills and knowledge, starting with fundamental programming concepts and culminating in advanced web development techniques.
                   </p>
                 </div>
                 <div>
                   <ul className="flex gap-5 flex-col pl-6">
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> "The
-                      Complete Freelancer Guide" e-Book
+                      Object-Oriented Programming (OOP)
                     </li>
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> 30 Free
-                      Responsive Templates
+                      Array Manipulation in Java
                     </li>
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> Make REAL
-                      life web apps with our final projects
+                      Java Code Quality
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> PDF
-                      Manuals and Guides
+                      <TiTick className="text-indigo-500 text-2xl" /> PDF Java
+                      Error Handling & APIs
                     </li>
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> Massive
-                      Q&A Community
+                      Functional Programming in Java
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />{" "}
-                      Improvement Suggestions for Course
+                      <TiTick className="text-indigo-500 text-2xl" /> DDatabase
+                      Fundamentals & Joins
                     </li>
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> Learn to
-                      get free hosting forever
+                      Data Stream Manipulation
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> All
-                      Lectures and Projects Source Codes
+                      <TiTick className="text-indigo-500 text-2xl" />  JDBC:
+                      Java Database Connectivity
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />  Java
+                      EE Overview
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />  Web
+                      Development Basics
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      Fundamentals
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />  IoC &
+                      DI Concepts
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      Bean Understanding
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      Boot for Web Development
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Microservices with Spring Boot
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      Boot for Web Development
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Hibernate ORM Basics
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Hibernate Mapping Techniques
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Hibernate Querying
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Angular & TypeScript Basics
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Angular Component & Module Concepts
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Angular Data Binding & Forms
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Angular Routing Basics
+                    </li>
+                    <li className="flex flex-row">
+                      <TiTick className="text-indigo-500 text-2xl" />
+                      Angular & TypeScript Basics
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             {/* <div>
-          <Review />
-        </div> */}
+              <Review />
+            </div> */}
           </div>
 
-          <div className=" my-3 flex justify-center  px-3 w-full ">
-            <div className="w-full shadow-lg rounded-lg py-2 md:w-[320px]  h-fit">
+          <div className=" flex justify-center  px-6 w-fit">
+            <div className="w-full md:shadow-lg  py-2 md:w-[320px]  h-fit">
               <div>
                 <img
                   className="w-full h-64 object-cover rounded-t-lg"
@@ -209,9 +226,11 @@ export default function CourseDetail() {
                 </h2>
 
                 <div>
-                  <p className="text-md text-gray-600">
-                    This course covers all you need to know about becoming a top
-                    skilled web developer even if you never programmed before!
+                  <p className="visible md:hidden text-md text-gray-600">
+                    No prior programming experience? No problem! This
+                    comprehensive Java Fullstack online course ensures you
+                    acquire all the essential skills to become a successful web
+                    developer.
                   </p>
                 </div>
                 <div>
@@ -224,12 +243,12 @@ export default function CourseDetail() {
                 <div className="flex flex-col">
                   <div className="flex flex-row justify-around items-center mt-6 mb-2">
                     <div>
-                      <h2 className="text-2xl font-bold text-gray-800">
-                        Rs 150.00
+                      <h2 className="text-xl font-bold text-gray-800">
+                        Rs 1500.00
                       </h2>
                     </div>
                     <div>
-                      <p className="text-md text-gray-500">1000 Enrolled</p>
+                      <del className="text-md text-gray-500"> Rs 6999 /-</del>
                     </div>
                   </div>
                 </div>
@@ -244,20 +263,20 @@ export default function CourseDetail() {
                   All Secured with RazorPay India
                 </p>
               </div>
-              <div className="w-full px-5 mt-7">
+              <div className="hidden md:block w-full px-5 mt-7">
                 <div className="flex gap-4 flex-col">
                   <h2 className="text-2xl font-bold">Coures Contain</h2>
                   <ul className="flex gap-3 flex-col pl-6">
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" />
-                      25 hours on-demand video
+                      80 hours on-demand video
                     </li>
-                    <li className="flex flex-row">
+                    {/* <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> 4 articles
-                    </li>
+                    </li> */}
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" /> 97
-                      downloadable resources
+                      <TiTick className="text-indigo-500 text-2xl" /> 25
+                      Downloadable resources
                     </li>
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> Full
@@ -275,13 +294,12 @@ export default function CourseDetail() {
                 <div className="mb-6">
                   <h2 className="text-2xl font-bold">Traning Student</h2>
                   <p className="text-sm text-gray-500">
-                    Get your team access to 16,000+ top Udemy courses anytime,
-                    anywhere.
+                    Get You Student the access to tons of Course and Programs, and insure your students Placement.
                   </p>
                   <div className="hidden md:flex justify-center w-full my-3">
-                    <Link href={"/home/contact-us"}>
+                    <Link href={"/home/program"}>
                       <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
-                        Try Bussiness
+                        For Universities
                       </button>
                     </Link>
                   </div>
