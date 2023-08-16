@@ -149,20 +149,20 @@ export default function intershipInfo() {
               </div>
               <div className="flex flex-col gap-4">
                 <span className="text-lg  text-gray-600">Who can apply</span>
-                <span>Only those candidates can apply who:</span>
+                <span>Candidates can apply who:</span>
                 <ul className="flex gap-5 flex-col pl-6">
                   <li className="flex flex-row">
-                    1. are available for the work from home job/internship
+                    1. Are available for the work from home job/internship
                   </li>
                   <li className="flex flex-row">
-                    2. can start the work from home job/internship between 1st
+                    2. Can start the work from home job/internship between 1st
                     Sept'23 and 6th Dec'23
                   </li>
                   <li className="flex flex-row">
-                    3. are available for duration of 3 months
+                    3. Are available for duration of 3 months
                   </li>
                   <li className="flex flex-row">
-                    4. have relevant skills and interests
+                    4. Have relevant skills and interests
                   </li>
                 </ul>
               </div>
