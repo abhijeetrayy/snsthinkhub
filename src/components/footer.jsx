@@ -10,7 +10,7 @@ export default function Footer() {
     { name: "Course", link: "/home/courses" },
     { name: "Internship", link: "/home/internship" },
     { name: "Programs", link: "/home/program" },
-    { name: "Success Story", link: "/home/success-story" },
+    // { name: "Success Story", link: "/home/success-story" },
     { name: "Team", link: "/home/team" },
     { name: "Career", link: "/home/career" },
     { name: "About", link: "/home/about" },

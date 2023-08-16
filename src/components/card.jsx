@@ -41,7 +41,7 @@ export default function card() {
                   </p>
                 </div>
                 <Link
-                  href={"/home/courses/web-development-2023"}
+                  href={"/home/courses/java-fullstack-2023"}
                   className="mt-4 text-white text-xl font-bold cursor-pointer"
                 >
                   Java Full Stack - Complete Course
@@ -107,7 +107,7 @@ export default function card() {
                 </div>
                 <div className="flex-grow">{""}</div>
                 <div>
-                  <Link href={"/home/courses/hello"}>
+                  <Link href={"/home/courses/java-fullstack-2023"}>
                     <ClickButton
                       style={
                         "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white  py-2 rounded-lg shadow-lg"
