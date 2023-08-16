@@ -478,8 +478,7 @@ function program() {
               </h2>
               <p className="text-gray-600 sm:text-sm ">
                 Programs are targeted towards Bachelor's of Technology, BCA,
-                MCA, MTech, etc. Please keep in mind the punctuation and capital
-                letters in the sentence
+                MCA, MTech, etc.
               </p>
             </div>
           </div>
