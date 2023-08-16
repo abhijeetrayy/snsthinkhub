@@ -172,7 +172,7 @@ export default function Team() {
                 </p>
                 <p className="mb-4 text-xs text-gray-50">Softskills Trainer</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
-                  "Mistakes fuel victories, shaping your success journey"
+                  "Mistakes fuel victories, and shape your success."
                 </p>
                 {/* <div className="flex items-center justify-center space-x-3">
                   <a

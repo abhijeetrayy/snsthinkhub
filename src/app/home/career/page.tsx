@@ -106,7 +106,7 @@ function page() {
               onClick={() => result("software")}
               className="w-fit text-sm border-2 rounded-xl inline-block px-2 py-1 cursor-pointer hover:scale-105 ease-in-out duration-300"
             >
-              Software_Developer
+              Software Developer
             </button>
             <button
               onClick={() => result("content")}
