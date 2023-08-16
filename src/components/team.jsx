@@ -36,7 +36,7 @@ export default function Team() {
                 </p>
                 <p className="mb-4 text-xs text-gray-50">Founder / CEO</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
-                  Discouragement and failure are two of the surest stepping stones to success.
+                  "Discouragement and failure are two of the surest stepping stones to success"
 
                 </p>
                 {/* <div className="flex items-center justify-center space-x-3">
@@ -81,7 +81,7 @@ export default function Team() {
                 </p>
                 <p className="mb-4 text-xs text-gray-50">COO</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
-                  Triumph grows on the soil of setbacks.
+                  "Triumph grows on the soil of setbacks"
                 </p>
                 {/* <div className="flex items-center justify-center space-x-3">
                   <a
@@ -126,7 +126,7 @@ export default function Team() {
                 </p>
                 <p className="mb-4 text-xs text-gray-50">Technical Trainer</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
-                  Fail forward, achieve greatness through setbacks.
+                  "Fail forward, achieve greatness through setbacks"
 
                 </p>
                 {/* <div className="flex items-center justify-center space-x-3">
@@ -172,8 +172,7 @@ export default function Team() {
                 </p>
                 <p className="mb-4 text-xs text-gray-50">Softskills Trainer</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
-                  Mistakes fuel victories, shaping your success journey.
-
+                  "Mistakes fuel victories, shaping your success journey"
                 </p>
                 {/* <div className="flex items-center justify-center space-x-3">
                   <a
