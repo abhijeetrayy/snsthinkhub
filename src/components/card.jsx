@@ -1,7 +1,8 @@
 import Link from "next/link";
 import ClickButton from "./moreButton";
-
+import javaCourseImg from "../public/photos/javaCourse.png"
 import React from "react";
+import Image from "next/image";
 
 export default function card() {
   return (
@@ -28,9 +29,11 @@ export default function card() {
                   Beginner Friendly
                 </h3>
                 <div className="relative">
-                  <img
+                  <Image
+                    width={200}
+                    height={100}
                     className="w-full rounded-xl"
-                    src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    src={javaCourseImg}
                     alt="Colors"
                   />
                   <p className="absolute top-0 bg-gray-800 text-gray-100 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
