@@ -47,12 +47,18 @@ export default function courseCta({ title }) {
       <div className="flex flex-col items-center px-8 py-20 lg:flex lg:justify-between sm:flex-row">
         <div className="sm:inline-block sm:pb-9">
           <h3 className="text-3xl font-bold text-gray-100">
-            Get Notified New {title}
+            Get Notified for New {title}
           </h3>
-          <p className="mt-2 text-gray-100 text-md">
-            We have professional alliance's with leading Universities and
-            Colleges around the World.
-          </p>
+          {title == "Internship" ? (
+            <p className="mt-2 text-gray-100 text-md">
+              With our global network, get an opportunity to work with the
+              leading names of the industry.
+            </p>
+          ) : (
+            <p className="mt-2 text-gray-100 text-md">
+              Exclusive, personalized and latest programs for you to sharpen your skills.
+            </p>
+          )}
         </div>
         <div className="flex flex-col gap-4 items-center sm:flex-row mt-3 md:mt-0">
           <input

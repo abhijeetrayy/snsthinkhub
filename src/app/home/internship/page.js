@@ -22,7 +22,7 @@ export default function page() {
 
   return (
     <>
-      <CourseHeader title={"Intership"} />
+      <CourseHeader title={"Internship"} />
       <div className="w-full flex  justify-center mb-6">
         <div className="w-full flex justify-between items-center sm:w-[840px] lg:w-[1124px] p-6 m-3">
           <span className="text-4xl font-extrabold">Internships</span>
