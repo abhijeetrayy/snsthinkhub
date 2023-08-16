@@ -36,7 +36,18 @@ export default function contactus() {
 
       if (data.message === "Form data saved successfully") {
         setLoading(false);
+        formData.Name = ""
+        formData.Email = ""
+        formData.Message = ""
+        formData.Phone = ""
         toast("Thanks, We will reach to you soon");
+      }
+      else {
+        setLoading(false);
+        formData.Name = ""
+        formData.Email = ""
+        formData.Message = ""
+        formData.Phone = ""
       }
       console.log("hell", data);
       // Handle success message or redirect
