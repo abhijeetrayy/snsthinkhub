@@ -88,7 +88,7 @@ export default function contactus() {
                     Our Location
                   </h4>
                   <p className="text-body-color text-sm ">
-                    Maka Wala, Dehradun, Uttarakhand, India
+                    Dehradun, Uttarakhand, India
                   </p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function contactus() {
                     Phone Number
                   </h4>
                   <p className="text-body-color text-sm">
-                    (+91)81 414 257 9980
+                    (+91)74170 77000
                   </p>
                 </div>
               </div>
@@ -130,8 +130,9 @@ export default function contactus() {
                     Email Address
                   </h4>
                   <p className="text-body-color text-sm ">
-                    info.snsthinkhub.com
+                    founder@sandsthinkhub.com
                   </p>
+
                 </div>
               </div>
             </div>
