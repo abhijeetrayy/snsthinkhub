@@ -7,10 +7,10 @@ import Atoshi from "../../../public/img/team/Atoshi.jpg";
 
 import Sir from "../../../public/img/team/Sir.jpg";
 const data = [
-  { Name: "Sangita Badoni", Position: "Founder/CEO", Image: img1 },
-  { Name: "Harshit Munjal", Position: "Cheif Operating Officer", Image: img2 },
-  { Name: "Atoshi Roy", Position: "SoftSkill Trainer", Image: Atoshi },
-  { Name: "Sharad Gupta", Position: "Technical Trainer", Image: Sir },
+  { Name: "Sangita Badoni", Position: "Founder/CEO", Image: img1 , qoute: "Discouragement and failure are two of the surest stepping stones to success."},
+  { Name: "Harshit Munjal", Position: "Chief Operating Officer", Image: img2 , qoute: "Triumph grows on the soil of setbacks."},
+  { Name: "Atoshi Roy", Position: "SoftSkill Trainer", Image: Atoshi , qoute: "Mistakes fuel victories, shaping your success journey."},
+  { Name: "Sharad Gupta", Position: "Technical Trainer", Image: Sir , qoute: "Fail forward, achieve greatness through setbacks."},
 
 ];
 
@@ -86,7 +86,7 @@ export default function page() {
                         {item.Position}
                       </span>
                     </div>
-                    <div className="flex mt-5 space-x-5 text-gray-900">
+                    {/* <div className="flex mt-5 space-x-5 text-gray-900">
                       <a
                         href="https://twitter.com/"
                         target="_blank"
@@ -119,11 +119,10 @@ export default function page() {
                         <span className="sr-only">Linkedin</span>
                         <Linkedin />
                       </a>
-                    </div>
+                    </div> */}
                     <div>
                       <span className="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut{" "}
+                        {item.qoute}
                       </span>
                     </div>
                   </div>

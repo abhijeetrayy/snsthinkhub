@@ -293,7 +293,7 @@ function program() {
         </div>
 
         <div className="px-3 mt-5 max-w-5xl w-full">
-          <div className="text-xs">trusted with top universities.</div>
+          <div className="text-xs">Trusted by top universities.</div>
           <div className="pt-3">
             <Workwith />
           </div>
@@ -434,11 +434,11 @@ function program() {
             <div className="max-w-6xl">
               <hr className="border" />
               <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-                Business/Finance Program's
+                Business/Finance Program
               </h2>
               <p className="text-gray-600 sm:text-sm ">
-                Program's are tageted to Bachlor of Business and Finance or BBA,
-                BCOM, MBA etc.
+                Programs are targeted to students pursuing Bachelor of Business
+                Administration (BBA), Bachelor of Commerce (BCOM), MBA.
               </p>
             </div>
           </div>
@@ -474,11 +474,12 @@ function program() {
             <div className="max-w-6xl">
               <hr className="border" />
               <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-                Technical Program's
+                Technical Program
               </h2>
               <p className="text-gray-600 sm:text-sm ">
-                Program's are tageted to Bachlor's of technology or BCA, MCA,
-                MTECH etc.
+                Programs are targeted towards Bachelor's of Technology, BCA,
+                MCA, MTech, etc. Please keep in mind the punctuation and capital
+                letters in the sentence
               </p>
             </div>
           </div>

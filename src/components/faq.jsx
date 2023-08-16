@@ -16,9 +16,8 @@ const Faq = () => {
                   <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-md text-left text-gray-800 rounded-lg bg-gray-100 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75">
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${
-                        open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-indigo-500`}
+                      className={`${open ? "transform rotate-180" : ""
+                        } w-5 h-5 text-indigo-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
@@ -38,7 +37,7 @@ const faqdata = [
   {
     question: "Can I do the course alongside my college ?",
     answer:
-      "Yes you can continue our courses alongside your college curriculum.",
+      "Yes, you can continue our courses alongside your college curriculum.",
   },
   {
     question: "What is your refund policy ?",

@@ -11,7 +11,7 @@ const Testimonials = () => {
           </p>
         </div>
         <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-          Here's what our Student says
+          Let's hear it from our students
         </h2>
       </div>
       <div className=" overflow-x-scroll scroll-smooth scrollbar-thumb-indigo-400 group-hover:scrollbar-thumb-gray-500 scrollbar-thin  flex  gap-3 duration-300">

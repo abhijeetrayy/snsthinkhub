@@ -17,7 +17,7 @@ export default function aboutReason() {
           of an entire nation.
           <br />
           <br />
-          No matter who we are,where we come from, education and right guidance
+          No matter who we are, where we come from, education and right guidance
           bestows us with power to shape our lives however we want. Receiving
           quality education should be one’s right and not a privilege.
           <br />

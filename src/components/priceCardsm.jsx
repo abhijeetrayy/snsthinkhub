@@ -17,13 +17,12 @@ export default function priceCardsm({ data, title }) {
           {title}
         </p>
       </div>
-      <p className="mt-4 text-white text-md">Include :</p>
+      <p className="mt-4 text-white text-md">Includes :</p>
       <ul
-        className={`w-full mt-6 mb-6 text-sm text-white  ${
-          value
+        className={`w-full mt-6 mb-6 text-sm text-white  ${value
             ? "overflow-visible max-h-full h-full"
             : "overflow-clip h-full max-h-60"
-        } `}
+          } `}
       >
         {data.map((item, index) => (
           <li key={index} className="mb-3 flex items-start ">

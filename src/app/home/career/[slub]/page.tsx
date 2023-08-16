@@ -8,78 +8,94 @@ function page() {
       <div className="flex flex-col gap-5 max-w-4xl p-4 border rounded-md">
         <div className="py-5">
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-700">
-            Engineering Manager Developer Experience
+            Freelance trainer for S&S
           </h1>
         </div>
         <div className="flex flex-col gap-3">
           <h2 className="text-xl font-bold text-gray-700">The Role</h2>
           <p className="text-sm ">
-            In the world of AI, behavioural predictions are leading the charge
-            to better machine learning. There is so much happening in the AI
-            space. Advances in the economic sectors have seen automated business
-            practices rapidly increasing economic value. While the realm of the
-            human sciences has used the power afforded by computational
-            capabilities to solve many human based dilemmas. Even the art scene
-            has adopted carefully selected ML applications to usher in the
-            technological movement. As a Senior Client Engineer, you'll work
-            alongside other engineers, designers, and product managers to tackle
-            everything from huge company initiatives to modest but important bug
-            fixes, from start to finish. You'll also collaborate with your
-            product team on discovery, helping to assess the direction and
-            feasibility of product changes. And, perhaps most importantly,
-            you'll actively contribute to the evolution of the culture and
-            processes of a growing engineering team.
-          </p>
-        </div>
-        <div className="flex flex-col gap-3">
-          <h2 className="text-xl font-bold text-gray-700">About You</h2>
-          <p className="text-sm ">
-            You love building great software. Your work could be supporting new
-            feature development, migrating existing features, and creating other
-            mobile and web solutions for customers. You'll have a primary focus
-            on frontend development using Javascript. Our client's tech stack is
-            JavaScript, primarily using React. A strong understanding of JS core
-            (ES2019+) is required, with some exposure in Java as back-end
-            technology. We use modern tools, which means you'll have the
-            opportunity to work with Webpack, Redux, Apollo, Styled Components,
-            and much more. You love learning. Engineering is an ever-evolving
-            world. You enjoy playing with new tech and exploring areas that you
-            might not have experience with yet. You are self-driven,
-            self-learner willing to share knowledge and participate actively in
-            your community. Having overlap with your team is critical when
-            working in a global remote team. Modus requires all team members to
-            overlap with EST morning hours daily. In addition, reliable high
-            speed internet is a must.
+            We are seeking a highly skilled and motivated Freelance Trainer to
+            join our team. As a Freelance Trainer, you will be responsible for
+            delivering high-quality training sessions to our students, focusing
+            on imparting technical knowledge and skills related to products,
+            services, or industry.
+            <br />
+            Your role will involve creating training materials, conducting
+            interactive training sessions, and ensuring participants have a
+            clear understanding of complex technical concepts you’re asked to.
           </p>
         </div>
         <div className="flex flex-col gap-3">
           <h2 className="text-xl font-bold text-gray-700">
-            Things You Might Do
+            YOUR RESPONSIBILITIES
           </h2>
+          {/* <p className="text-sm ">
+            For applying for position of Freelance trainer you’d need,
+          </p> */}
+          <div className="text-sm flex flex-col gap-3 p-3">
+            <span className="flex flex-row  gap-2">
+              • Training Content Development: Create comprehensive training
+              materials and collaborate with experts for accuracy.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Training Delivery: Conduct dynamic, adaptable training sessions
+              in-person and virtually.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Technical Expertise: Stay current with industry trends and
+              master products for effective communication.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Participant Engagement: Foster interactive environments,
+              addressing queries and encouraging active participation.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Assessment and Feedback: Evaluate understanding through
+              assessments and offer valuable improvement feedback.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Continuous Improvement: Maintain up-to-date materials and
+              integrate participant feedback for enhanced training.
+            </span>
+          </div>
+        </div>
+        <div className="flex flex-col gap-3">
+          <h2 className="text-xl font-bold text-gray-700">JOB REQUIREMENTS</h2>
           <p className="text-sm ">
-            We are a fast-growing, and remote-first company, so you'll likely
-            get experience on many different projects across the organization.
-            That said, here are some things you'll probably do:
+            For applying for position of Freelance trainer you’d need,
           </p>
           <div className="text-sm flex flex-col gap-3 p-3">
             <span className="flex flex-row  gap-2">
-              • Give back to the community via open source and blog posts
+              • Master's degree in a relevant field.
             </span>
             <span className="flex flex-row  gap-2">
-              • Travel and meet great people- as part of our remote-first
-              lifestyle, it's important that we come together as needed to work
-              together, meet each other in person and have fun together. Please
-              keep that in mind when you apply
+              • Some experience as a Trainer or similar role, preferably in a
+              freelance capacity.
             </span>
             <span className="flex flex-row  gap-2">
-              • Teach and be taught: Modus creates active teams that work in
-              internal and external projects together, giving opportunities to
-              stay relevant with the latest technologies and learning from
-              experts worldwide
+              • Strong command of technical subject matter and the ability to
+              translate complex concepts into understandable terms.
             </span>
             <span className="flex flex-row  gap-2">
-              • Interact directly with internal and external clients to
-              represent Modus and its values
+              • Excellent communication and presentation skills, both verbal and
+              written.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Proficiency in using training tools, platforms, and multimedia
+              resources.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Experience with virtual training delivery tools and platforms.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Ability to adapt to different learning styles and engage diverse
+              audiences.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Strong organizational skills and attention to detail.
+            </span>
+            <span className="flex flex-row  gap-2">
+              • Self-motivated, adaptable, and able to work independently.
             </span>
           </div>
         </div>

@@ -13,8 +13,8 @@ const AboutHeader = () => {
               About Us
             </h1>
             <p className="text-md text-gray-700">
-              Creating change through our specilized Courses and Career
-              Guidence.
+              Creating change through our specilized courses and career
+              guidence.
             </p>
             <Link
               className="w-fit px-3 py-2 md:px-5 md:py-3  text-lg rounded-md hover:bg-indigo-500 bg-white border-2 border-gray-600 text-gray-700 bg-cover object-cover duration-500 hover:text-white"

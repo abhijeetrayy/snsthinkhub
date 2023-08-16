@@ -6,6 +6,7 @@ import Wave from "../public/img/waves.svg";
 import Image from "next/image";
 import Team from "./team";
 import Review from "./review";
+import javaCourseImg from "../public/photos/javaCourse.png"
 
 import Link from "next/link";
 import CourseRegistration from "./courseRegistration";
@@ -215,14 +216,18 @@ export default function CourseDetail() {
           <div className=" flex justify-center  px-6 w-fit">
             <div className="w-full md:shadow-lg  py-2 md:w-[320px]  h-fit">
               <div>
-                <img
+                <Image
+                  alt=""
+                  width={200}
+                  height={100}
                   className="w-full h-64 object-cover rounded-t-lg"
-                  src="https://images.pexels.com/photos/6816529/pexels-photo-6816529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={javaCourseImg}
+                  placeholder="blur"
                 />
               </div>
               <div className="md:hidden flex flex-col gap-5 p-3 rounded-lg">
                 <h2 className="text-3xl font-semibold text-gray-700">
-                  Become a professional Web Developer from Scratch
+                  Java Full Stack - 2023 Complete Course
                 </h2>
 
                 <div>
@@ -269,7 +274,7 @@ export default function CourseDetail() {
                   <ul className="flex gap-3 flex-col pl-6">
                     <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" />
-                      80 hours on-demand video
+                      80 hours
                     </li>
                     {/* <li className="flex flex-row">
                       <TiTick className="text-indigo-500 text-2xl" /> 4 articles

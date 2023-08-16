@@ -97,17 +97,17 @@ function App() {
 
   return (
     <div className="flex  justify-center my-7">
-      <div className="max-w-7xl w-full p-3 flex flex-col md:flex-row items-center">
-        <div className="max-h-[400px] h-full w-full m-auto py-16 px-4 relative group">
+      <div className="max-w-5xl w-full p-3 flex flex-col md:flex-row items-center justify-center">
+        <div className=" max-h-[400px] h-full max-w-lg w-full m-auto py-10 px-4 relative group">
           <Image
             src={groupmain}
             placeholder="blur"
             alt=""
-            quality={70}
-            layout="fill"
+            width={400}
+            height={100}
             objectFit="cover"
             className={`
-          w-full h-full rounded-2xl duration-700 ease-in-out 
+          max-w-xl w-full h-full rounded-2xl duration-700 ease-in-out object-cover 
               `}
           />
           {/* Left Arrow */}

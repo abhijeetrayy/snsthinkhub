@@ -7,34 +7,34 @@ import Link from "next/link";
 
 const data = [
   {
-    title: "Freelace Technical Trainer",
+    title: "Freelace  Trainer",
     detail:
-      "We're looking for experinced Technical teacher with required technical knowdlege",
+      "We're looking for experinced  teacher with required technical knowledge",
     tag: "freelance",
   },
-  {
-    title: "React Developer",
-    detail:
-      "We're looking for experinced react developer with required knowdlege",
-    tag: "software",
-  },
-  {
-    title: "UI/UX Designer",
-    detail:
-      "We're looking for experinced UI/UX designer with required knowdlege",
-    tag: "ui/ux",
-  },
-  {
-    title: "Content Writter",
-    detail: "We're looking for Content writter with required knowdlege",
-    tag: "content",
-  },
-  {
-    title: "Digital Markerter",
-    detail:
-      "We're looking for experinced Digital Marketer with required knowdlege",
-    tag: "marketing",
-  },
+  // {
+  //   title: "React Developer",
+  //   detail:
+  //     "We're looking for experinced react developer with required knowdlege",
+  //   tag: "software",
+  // },
+  // {
+  //   title: "UI/UX Designer",
+  //   detail:
+  //     "We're looking for experinced UI/UX designer with required knowdlege",
+  //   tag: "ui/ux",
+  // },
+  // {
+  //   title: "Content Writter",
+  //   detail: "We're looking for Content writter with required knowdlege",
+  //   tag: "content",
+  // },
+  // {
+  //   title: "Digital Markerter",
+  //   detail:
+  //     "We're looking for experinced Digital Marketer with required knowdlege",
+  //   tag: "marketing",
+  // },
 ];
 
 function page() {

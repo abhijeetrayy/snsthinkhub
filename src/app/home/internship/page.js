@@ -9,16 +9,7 @@ import { useState } from "react";
 export default function page() {
   const data = [
     "Remote",
-    "Remote",
-    "Inoffice",
-    "Inoffice",
-    "Inoffice",
-    "Inoffice",
-    "Inoffice",
-    "Inoffice",
-    "Inoffice",
-    "Remote",
-    "Remote",
+   
   ];
   const [filtered, setFilter] = useState(data);
   function filterData(type) {
@@ -74,15 +65,15 @@ export default function page() {
             <div key={index} className="border-0 shadow-md rounded-md max-w-xs p-3 bg-slate-50 hover:bg-slate-100 transition">
               <h2>new</h2>
               <div className="p-6">
-                <h2 className=" text-2xl font-bold">Web Developer</h2>
+                <h2 className=" text-2xl font-bold">Front End Web Developer - React/Next Js</h2>
 
-                <span className=" font-sans">Perl Organization</span>
-                <div className="mb-2">
-                  <Link href={"/home"}>
+                <span className=" font-sans">SsndSthinkhub</span>
+                <div className="mb-2 cursor-default">
+                  <p >
                     <span className="text-sm underline decoration-dotted">
                       Dehradun,India
                     </span>
-                  </Link>
+                  </p>
                 </div>
                 <div>
                   <div className="inline-block mr-2 border-2 rounded-md p-1 w-fit">
@@ -123,15 +114,13 @@ export default function page() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm">Stipend</span>
+                    <span className="text-sm">Rs 10000 /-</span>
                   </div>
                 </div>
                 <div className=" text-sm  mt-3">
                   <span>*</span>{" "}
                   <span>
-                    Are you an aspiring data analyst seeking an unparalleled
-                    opportunity to gain hands-on experience while working with a
-                    prestigious Management Consulting firm?
+                  We are seeking a highly motivated and enthusiastic Front-End Development Intern to join our dynamic team.
                   </span>
                 </div>
                 <div className="mt-3">
