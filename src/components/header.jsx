@@ -158,20 +158,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <span className=" flex text-center z-20 text-gray-700 text-[1.9em] sm:text-4xl md:text-6xl font-bold">
-        Education for Excellence
+      <span className=" flex text-center z-20 text-indigo-500 text-[1.9em] sm:text-4xl md:text-6xl font-bold">
+        S&S ThinkHub
       </span>
-      <h2 className=" mb-5 font-sans flex text-center text-2xl leading-5 font-bold tracking-tight text-indigo-500 sm:text-4xl md:text-5xl xl:text-6xl  sm:leading-none object-cover">
-        <TypeAnimation
-          sequence={[`Placement for Success \n🥇`, 1000]}
-          speed={30}
-          style={{
-            whiteSpace: "pre-line",
-
-            lineHeight: "1.3em",
-          }}
-          cursor={false}
-        />
+      <h2 className="mt-2 mb-5 font-sans flex text-center text-2xl leading-5 font-bold tracking-tight text-gray-700 sm:text-4xl md:text-5xl xl:text-6xl  sm:leading-none object-cover">
+        A Confidence Towards Success
       </h2>
       <span
         style={{ fontFamily: `"Nano Sans", sans-serif` }}
