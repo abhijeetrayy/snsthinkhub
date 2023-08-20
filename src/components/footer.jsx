@@ -83,7 +83,7 @@ export default function Footer() {
               <span className="sr-only">Instagram</span>
               <Instagram />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener">
+            <a href="https://linkedin.com/company/snsthinkhub" target="_blank" rel="noopener">
               <span className="sr-only">Linkedin</span>
               <Linkedin />
             </a>
