@@ -93,9 +93,9 @@ export default function registaration() {
               <div className="mt-2">
                 <input
                   id="College"
-                  name="College"
+                  name="University"
                   type="text"
-                  value={formData.College}
+                  value={formData.University}
                   onChange={handleChange}
                   autoComplete="College"
                   placeholder="Delhi University"

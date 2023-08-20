@@ -9,15 +9,15 @@ import { TiTick } from "react-icons/ti"
 import DotLoader from "react-spinners/DotLoader";
 
 
-export default function Home({formData}) {
-      let [loading, setLoading] = useState(false);
+export default function Home({ formData }) {
+    let [loading, setLoading] = useState(false);
     const [color, setColor] = useState(false)
-  
-const handleSubmit = async () => {
-      
+
+    const handleSubmit = async () => {
+
         try {
-              
-            
+
+
             const response = await fetch('/api/courseData', {
                 method: 'POST',
                 headers: {
@@ -26,40 +26,84 @@ const handleSubmit = async () => {
                 body: JSON.stringify(formData),
             });
             const resWhichSave = await response.json();
-           
-            if(resWhichSave.message === "Form data saved successfully"){
+
+            if (resWhichSave.message === "Form data saved successfully") {
                 setLoading(false)
                 toast("Good Wishes, Registration successfull")
             }
-             else{
+            else {
                 setLoading(false)
                 toast("something went worng, please contact and send the requeset on the contact-us page.📞")
             }
-            console.log("hell",resWhichSave);
+            console.log("hell", resWhichSave);
             // Handle success message or redirect
         } catch (error) {
             console.log('Failed to submit form:', error);
             // Handle error
         }
     };
-   
+
+    function checking() {
+        if (formData.Name == "") {
+            toast("Please fill the Name")
+            setLoading(false)
+        }
+        else {
+
+            if (formData.Email == "") {
+                toast("Please fill the Email")
+                setLoading(false)
+            }
+            else {
+                if (formData.Course == "") {
+                    toast("Please fill the Couse")
+                    setLoading(false)
+                }
+                else {
+
+                    if (formData.University == "") {
+                        toast("Please fill the Universiy")
+                        setLoading(false)
+                    }
+                    else {
+                        if (formData.Phone == "") {
+                            toast("Please fill the Phone")
+                            setLoading(false)
+                        }
+                        else {
+                            if (formData.Year == "") {
+                                toast("Please fill the year of graduation")
+                                setLoading(false)
+                            }
+                            else {
+                                makePayment()
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
     const makePayment = async () => {
         console.log(formData)
         setLoading(true)
 
         console.log("here...");
         const check = await fetch('/api/checkUserForCourse', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-            
-            const dataToCheck = await check.json();
-            console.log(dataToCheck)
-        
-        if(dataToCheck.message == "User You have already Registered for the Course"){
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        const dataToCheck = await check.json();
+        console.log(dataToCheck)
+
+        if (dataToCheck.message == "User You have already Registered for the Course") {
             toast("You have already Registered for the course")
             setLoading(false)
             return;
@@ -124,10 +168,10 @@ const handleSubmit = async () => {
     return (
 
         <button
-            onClick={makePayment}
-            className="flex w-full justify-center bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
+            onClick={checking}
+            className="flex justify-center bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
         >
-           {loading ? <DotLoader color="#FFFFFF" size={26}/> : "Purchase Now"} 
+            {loading ? <DotLoader color="#FFFFFF" size={26} /> : "Purchase Now"}
         </button>
 
     );
