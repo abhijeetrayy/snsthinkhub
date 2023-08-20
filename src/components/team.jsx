@@ -30,7 +30,7 @@ export default function Team() {
                 src={Sangita}
                 alt="Person"
               />
-              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 bg-opacity-75 hover:opacity-0 opacity-100">
+              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 hover:bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-50">
                   Sangita Badoni
                 </p>
@@ -75,7 +75,7 @@ export default function Team() {
                 src={img2}
                 alt="Person"
               />
-              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 bg-opacity-75 hover:opacity-0 opacity-100">
+              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 hover:bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-50">
                   Harshit Munjal
                 </p>
@@ -120,7 +120,7 @@ export default function Team() {
                 src={Sir}
                 alt="Person"
               />
-              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 bg-opacity-75 hover:opacity-0 opacity-100">
+              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 hover:bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-50">
                   Sharad Gupta
                 </p>
@@ -166,7 +166,7 @@ export default function Team() {
                 src={Atoshi}
                 alt="Person"
               />
-              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 bg-opacity-75 hover:opacity-0 opacity-100">
+              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 hover:bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-50">
                   Atoshi Roy
                 </p>

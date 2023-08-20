@@ -257,7 +257,7 @@ function program() {
                 onClick={handleClick}
                 className="z-10 py-1 px-3 text-md text-white bg-indigo-600 border-2 border-indigo-600 hover:border-indigo-500 rounded-lg hover:text-white  hover:bg-indigo-500  duration-300 "
               >
-                Program's
+                Programs
               </button>
               <button
                 onClick={handleClickContact}
