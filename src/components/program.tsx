@@ -445,26 +445,26 @@ function program() {
           <div className="flex flex-wrap justify-center w-full gap-4 my-7">
             <div className=" start-0 columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
               <ProgramBuy
-                title={"Business Building Blocks"}
-                data={programs["Business Building Blocks"]}
+                title={"Business Programs"}
+                data={programs["Business Programs"]}
               />
               <ProgramBuy
-                title={"Marketing Mavericks"}
-                data={programs["Marketing Mavericks"]}
+                title={"Marketing programs"}
+                data={programs["Marketing programs"]}
               />
               <ProgramBuy
-                title={"Personal Growth and Empowerment"}
-                data={programs["Personal Growth and Empowerment"]}
+                title={"Personality development program"}
+                data={programs["Personality development program"]}
               />
               <ProgramBuy
-                title={"Finance and Accounting Wizards"}
-                data={programs["Finance and Accounting Wizards"]}
+                title={"Financing and Accounting programs"}
+                data={programs["Financing and Accounting programs"]}
               />
             </div>
             <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
               <ProgramBuy
-                title={"People Powerhouse"}
-                data={programs["People Powerhouse"]}
+                title={"People skills programs"}
+                data={programs["People skills programs"]}
               />
             </div>
           </div>
@@ -485,8 +485,8 @@ function program() {
           <div className="flex flex-wrap justify-center w-full gap-4 my-7">
             <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
               <ProgramBuy
-                title={"Tech Titans"}
-                data={programs["Tech Titans"]}
+                title={"Tech all in one"}
+                data={programs["Tech all in one"]}
               />
             </div>
           </div>
