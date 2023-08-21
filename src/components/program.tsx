@@ -453,7 +453,7 @@ function program() {
                 data={programs["Marketing programs"]}
               />
               <ProgramBuy
-                title={"Personality development program"}
+                title={"Personality development programs"}
                 data={programs["Personality development program"]}
               />
               <ProgramBuy
