@@ -84,7 +84,7 @@ const data = [
 ];
 
 const programs = {
-  "Business Building Blocks": [
+  "Business Programs": [
     "ChatGPT Masterclass",
     "Fundamentals of Business Analytics",
     "AI-Integrated Digital Marketing Masterclass for Beginners",
@@ -92,7 +92,7 @@ const programs = {
     "Planning and Decision Making",
     "Solving Complex Problems",
   ],
-  "Marketing Mavericks": [
+  "Marketing programs": [
     "Google Ads Masterclass",
     "Microsoft Ads Masterclass",
     "Facebook and Instagram Ads With AI Tools",
@@ -105,7 +105,7 @@ const programs = {
     "WhatsApp Marketing and Automation",
     "Canva Mastery",
   ],
-  "Tech Titans": [
+  "Tech all in one": [
     "Python for Everyone: Beginners Level",
     "Python Intermediate Level",
     "Microsoft SQL",
@@ -118,12 +118,12 @@ const programs = {
     "Absolute Beginners Guide to AWS with Cloud Computing",
     "Statistics for Data Science & Machine Learning",
   ],
-  "Sales and Negotiation Ninjas": [
+  "Sales and Negotiation programs": [
     "Sales Mastery: Close Any Sale",
     "Negotiate to Win",
     "Inside Sales & Business Development Certificate Program",
   ],
-  "Finance and Accounting Wizards": [
+  "Financing and Accounting programs": [
     "Evaluation of Investment Projects",
     "GST: The Complete Goods & Service Tax Course",
     "Accounting for Beginners",
@@ -131,7 +131,7 @@ const programs = {
     "Stock Market Basics for Beginners",
     "Guide to General Banking",
   ],
-  "Personal Growth and Empowerment": [
+  "Personality development program": [
     "Enhance Your Emotional Intelligence",
     "Design Thinking for Innovation",
     "Unlock Creativity",
@@ -142,7 +142,7 @@ const programs = {
     "Beginners Guide to PowerPoint",
     "Personality Development For Advancement in Career",
   ],
-  "People Powerhouse": [
+  "People skills programs": [
     "Recruitment and Selection",
     "Building High-Performing Teams",
     "Delegation and Empowerment",
