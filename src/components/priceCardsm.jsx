@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export default function priceCardsm({ data, title }) {
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useState(true);
   const [style, setStyle] = useState("");
 
   function fullview() {
@@ -11,7 +11,7 @@ export default function priceCardsm({ data, title }) {
     } else setValue(false);
   }
   return (
-    <div className=" w-64 p-4 bg-indigo-500 shadow-lg rounded-2xl dark:bg-gray-800 break-inside-avoid mb-10">
+    <div className=" w-64 p-4  bg-indigo-500 shadow-lg rounded-2xl dark:bg-gray-800 break-inside-avoid mb-10">
       <div className="flex items-center justify-between text-white">
         <p className="text-gray-900 w-full bg-white rounded-lg p-3 text-xl font-bold">
           {title}
@@ -20,8 +20,8 @@ export default function priceCardsm({ data, title }) {
       <p className="mt-4 text-white text-md">Includes :</p>
       <ul
         className={`w-full mt-6 mb-6 text-sm text-white  ${value
-            ? "overflow-visible max-h-full h-full"
-            : "overflow-clip h-full max-h-60"
+          ? "overflow-visible max-h-full h-full"
+          : "overflow-clip h-full max-h-60"
           } `}
       >
         {data.map((item, index) => (
@@ -46,13 +46,13 @@ export default function priceCardsm({ data, title }) {
           etc.
         </p>
       </div>
-      <button
+      {/* <button
         className={`group text-white ${value ? "hidden" : "block"}`}
         onClick={fullview}
       >
         {" "}
         read more <span className="group-hover:ml-3 duration-300">{"->"}</span>
-      </button>
+      </button> */}
       {/* <button
         type="button"
         className="w-full px-3 py-3 text-sm text-indigo-500 bg-white rounded-lg shadow hover:bg-gray-100 "

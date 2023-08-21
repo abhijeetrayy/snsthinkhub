@@ -443,7 +443,7 @@ function program() {
             </div>
           </div>
           <div className="flex flex-wrap justify-center w-full gap-4 my-7">
-            <div className=" start-0 columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
+            <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 xl:columns-4 gap-5">
               <ProgramBuy
                 title={"Business Programs"}
                 data={programs["Business Programs"]}
@@ -460,8 +460,6 @@ function program() {
                 title={"Financing and Accounting programs"}
                 data={programs["Financing and Accounting programs"]}
               />
-            </div>
-            <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
               <ProgramBuy
                 title={"People skills programs"}
                 data={programs["People skills programs"]}
@@ -483,7 +481,7 @@ function program() {
             </div>
           </div>
           <div className="flex flex-wrap justify-center w-full gap-4 my-7">
-            <div className=" columns-1 sm:columns-2 md:columns-2 lg:columns-4 gap-5">
+            <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 xl:columns-4 gap-5">
               <ProgramBuy
                 title={"Tech all in one"}
                 data={programs["Tech all in one"]}
@@ -492,8 +490,8 @@ function program() {
           </div>
         </div>
 
-        <div className="xl:flex justify-center p-3">
-          <div className="xl:max-w-6xl">
+        <div className="w-full flex justify-center p-3">
+          <div className="max-w-6xl w-full">
             <Testimonials />
           </div>
         </div>
