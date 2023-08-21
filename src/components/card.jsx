@@ -207,7 +207,7 @@ export default function card() {
                       style={
                         "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white py-2 rounded-lg shadow-lg"
                       }
-                      data={"Comming Soon ..."}
+                      data={"Coming Soon ..."}
                     />
                   </Link>
                 </div>
@@ -299,7 +299,7 @@ export default function card() {
                       style={
                         "mt-4 text-sm hover:bg-gray-100 duration-300 w-full text-gray-700 bg-white text-gray-100 py-2 rounded-lg shadow-lg"
                       }
-                      data={"Comming Soon ..."}
+                      data={"Coming Soon ..."}
                     />
                   </Link>
                 </div>
