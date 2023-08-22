@@ -34,7 +34,7 @@ const testimonials = [
   },
 
   {
-    data: "In the training I have learnt how we should give personal interviews, how to prepare & give presentations. Teachers and their guidance helped me to improve myself along with that I learnt Microsoft excel. Thank you for everything.",
+    data: "This course taught me how to give personal interviews and improved my presentation skills. With these I got a grip on fundamentals of Microsoft Excel which is a really important skill to master. I thank the platform and the teachers for everything.",
     name: "Aditi Ujawane",
   },
 
