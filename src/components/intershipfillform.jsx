@@ -34,7 +34,7 @@ export default function form({ title, tag, ids }) {
       if (title == "Job details form") {
 
 
-        const response = await fetch("/api/intershipData", {
+        const response = await fetch("/api/careerUser", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
