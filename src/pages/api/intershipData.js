@@ -14,14 +14,14 @@ async function submitForm(req, res) {
 		   	Linkedin: String,
 		   	Github: String,
 		    about: String,
-		    internshipId: String,
+		    Id: String,
   	
 	})
 	const interUserModel = models.internshipUser || model('internshipUser', interUser)
 
 	
 	const IntershipData = new mongoose.Schema({
-	internshipId: {type: String, required: true},
+	Id: {type: String, required: true},
    
   
   
@@ -37,15 +37,15 @@ async function submitForm(req, res) {
     console.log("working")
    
    try {
-   		const { Name, Email, Phone, Linkedin, Github, about, internshipId } = req.body;
-   		 console.log(internshipId);
+   		const { Name, Email, Phone, Linkedin, Github, about, Id } = req.body;
+   		 console.log(Id);
         await connectToDatabase();
-        let checkUserIsAlreadyFilled = await interUserModel.findOne({internshipId, Email})
+        let checkUserIsAlreadyFilled = await interUserModel.findOne({Id, Email})
         if (checkUserIsAlreadyFilled){
         	return res.status(200).json({message: "User You have already Filled the internship"})
         }
         else
-        {let check = await InternData.findOne({internshipId})
+        {let check = await InternData.findOne({Id})
                 if(check){
         
         
@@ -60,7 +60,7 @@ async function submitForm(req, res) {
         						   	Linkedin,
         						   	Github,
         						    about,
-        						    internshipId,
+        						    Id,
           	
         			        	 })
         			        	await saveusers.save()
@@ -69,13 +69,13 @@ async function submitForm(req, res) {
         
         
         			        	 check =new InternData({
-        			        		internshipId ,
+        			        		Id ,
         			        		
         			        		
         			        	})
         			        	 await check.save()
         			        	 const saveusers = new interUserModel({
-        			        	 	internshipId,
+        			        	 	Id,
         			        	 	Name,
         						   	Email,
         						   	Phone,

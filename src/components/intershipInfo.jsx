@@ -187,7 +187,7 @@ export default function intershipInfo() {
               </div>
             </div>
             <div className="w-full flex items-center justify-center">
-              <IntershihfillButton />
+              <IntershihfillButton ids={"000011"} />
             </div>
           </div>
         </div>

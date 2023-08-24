@@ -5,7 +5,7 @@ import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import toast from "react-hot-toast";
 import DotLoader from "react-spinners/DotLoader";
 
-export default function form({ title, tag }) {
+export default function form({ title, tag, ids }) {
   let [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -17,44 +17,68 @@ export default function form({ title, tag }) {
     Linkedin: "",
     Github: "",
     about: "",
-    internshipId: "",
+    Id: ids,
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      internshipId: "000111",
-    }));
+
   };
 
   const handleSubmit = async () => {
     try {
       setLoading(true);
       console.log(formData);
-      const response = await fetch("/api/intershipData", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await response.json();
-      if (data.message === "User You have already Filled the internship") {
-        setLoading(false);
-        toast("You have already Filled the internship");
-      }
-      if (data.message === "Form data saved successfully") {
-        setLoading(false);
-        toast("Good Wishes, Form Filled successfully");
-      } else {
-        setLoading(false);
-        toast("something went wrong!😢");
-      }
+      if (title == "Job details form") {
 
-      console.log("hell", data);
+
+        const response = await fetch("/api/intershipData", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+        const data = await response.json();
+        if (data.message === "User You have already Filled the internship") {
+          setLoading(false);
+          toast("You have already Filled the internship");
+        }
+        if (data.message === "Form data saved successfully") {
+          setLoading(false);
+          toast("Good Wishes, Form Filled successfully");
+        } else {
+          setLoading(false);
+          toast("something went wrong!😢");
+        }
+
+        console.log("hell", data);
+      }
+      else {
+        const response = await fetch("/api/intershipData", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+        const data = await response.json();
+        if (data.message === "User You have already Filled the internship") {
+          setLoading(false);
+          toast("You have already Filled the internship");
+        }
+        if (data.message === "Form data saved successfully") {
+          setLoading(false);
+          toast("Good Wishes, Form Filled successfully");
+        } else {
+          setLoading(false);
+          toast("something went wrong!😢");
+        }
+
+        console.log("hell", data)
+      }
       // Handle success message or redirect
     } catch (error) {
       console.log("Failed to submit form:", error);

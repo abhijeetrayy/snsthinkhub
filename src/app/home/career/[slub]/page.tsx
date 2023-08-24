@@ -100,7 +100,11 @@ function page() {
           </div>
         </div>
         <div className="w-full flex items-center justify-center">
-          <IntershihfillButton title={"Job details form"} tag={"job"} />
+          <IntershihfillButton
+            title={"Job details form"}
+            tag={"job"}
+            ids={"00001"}
+          />
         </div>
       </div>
     </div>
