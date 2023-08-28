@@ -11,10 +11,8 @@ import "../css/patternProgram.css";
 import "../css/background.css";
 import ProgramBuy from "./priceCardsm";
 import Testimonials from "./testimonials";
-import { BiRightArrowAlt } from "react-icons/bi";
-import Link from "next/link";
-import MainImg from "../public/photos/New folder/main2.png";
-import group from "../public/photos/trianer_university.png";
+
+import group from "../public/photos/trianer_university.jpg";
 import interviewImg from "../public/photos/interview2.png";
 import certificate from "../public/photos/uni_ceritfate.png";
 import groupmain from "../public/photos/group2.png";
