@@ -3,7 +3,7 @@ import { NextAuthOptions } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 import GithubProvider from 'next-auth/providers/github'
 import CredentialProvider from 'next-auth/providers/credentials'
-import { any } from 'prop-types'
+
 
 
 
@@ -50,12 +50,8 @@ export const authOptions: NextAuthOptions = {
         }),
         
     ],
-    session: {
-        strategy: 'jwt',
-    },
-    callbacks: {
-        
-    },
+    
+    
     secret: process.env.NEXTAUTH_SECRET,
     debug: process.env.NODE_ENV == "development"
 }

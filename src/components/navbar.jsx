@@ -32,7 +32,7 @@ function Navbar() {
 
         <div className="flex flex-wrap items-start justify-between w-full  lg:w-32">
           <Link href="/">
-            <Image alt="" width={44} height={44} src={Logo} />
+            <Image className="w-10 h-10" alt="" width={100} height={100} src={Logo} />
             {/* <span className="flex   flex-row space-x-2 text-2xl font-medium text-indigo-500">
               
 

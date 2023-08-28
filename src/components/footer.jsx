@@ -17,38 +17,38 @@ export default function Footer() {
   ];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
-    <div className="w-full flex justify-center flex-col">
-      <div className="grid  grid-cols-1 gap-10 pt-10 px-5 mx-auto mt-5 border-t border-gray-100 lg:grid-cols-5">
+    <div className="w-full flex justify-center flex-col max-w-7xl md:px-5">
+      <div className="grid  grid-cols-1 gap-10 py-10 px-5 rounded-lg mx-auto mt-5 border-t bg-indigo-500 border-gray-100 w-full md:grid-cols-5">
         <div className="lg:col-span-2">
           <div>
             {" "}
             <Link
               href="/"
-              className="flex items-center space-x-2 text-2xl font-medium text-indigo-500"
+              className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 p-3 rounded-md bg-white w-fit"
             >
               <Image
                 className="w-16 h-auto"
                 alt=""
-                width={440}
-                height={440}
+                width={200}
+                height={200}
                 src={Logo}
               />
             </Link>
           </div>
 
-          <div className="max-w-md mt-4 text-gray-500">
+          <div className="max-w-md mt-4 text-sm text-white">
             SnSThinkhub offers a variety of programs and services that are
             designed to help students develop the skills and knowledge
           </div>
         </div>
 
         <div>
-          <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+          <div className="flex flex-col gap-3 w-fit -mt-2 -ml-3 lg:ml-0">
             {navigation.map((item, index) => (
               <Link
                 key={index}
                 href={`${item.link}`}
-                className="w-full px-4 py-2 text-gray-500 rounded-md  hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
+                className="border w-full border-white hover:bg-white hover:text-indigo-500 px-4 py-2 text-white rounded-md  duration-300  "
               >
                 {item.name}
               </Link>
@@ -56,12 +56,12 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+          <div className="flex flex-col gap-3 w-fit -mt-2 -ml-3 lg:ml-0">
             {legal.map((item, index) => (
               <Link
                 key={index}
                 href="/"
-                className="w-full px-4 py-2 text-gray-500 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
+                className="px-4 py-2 border w-full hover:bg-white hover:text-indigo-500 border-white text-white rounded-md duration-300  "
               >
                 {item}
               </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="">
-          <div>Follow us</div>
+          <div className="text-white">Follow us</div>
           <div className="flex mt-5 space-x-5 text-gray-400">
             <a href="https://twitter.com/" target="_blank" rel="noopener">
               <span className="sr-only">Twitter</span>
@@ -103,7 +103,7 @@ export default function Footer() {
 
 const Twitter = ({ size = 24 }) => (
   <svg
-    className="text-indigo-500 hover:text-indigo-600"
+    className="text-white hover:text-gray-200"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
@@ -116,7 +116,7 @@ const Twitter = ({ size = 24 }) => (
 
 const Facebook = ({ size = 24 }) => (
   <svg
-    className="text-indigo-500 hover:text-indigo-600"
+    className="text-white hover:text-gray-200"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
@@ -128,7 +128,7 @@ const Facebook = ({ size = 24 }) => (
 );
 const Instagram = ({ size = 24 }) => (
   <svg
-    className="text-indigo-500 hover:text-indigo-600"
+    className="text-white hover:text-gray-200"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
@@ -141,7 +141,7 @@ const Instagram = ({ size = 24 }) => (
 
 const Linkedin = ({ size = 24 }) => (
   <svg
-    className="text-indigo-500 hover:text-indigo-600"
+    className="text-white hover:text-gray-200"
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
