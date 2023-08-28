@@ -4,11 +4,11 @@ import javaCourseImg from "../public/photos/javaCourse.png"
 import React from "react";
 import Image from "next/image";
 
-export default function card() {
+export default function card({ page }) {
   return (
     <>
       <div className="w-full  flex items-center flex-col ">
-        <div className="h-fit w-full  py-7 max-w-6xl ">
+        <div className={` w-full  py-7 max-w-6xl ${page ? "min-h-[1000px] h-full" : "h-fit"}`}>
           <div className="flex flex-col items-center mb-6 bg-white px-8 py-3 bg-cover">
             <h2 className="text-2xl md:text-4xl font-extrabold mb-5 float-left  text-indigo-500">
               Our Courses

@@ -7,7 +7,7 @@ export default function page() {
   return (
     <>
       <CourseHeader title={"Course"} />
-      <Card />
+      <Card page={true}/>
     </>
   );
 }
