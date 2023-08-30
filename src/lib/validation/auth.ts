@@ -32,22 +32,22 @@ export const authOptions: NextAuthOptions = {
             clientId: getGoogleCredentials().clientId,
             clientSecret: getGoogleCredentials().clientSecret,
         }),
-        // GithubProvider({
-        //     clientId: process.env.clientIdG as string
-        //     ,clientSecret: process.env.cientSceretG as string
-        // }),
-        // CredentialProvider({
-        //     name: "credentials",
-        //     credentials:{
-        //         email: {label: "Email", type: "text" , placeholder: "ray" },
-        //         password: {label: "Password", type: "password" , placeholder: "password" }
-        //     },
+        GithubProvider({
+            clientId: process.env.clientIdG as string
+            ,clientSecret: process.env.cientSceretG as string
+        }),
+        CredentialProvider({
+            name: "credentials",
+            credentials:{
+                email: {label: "Email", type: "text" , placeholder: "ray" },
+                password: {label: "Password", type: "password" , placeholder: "password" }
+            },
 
-        //     async authorize(credentials)  {
-        //         const User = {id:1, email: "a@gmail.com", name: "Abhi Bahi"}
-        //         return User as any
-        //     },
-        // }),
+            async authorize(credentials)  {
+                const User = {id:1, email: "a@gmail.com", name: "Abhi"}
+                return User as any
+            },
+        }),
         
     ],
 

@@ -184,6 +184,9 @@ export default function Home(props) {
         if (button == "Purchase Now") {
           makePayment();
         }
+        if (button == "Already Registered") {
+          toast("you have been already registered 🎉");
+        }
       }}
       className=" transition-all bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
     >

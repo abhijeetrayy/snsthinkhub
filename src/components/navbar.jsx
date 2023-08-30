@@ -162,7 +162,7 @@ function Navbar() {
                                     href={"/home/profile"}
                                     className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
                                   >
-                                    {session?.user?.name.substring(0, 8)}...
+                                    Hi {session?.user?.name.substring(0, 8)}...
                                   </Link>
                                 )}
                                 <Link
@@ -217,7 +217,7 @@ function Navbar() {
           ) : (
             <Link
               href={"/home/profile"}
-              className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
+              className="px-4 py-2 text-indigo-500 hover:text-gray-800 border  border-indigo-500 hover:border-gray-900 duration-300  rounded-md md:ml-5"
             >
               {session?.user?.name.substring(0, 8)}...
             </Link>
