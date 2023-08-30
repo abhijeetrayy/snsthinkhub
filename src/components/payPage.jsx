@@ -9,7 +9,7 @@ import DotLoader from "react-spinners/DotLoader";
 export default function Home(props) {
   let [loading, setLoading] = useState(false);
   const [color, setColor] = useState(false);
-  const [button, setButton] = useState("loading");
+  const [button, setButton] = useState("loading...");
 
   useEffect(() => {
     const checking = async () => {
