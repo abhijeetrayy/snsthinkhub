@@ -6,7 +6,7 @@ import Wave from "../public/img/waves.svg";
 import Image from "next/image";
 import Team from "./team";
 import Review from "./review";
-import javaCourseImg from "../public/photos/javaCourse.png"
+import javaCourseImg from "../public/photos/javaCourse.png";
 
 import Link from "next/link";
 import CourseRegistration from "./courseRegistration";
@@ -38,49 +38,47 @@ export default function CourseDetail() {
               <h2 className="text-2xl font-bold">What You will Learn</h2>
               <div>
                 <p className=" text-gray-500">
-                  This comprehensive course is designed to provide you with a strong foundation in Java programming and essential web development concepts.
+                  This comprehensive course is designed to provide you with a
+                  strong foundation in Java programming and essential web
+                  development concepts.
                 </p>
               </div>
               <div>
                 <ul className="flex gap-5 flex-col pl-3">
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" />  <span className="text-sm text-gray-600">
-
-                      "The Grasp
-                      Java essentials: OOPs, Arrays, testing, debugging,
-                      exceptions, API, and Collections for robust coding.
+                    <TiTick className="text-indigo-500 text-2xl" />{" "}
+                    <span className="text-sm text-gray-600">
+                      "The Grasp Java essentials: OOPs, Arrays, testing,
+                      debugging, exceptions, API, and Collections for robust
+                      coding.
                     </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
-
-                      30 Free
-                      Advanced Java skills: Lambdas, Streams, SQL, JDBC,
+                    <TiTick className="text-indigo-500 text-2xl" />{" "}
+                    <span className="text-sm text-gray-600">
+                      30 Free Advanced Java skills: Lambdas, Streams, SQL, JDBC,
                       Hibernate, Spring, Restful services for modern development
                     </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
-
-                      Make REAL
-                      Web basics: CSS, XML, Servlets, JSP, Spring Boot for dynamic
-                      pages and Restful Microservices.
+                    <TiTick className="text-indigo-500 text-2xl" />{" "}
+                    <span className="text-sm text-gray-600">
+                      Make REAL Web basics: CSS, XML, Servlets, JSP, Spring Boot
+                      for dynamic pages and Restful Microservices.
                     </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
-
-                      PDF Manuals
-                      Database magic: SQL, SQL Joins, Hibernate mapping, advanced
-                      queries with Hibernate Query Language.
+                    <TiTick className="text-indigo-500 text-2xl" />{" "}
+                    <span className="text-sm text-gray-600">
+                      PDF Manuals Database magic: SQL, SQL Joins, Hibernate
+                      mapping, advanced queries with Hibernate Query Language.
                     </span>
                   </li>
                   <li className="flex flex-row">
-                    <TiTick className="text-indigo-500 text-2xl" /> <span className="text-sm text-gray-600">
-
-                      Massive Q&A
-                      Modern web: Angular, TypeScript, Components, Forms, Routing,
-                      SPA Framework for interactive interfaces.
+                    <TiTick className="text-indigo-500 text-2xl" />{" "}
+                    <span className="text-sm text-gray-600">
+                      Massive Q&A Modern web: Angular, TypeScript, Components,
+                      Forms, Routing, SPA Framework for interactive interfaces.
                     </span>
                   </li>
                 </ul>
@@ -89,21 +87,21 @@ export default function CourseDetail() {
             <div className="flex flex-col gap-5">
               <div>
                 <h2 className="text-2xl font-bold">Contet</h2>
-                <p className=" text-gray-500">
-                  5 sections • 80 Hours
-                </p>
+                <p className=" text-gray-500">5 sections • 80 Hours</p>
               </div>
               <div className="max-w-[700px] p-3 border rounded-lg">
                 <Accordion />
               </div>
             </div>
             <div className="max-w-[790px] px-5 py-3 flex flex-col gap-7">
-
               <div className="flex flex-col gap-5">
                 <h2 className="text-2xl font-bold">Course Description</h2>
                 <div>
                   <p className=" text-gray-500">
-                    Through a series of carefully structured lessons, you will progressively build your skills and knowledge, starting with fundamental programming concepts and culminating in advanced web development techniques.
+                    Through a series of carefully structured lessons, you will
+                    progressively build your skills and knowledge, starting with
+                    fundamental programming concepts and culminating in advanced
+                    web development techniques.
                   </p>
                 </div>
                 <div>
@@ -137,31 +135,31 @@ export default function CourseDetail() {
                       Data Stream Manipulation
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  JDBC:
-                      Java Database Connectivity
+                      <TiTick className="text-indigo-500 text-2xl" /> JDBC: Java
+                      Database Connectivity
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  Java
-                      EE Overview
+                      <TiTick className="text-indigo-500 text-2xl" /> Java EE
+                      Overview
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  Web
+                      <TiTick className="text-indigo-500 text-2xl" /> Web
                       Development Basics
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      <TiTick className="text-indigo-500 text-2xl" /> Spring
                       Fundamentals
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  IoC &
-                      DI Concepts
+                      <TiTick className="text-indigo-500 text-2xl" /> IoC & DI
+                      Concepts
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      <TiTick className="text-indigo-500 text-2xl" /> Spring
                       Bean Understanding
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      <TiTick className="text-indigo-500 text-2xl" /> Spring
                       Boot for Web Development
                     </li>
                     <li className="flex flex-row">
@@ -169,7 +167,7 @@ export default function CourseDetail() {
                       Microservices with Spring Boot
                     </li>
                     <li className="flex flex-row">
-                      <TiTick className="text-indigo-500 text-2xl" />  Spring
+                      <TiTick className="text-indigo-500 text-2xl" /> Spring
                       Boot for Web Development
                     </li>
                     <li className="flex flex-row">
@@ -259,7 +257,7 @@ export default function CourseDetail() {
                 </div>
               </div>
               <div className="w-full flex flex-col items-center my-5 gap-3 transition-all">
-                <CourseRegistration />
+                <CourseRegistration courseId={"100001"} />
 
                 {/* <button className="text-white py-4 px-9 rounded-lg  bg-indigo-600 hover:bg-indigo-500 w-56">
                                 Buy Now
@@ -299,7 +297,8 @@ export default function CourseDetail() {
                 <div className="mb-6">
                   <h2 className="text-2xl font-bold">Traning Student</h2>
                   <p className="text-sm text-gray-500">
-                    Get You Student the access to tons of Course and Programs, and insure your students Placement.
+                    Get You Student the access to tons of Course and Programs,
+                    and insure your students Placement.
                   </p>
                   <div className="hidden md:flex justify-center w-full my-3">
                     <Link href={"/home/program"}>

@@ -1,7 +1,10 @@
 "use client";
 import { useState } from "react";
 import PayButton from "./payPage";
-export default function registaration() {
+import { signIn, useSession } from "next-auth/react";
+export default function registaration({ courseId }) {
+  const { data: session, status } = useSession();
+  console.log(session);
   const [click, setClick] = useState(false);
   const [formData, setFormData] = useState({
     Name: "",
@@ -18,10 +21,21 @@ export default function registaration() {
 
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
+  if (status == "loading") {
+    return (
+      <>
+        <div className="w-full">
+          <button className=" transition-all bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700">
+            Loading..
+          </button>
+        </div>
+      </>
+    );
+  }
   return (
     <>
       <div className="transition delay-100 duration-200 ease-out w-full">
-        {click ? (
+        {/* {click ? (
           <div className="w-full p-3 flex gap-3 flex-col transition delay-200 ease-in-out">
             <div className="">
               <label
@@ -155,7 +169,20 @@ export default function registaration() {
           >
             Enrol Now
           </button>
-        )}
+        )} */}
+
+        <div>
+          {!session ? (
+            <button
+              className=" transition-all bg-indigo-600 rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-white font-bold hover:bg-indigo-700"
+              onClick={signIn}
+            >
+              SignIn
+            </button>
+          ) : (
+            <PayButton formData={session?.user} CourseId={courseId} />
+          )}
+        </div>
       </div>
     </>
   );

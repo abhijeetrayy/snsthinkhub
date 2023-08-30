@@ -296,6 +296,67 @@ function program() {
             <Workwith />
           </div>
         </div>
+
+        <div>
+          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16 px-3">
+            <div className="max-w-6xl">
+              <hr className="border" />
+              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
+                Business/Finance Program
+              </h2>
+              <p className="text-gray-600 sm:text-sm ">
+                Programs are targeted to students pursuing Bachelor of Business
+                Administration (BBA), Bachelor of Commerce (BCOM), MBA.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center w-full gap-4 my-7">
+            <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 xl:columns-4 gap-5">
+              <ProgramBuy
+                title={"Business Programs"}
+                data={programs["Business Programs"]}
+              />
+              <ProgramBuy
+                title={"Marketing programs"}
+                data={programs["Marketing programs"]}
+              />
+              <ProgramBuy
+                title={"Personality development programs"}
+                data={programs["Personality development program"]}
+              />
+              <ProgramBuy
+                title={"Financing and Accounting programs"}
+                data={programs["Financing and Accounting programs"]}
+              />
+              <ProgramBuy
+                title={"People skills programs"}
+                data={programs["People skills programs"]}
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16 px-3">
+            <div className="max-w-6xl">
+              <hr className="border" />
+              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
+                Technical Program
+              </h2>
+              <p className="text-gray-600 sm:text-sm ">
+                Programs are targeted towards Bachelor's of Technology, BCA,
+                MCA, MTech, etc.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center w-full gap-4 my-7">
+            <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 xl:columns-4 gap-5">
+              <ProgramBuy
+                title={"Tech all in one"}
+                data={programs["Tech all in one"]}
+              />
+            </div>
+          </div>
+        </div>
         <div ref={ref} className="lg:flex lg:w-full justify-center p-3">
           <div className=" lg:max-w-6xl lg:flex flex-col justify-center items-center">
             <hr className="border max-w-lg w-full" />
@@ -426,68 +487,6 @@ function program() {
             </div>
           </div>
         </div>
-
-        <div>
-          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16 px-3">
-            <div className="max-w-6xl">
-              <hr className="border" />
-              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-                Business/Finance Program
-              </h2>
-              <p className="text-gray-600 sm:text-sm ">
-                Programs are targeted to students pursuing Bachelor of Business
-                Administration (BBA), Bachelor of Commerce (BCOM), MBA.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap justify-center w-full gap-4 my-7">
-            <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 xl:columns-4 gap-5">
-              <ProgramBuy
-                title={"Business Programs"}
-                data={programs["Business Programs"]}
-              />
-              <ProgramBuy
-                title={"Marketing programs"}
-                data={programs["Marketing programs"]}
-              />
-              <ProgramBuy
-                title={"Personality development programs"}
-                data={programs["Personality development program"]}
-              />
-              <ProgramBuy
-                title={"Financing and Accounting programs"}
-                data={programs["Financing and Accounting programs"]}
-              />
-              <ProgramBuy
-                title={"People skills programs"}
-                data={programs["People skills programs"]}
-              />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16 px-3">
-            <div className="max-w-6xl">
-              <hr className="border" />
-              <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-                Technical Program
-              </h2>
-              <p className="text-gray-600 sm:text-sm ">
-                Programs are targeted towards Bachelor's of Technology, BCA,
-                MCA, MTech, etc.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap justify-center w-full gap-4 my-7">
-            <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 xl:columns-4 gap-5">
-              <ProgramBuy
-                title={"Tech all in one"}
-                data={programs["Tech all in one"]}
-              />
-            </div>
-          </div>
-        </div>
-
         <div className="w-full flex justify-center p-3">
           <div className="max-w-6xl w-full">
             <Testimonials />

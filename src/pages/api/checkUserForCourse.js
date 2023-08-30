@@ -10,10 +10,7 @@ async function submitForm(req, res) {
 			
 		   	Name: String,
 		   	Email: String,
-		   	Phone: String,
-		   	University: String,
-		   	Course: String,
-		    Year: String,
+		   
 		    CourseId: String,
   	
 	})
@@ -37,8 +34,10 @@ async function submitForm(req, res) {
     console.log("working")
    
    try {
-   		const { Name, Email, Phone, University, Course, Year, CourseId } = req.body;
-   		
+   		const CourseId = req.body.CourseId
+   		const Email = req.body.formData.email
+   		console.log(CourseId,Email)
+		
         await connectToDatabase();
         let checkUserIsAlreadyFilled = await courseUserModel.findOne({CourseId, Email})
         if (checkUserIsAlreadyFilled){

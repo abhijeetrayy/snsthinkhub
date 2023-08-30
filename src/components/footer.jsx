@@ -18,8 +18,8 @@ export default function Footer() {
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="w-full flex justify-center flex-col max-w-7xl md:px-5">
-      <div className="grid  grid-cols-1 gap-10 py-10 px-5 rounded-lg mx-auto mt-5 border-t bg-indigo-500 border-gray-100 w-full md:grid-cols-5">
-        <div className="lg:col-span-2">
+      <div className="w-full grid  grid-cols-1 gap-10 py-10 px-5 rounded-lg mx-auto mt-5 border-t bg-indigo-500 border-gray-100 md:grid-cols-3 ">
+        <div className="">
           <div>
             {" "}
             <Link
@@ -41,31 +41,32 @@ export default function Footer() {
             designed to help students develop the skills and knowledge
           </div>
         </div>
-
-        <div>
-          <div className="flex flex-col gap-3 w-fit -mt-2 -ml-3 lg:ml-0">
-            {navigation.map((item, index) => (
-              <Link
-                key={index}
-                href={`${item.link}`}
-                className="border w-full border-white hover:bg-white hover:text-indigo-500 px-4 py-2 text-white rounded-md  duration-300  "
-              >
-                {item.name}
-              </Link>
-            ))}
+        <div className="pl-5 md:pl-0 flex flex-row gap-10   w-full">
+          <div >
+            <div className="flex flex-col gap-3 w-fit -mt-2 -ml-3 lg:ml-0">
+              {navigation.map((item, index) => (
+                <Link
+                  key={index}
+                  href={`${item.link}`}
+                  className="border w-full border-white hover:bg-white hover:text-indigo-500 px-4 py-2 text-white rounded-md  duration-300  "
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <div className="flex flex-col gap-3 w-fit -mt-2 -ml-3 lg:ml-0">
-            {legal.map((item, index) => (
-              <Link
-                key={index}
-                href="/"
-                className="px-4 py-2 border w-full hover:bg-white hover:text-indigo-500 border-white text-white rounded-md duration-300  "
-              >
-                {item}
-              </Link>
-            ))}
+          <div>
+            <div className="flex flex-col gap-3 w-fit -mt-2 -ml-3 lg:ml-0">
+              {legal.map((item, index) => (
+                <Link
+                  key={index}
+                  href="/"
+                  className="px-4 py-2 border w-full hover:bg-white hover:text-indigo-500 border-white text-white rounded-md duration-300  "
+                >
+                  {item}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
         <div className="">
