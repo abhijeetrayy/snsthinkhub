@@ -159,10 +159,11 @@ function Navbar() {
                                   </button>
                                 ) : (
                                   <Link
+                                    onClick={() => setOpen(false)}
                                     href={"/home/profile"}
                                     className=" px-4 py-2 -ml-4  text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
                                   >
-                                    Hi {session?.user?.name.substring(0, 8)}...
+                                    {session?.user?.name.substring(0, 8)}...
                                   </Link>
                                 )}
                                 <Link
