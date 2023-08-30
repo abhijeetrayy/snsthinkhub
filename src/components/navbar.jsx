@@ -32,7 +32,13 @@ function Navbar() {
 
         <div className="flex flex-wrap items-start justify-between w-full  lg:w-32">
           <Link href="/">
-            <Image className="w-10 h-10" alt="" width={100} height={100} src={Logo} />
+            <Image
+              className="w-10 h-10"
+              alt=""
+              width={100}
+              height={100}
+              src={Logo}
+            />
             {/* <span className="flex   flex-row space-x-2 text-2xl font-medium text-indigo-500">
               
 
@@ -187,6 +193,21 @@ function Navbar() {
         </div>
 
         <div className="hidden  lg:flex items-center nav__item ">
+          {!session ? (
+            <button
+              onClick={signIn}
+              className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
+            >
+              signIn
+            </button>
+          ) : (
+            <Link
+              href={"/home/profile"}
+              className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
+            >
+              {session?.user?.name}
+            </Link>
+          )}
           <Link
             onClick={() => setOpen(false)}
             href={"/home/program"}
