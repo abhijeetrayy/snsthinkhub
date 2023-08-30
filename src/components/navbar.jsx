@@ -205,7 +205,7 @@ function Navbar() {
               href={"/home/profile"}
               className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
             >
-              {session?.user?.name}
+              {session?.user?.name.substring(0, 8)}...
             </Link>
           )}
           <Link
