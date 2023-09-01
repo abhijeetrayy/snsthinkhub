@@ -10,19 +10,19 @@ function sidebar() {
         <h1 className="my-4">Navigation</h1>
         <Link
           className="px-8 py-3 bg-indigo-100 rounded-md border-1 border-gray-400 hover:bg-indigo-50"
-          href={"/admin"}
+          href={"/home/admin"}
         >
           Dashboard
         </Link>
         <Link
           className="px-8 py-3 bg-indigo-100 rounded-md border-1 border-gray-400 hover:bg-indigo-50"
-          href={"/admin/internships"}
+          href={"/home/admin/internships"}
         >
           Internship
         </Link>
         <Link
           className="px-8 py-3 bg-indigo-100 rounded-md border-1 border-gray-400 hover:bg-indigo-50"
-          href={"/admin/courses"}
+          href={"/home/admin/courses"}
         >
           Course
         </Link>
