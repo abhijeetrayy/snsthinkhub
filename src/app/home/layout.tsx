@@ -1,11 +1,25 @@
+"use client";
 import "../../css/tailwind.css";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 
 import { Toaster } from "react-hot-toast";
 import AuthProvider from "../../context/sessionProvider";
+import { NextRequest } from "next/server";
+import { number } from "prop-types";
+import { usePathname } from "next/navigation";
 
-export default function Layout({ children }) {
+export default function Layout({ children }, req: NextRequest) {
+  const url = usePathname();
+  if (url?.startsWith("/home/admin")) {
+    return (
+      <html>
+        <body>
+          <AuthProvider>{children}</AuthProvider>
+        </body>
+      </html>
+    );
+  }
   return (
     <html>
       <head>
@@ -14,11 +28,7 @@ export default function Layout({ children }) {
           rel="stylesheet"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin={+true}
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
           rel="stylesheet"

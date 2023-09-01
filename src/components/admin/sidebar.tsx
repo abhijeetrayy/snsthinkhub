@@ -33,14 +33,12 @@ function sidebar() {
           <span>User Name</span>
           <span>user email</span>
         </div>
-        <button
+        <Link
+          href={"/api/auth/signout"}
           className="px-8 py-3 text-white bg-gray-700 rounded-md border-1 border-gray-400 hover:bg-gray-600"
-          onClick={() => {
-            signOut;
-          }}
         >
           LogOut
-        </button>
+        </Link>
       </div>
     </div>
   );
