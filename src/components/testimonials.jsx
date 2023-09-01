@@ -14,7 +14,7 @@ const Testimonials = () => {
           Let's hear it from our students
         </h2>
       </div>
-      <div className=" overflow-x-scroll scroll-smooth scrollbar-thumb-indigo-400 group-hover:scrollbar-thumb-gray-500 scrollbar-thin  flex  gap-3 duration-300">
+      <div className=" overflow-x-scroll scroll-smooth scrollbar-thumb-indigo-400  scrollbar-thin  flex  gap-3 duration-300">
         {TestimonialsData.map((items, index) => (
           <div
             key={index}
