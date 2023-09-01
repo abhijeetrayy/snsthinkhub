@@ -36,18 +36,20 @@ export const authOptions: NextAuthOptions = {
             clientId: process.env.clientIdG as string
             ,clientSecret: process.env.cientSceretG as string
         }),
-        CredentialProvider({
-            name: "credentials",
-            credentials:{
-                email: {label: "Email", type: "text" , placeholder: "ray" },
-                password: {label: "Password", type: "password" , placeholder: "password" }
-            },
+        // CredentialProvider({
+        //     name: "credentials",
+        //     credentials:{
 
-            async authorize(credentials)  {
-                const User = {id:1, email: "a@gmail.com", name: "Abhi"}
-                return User as any
-            },
-        }),
+        //         name: {label: "Name", type: "text" , placeholder: "Abhijeet Ray" },
+        //         email: {label: "Email", type: "text" , placeholder: "ray@gmail.com" },
+        //         password: {label: "Password", type: "password" , placeholder: "password" }
+        //     },
+
+        //     async authorize(credentials)  {
+        //         const User = {id:1, email: credentials?.email, name: credentials?.name}
+        //         return User as any
+        //     },
+        // }),
         
     ],
 

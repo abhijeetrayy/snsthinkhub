@@ -1,7 +1,7 @@
 import Atoshi from "../public/img/team/Atoshi.jpg";
 import img2 from "../public/img/team/harshit_munjal.jpg";
 import Sir from "../public/img/team/Sir.jpg";
-import Sangita from "../public/img/user1.jpg"
+import Sangita from "../public/img/user1.jpg";
 
 import Image from "next/image";
 
@@ -29,6 +29,8 @@ export default function Team() {
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
                 src={Sangita}
                 alt="Person"
+                width={150}
+                height={100}
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-indigo-500 hover:bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-50">
@@ -36,8 +38,8 @@ export default function Team() {
                 </p>
                 <p className="mb-4 text-xs text-gray-50">Founder / CEO</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
-                  "Discouragement and failure are two of the surest stepping stones to success"
-
+                  "Discouragement and failure are two of the surest stepping
+                  stones to success"
                 </p>
                 {/* <div className="flex items-center justify-center space-x-3">
                   <a
@@ -127,7 +129,6 @@ export default function Team() {
                 <p className="mb-4 text-xs text-gray-50">Technical Trainer</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
                   "Fail forward, achieve greatness through setbacks"
-
                 </p>
                 {/* <div className="flex items-center justify-center space-x-3">
                   <a
