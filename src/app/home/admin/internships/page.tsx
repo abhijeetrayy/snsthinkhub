@@ -1,8 +1,8 @@
 import React from "react";
-import Form from "../../../components/form";
+import Form from "../../../../components/form";
 import Link from "next/link";
 
-import GetInternData from "../../../components/getInternData";
+import GetInternData from "../../../../components/getInternData";
 export default function page() {
   return (
     <div className="">
