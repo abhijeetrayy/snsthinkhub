@@ -10,7 +10,7 @@ export default function page() {
         <div>
           <Link
             className="px-5 py-2 bg-gray-800 text-white hover:bg-gray-700 rounded-md"
-            href={"/admin/internships/create"}
+            href={"/home/admin/internships/create"}
           >
             Create an Intenship
           </Link>

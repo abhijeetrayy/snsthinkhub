@@ -11,6 +11,8 @@ async function submitForm(req, res) {
     try {
         await connectToDatabase();
         const programdata = new FormDataModel({
+            CourseName: formData.title,
+            
             DynamicData: formData,
         });
         await programdata.save();
