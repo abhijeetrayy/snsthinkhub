@@ -23,7 +23,8 @@ export default function Layout({ children }) {
         <html>
           <body>
             <>
-              <div className="flex w-full ">
+              <div className="flex md:hidden">Switch to Desktop Only</div>
+              <div className="hidden md:flex w-full ">
                 <div className="flex-none ">
                   <Sidebar />
                 </div>
