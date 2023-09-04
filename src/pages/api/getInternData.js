@@ -16,6 +16,7 @@ async function submitForm(req, res) {
 		models.internshipUser || model("internshipUser", interUser);
 
 	const IntershipData = new mongoose.Schema({
+		InternshipName:{type: String, required: true},
 		internshipId: { type: String, required: true },
 
 		// Add more fields as needed

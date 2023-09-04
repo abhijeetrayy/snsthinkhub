@@ -6,28 +6,17 @@ import mongoose, { model, models } from 'mongoose';
 
 
 async function submitForm(req, res) {
-	const courseUserSchema = new mongoose.Schema({
-
-		Name: String,
-		Email: String,
-		Phone: String,
-		University: String,
-		Course: String,
-		Year: String,
-		CourseId: String,
-
-	})
-	const courseUserModel = models.courseUser || model('courseUser', courseUserSchema)
-
+	
 
 	const CouserDataSchema = new mongoose.Schema({
+		CourseName: { type: String, required: true },
 		CourseId: { type: String, required: true },
 
 
 
 		// Add more fields as needed
 	});
-	const courseDataModel = models.courseData || model('courseData', CouserDataSchema)
+	const courseDataModel = models.coursesData || model('coursesData', CouserDataSchema)
 
 
 

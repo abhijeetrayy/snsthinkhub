@@ -28,7 +28,7 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx", "src/middleware.js"],
+    "**/*.tsx", "src/middleware.js", "src/components/payPage.jsx"],
   "exclude": [
     "node_modules"
   ]

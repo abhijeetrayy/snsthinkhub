@@ -14,14 +14,15 @@ async function submitForm(req, res) {
 		   	Linkedin: String,
 		   	Github: String,
 		    about: String,
-		    Id: String,
+		    internshipId: String,
   	
 	})
 	const interUserModel = models.internshipUser || model('internshipUser', interUser)
 
 	
 	const IntershipData = new mongoose.Schema({
-	Id: {type: String, required: true},
+		InternshipName:{type: String, required: true},
+		internshipId: {type: String, required: true},
    
   
   
@@ -60,7 +61,7 @@ async function submitForm(req, res) {
         						   	Linkedin,
         						   	Github,
         						    about,
-        						    Id,
+        						    internshipId,
           	
         			        	 })
         			        	await saveusers.save()
@@ -69,13 +70,14 @@ async function submitForm(req, res) {
         
         
         			        	 check =new InternData({
-        			        		Id ,
+									InternshipName,
+        			        		internshipId ,
         			        		
         			        		
         			        	})
         			        	 await check.save()
         			        	 const saveusers = new interUserModel({
-        			        	 	Id,
+        			        	 	internshipId,
         			        	 	Name,
         						   	Email,
         						   	Phone,

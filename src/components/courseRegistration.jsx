@@ -2,7 +2,7 @@
 import { useState } from "react";
 import PayButton from "./payPage";
 import { signIn, useSession } from "next-auth/react";
-export default function registaration({ courseId }) {
+export default function registaration({ courseId, courseName }) {
   const { data: session, status } = useSession();
   console.log(session);
   const [click, setClick] = useState(false);
@@ -180,7 +180,11 @@ export default function registaration({ courseId }) {
               SignIn Please
             </button>
           ) : (
-            <PayButton formData={session?.user} CourseId={courseId} />
+            <PayButton
+              formData={session?.user}
+              CourseId={courseId}
+              CourseName={courseName}
+            />
           )}
         </div>
       </div>

@@ -13,20 +13,23 @@ async function submitForm(req, res) {
 		RazorpayOrderId: String,
 		RazorpayPaymentId: String,
 		RazorpaySignature: String,
+		price: String,
+
 		CourseId: String,
 
 	})
-	const courseUserModel = models.courseUserData || model('courseUserData', courseUserSchema)
+	const courseUserModel = models.courseUser || model('courseUser', courseUserSchema)
 
 
 	const CouserDataSchema = new mongoose.Schema({
+		CourseName: { type: String, required: true },
 		CourseId: { type: String, required: true },
 
 
 
 
 	});
-	const courseDataModel = models.courseData || model('courseData', CouserDataSchema)
+	const courseDataModel = models.coursesData || model('coursesData', CouserDataSchema)
 
 	if (req.method !== "POST") {
 		return res.status(405).json({ error: "Method Not Allowed" });
@@ -36,15 +39,16 @@ async function submitForm(req, res) {
 	console.log("working")
 
 	try {
-		const { userdata,courseId,payData} = req.body;
+		const { userdata, courseId, payData, price, name } = req.body;
 		console.log(req.body)
-		const Email = userdata.email
-		const Name = userdata.name
-		const CourseId = courseId
-		const RazorpayOrderId = payData.razorpay_order_id
+		const Email = userdata?.email
+		const CourseName = req.body?.name
+		const Name = userdata?.name
+		const CourseId = req.body?.courseId
+		const RazorpayOrderId = payData?.razorpay_order_id
 		console.log(RazorpayOrderId)
-		const RazorpayPaymentId = payData.razorpay_payment_id
-		const RazorpaySignature = payData.razorpay_signature
+		const RazorpayPaymentId = payData?.razorpay_payment_id
+		const RazorpaySignature = payData?.razorpay_signature
 		await connectToDatabase();
 		let checkUserIsAlreadyFilled = await courseUserModel.findOne({ CourseId, Email })
 		if (checkUserIsAlreadyFilled) {
@@ -65,6 +69,7 @@ async function submitForm(req, res) {
 					RazorpayOrderId,
 					RazorpayPaymentId,
 					RazorpaySignature,
+					price,
 					CourseId,
 
 				})
@@ -74,6 +79,7 @@ async function submitForm(req, res) {
 
 
 				check = new courseDataModel({
+					CourseName,
 					CourseId,
 
 
@@ -85,6 +91,7 @@ async function submitForm(req, res) {
 					RazorpayOrderId,
 					RazorpayPaymentId,
 					RazorpaySignature,
+					price,
 					CourseId,
 
 				})

@@ -15,7 +15,6 @@ export default function intershipInfo() {
             <div className="flex flex-col gap-5">
               <h2 className="text-3xl font-bold">
                 Frontend Developer, remote work, at S&S
-
               </h2>
 
               <div className="flex flex-col gap-2 border rounded-lg border-gray-200 p-2 md:p-4">
@@ -24,7 +23,8 @@ export default function intershipInfo() {
                 </h3>
                 <h4 className="text-gray-500 font-bold">SnSThinkHub</h4>
                 <p className="text-md text-gray-500">
-                  We are seeking a highly motivated and enthusiastic Fullstack Development Intern to join our dynamic team.
+                  We are seeking a highly motivated and enthusiastic Fullstack
+                  Development Intern to join our dynamic team.
                 </p>
                 <span className="font-bold text-gray-500">Work From Home</span>
                 <div className="flex flex-col gap-5 md:flex-row md:gap-10">
@@ -71,7 +71,8 @@ export default function intershipInfo() {
                   About SnSThinkHub
                 </span>
                 <span className="text-gray-500 hover:text-gray-700">
-                  SnSThinkhub offers a variety of programs and services that are designed to help students develop the skills and knowledge
+                  SnSThinkhub offers a variety of programs and services that are
+                  designed to help students develop the skills and knowledge
                 </span>
               </div>
             </div>
@@ -85,8 +86,8 @@ export default function intershipInfo() {
                 </span>
                 <ul className=" text-gray-500">
                   <li>
-                    1. Code daily in our stack: Mongo, React JS,
-                    NextJs, HTML, CSS, API
+                    1. Code daily in our stack: Mongo, React JS, NextJs, HTML,
+                    CSS, API
                   </li>
                   <li>
                     2. Create high-quality, testable and efficient code that can
@@ -187,7 +188,10 @@ export default function intershipInfo() {
               </div>
             </div>
             <div className="w-full flex items-center justify-center">
-              <IntershihfillButton ids={"000011"} />
+              <IntershihfillButton
+                ids={"000011"}
+                name={"Frontend Developer, remote work, at S&S"}
+              />
             </div>
           </div>
         </div>

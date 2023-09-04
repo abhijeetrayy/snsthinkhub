@@ -34,7 +34,7 @@ export default function getCourseData() {
                 <div key={index} className="flex flex-row gap-6 justify-around">
                   <Link
                     className=""
-                    href={`/admin/courses/${item.CourseId}`}
+                    href={`/home/admin/courses/${item.CourseId}`}
                     key={item._id}
                   >
                     <span>
@@ -44,7 +44,7 @@ export default function getCourseData() {
                       {item.CourseId}
                     </span>
                   </Link>
-                  <span>web devlopment</span>
+                  <span>{item.CourseName}</span>
                 </div>
               ))
             : "wait"}

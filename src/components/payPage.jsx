@@ -27,7 +27,7 @@ export default function Home(props) {
       if (
         dataToCheck.message == "User You have already Registered for the Course"
       ) {
-        setButton("Already Registered");
+        setButton("Registered");
         console.log(button);
       } else {
         setButton("Purchase Now");
@@ -50,7 +50,7 @@ export default function Home(props) {
       console.log(resWhichSave);
       if (resWhichSave.message === "Form data saved successfully") {
         setLoading(false);
-        toast("Good Wishes, Registration successfull");
+        toast("Good Wishes, Registration successfull 🎉");
       } else {
         setLoading(false);
         toast(
@@ -149,6 +149,8 @@ export default function Home(props) {
           userdata: props.formData,
           courseId: props.CourseId,
           payData: response,
+          price: data.amount / 100,
+          name: props.CourseName,
         };
         handleSubmit(dataset);
         // Validate payment at server - using webhooks is a better idea.
@@ -189,7 +191,7 @@ export default function Home(props) {
         if (button == "Purchase Now") {
           makePayment();
         }
-        if (button == "Already Registered") {
+        if (button == "Registered") {
           toast("you have been already registered 🎉");
         }
       }}
