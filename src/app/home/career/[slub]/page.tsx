@@ -104,7 +104,7 @@ function page() {
             title={"Job details form"}
             tag={"job"}
             ids={"00001"}
-            name={undefined}
+            name={"Freelance trainer for S&S"}
           />
         </div>
       </div>

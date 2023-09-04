@@ -31,12 +31,16 @@ export default function form({ title, tag, ids, name }) {
       setLoading(true);
       console.log(formData);
       if (title == "Job details form") {
+        const formDatas = {
+          formData,
+          name,
+        };
         const response = await fetch("/api/careerUser", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(formDatas),
         });
         const data = await response.json();
         if (data.message === "User You have already Filled the internship") {

@@ -21,11 +21,12 @@ async function submitForm(req, res) {
 
 	
 	const careerIds = new mongoose.Schema({
-	Id: {type: String, required: true},
-   
-  
-  
-   			 // Add more fields as needed
+		CareerTitle: {type: String, required: true},
+		Id: {type: String, required: true},
+		
+		
+		
+	
 		});
  	const careerIdData = models.careeridsData || model('careeridsData', careerIds)
 
@@ -37,8 +38,15 @@ async function submitForm(req, res) {
     console.log("working")
    
    try {
-   		const { Name, Email, Phone, Linkedin, Github, about, Id } = req.body;
-   		 console.log(Id);
+	const { formData, name } = req.body;
+	const Name = formData.Name
+	const Email = formData.Email
+	const Phone = formData.Phone
+	const Linkedin = formData.Linkedin
+	const Github = formData.Github
+	const about = formData.about
+	const Id = formData.Id
+	const CareerTitle = name
         await connectToDatabase();
         let checkUserIsAlreadyFilled = await careerUserModel.findOne({Id, Email})
         if (checkUserIsAlreadyFilled){
@@ -69,6 +77,7 @@ async function submitForm(req, res) {
         
         
         			        	 check =new careerIdData({
+									CareerTitle,
         			        		Id ,
         			        		
         			        		
