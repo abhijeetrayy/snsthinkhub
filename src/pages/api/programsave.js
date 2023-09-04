@@ -6,18 +6,19 @@ async function submitForm(req, res) {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
 
-    const { formData } = req.body;
-    console.log(formData);
+    const { formDatas } = req.body;
+    console.log(formDatas)
     try {
         await connectToDatabase();
         const programdata = new FormDataModel({
-            CourseName: formData.title,
+            CourseName: formDatas.formData.title,
             
-            DynamicData: formData,
+            DynamicData: formDatas,
         });
         await programdata.save();
         return res.status(200).json({ message: "Form data saved successfully" });
     } catch (error) {
+        console.log(error)
         return res.status(500).json({ error: "Failed to save form data" });
     }
 }
