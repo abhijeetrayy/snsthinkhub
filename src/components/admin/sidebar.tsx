@@ -39,6 +39,7 @@ function sidebar() {
 
       <div className="flex flex-col gap-2">
         <div className="flex flex-col gap-1">
+          <span className="text-xs">Accout Access Granted</span>
           <span>{session?.user?.name}</span>
           <span>{session?.user?.email}</span>
         </div>
