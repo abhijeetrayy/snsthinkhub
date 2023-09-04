@@ -37,17 +37,17 @@ export default function Home(props) {
     checking();
   });
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (dataset) => {
     try {
       const response = await fetch("/api/courseData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(props),
+        body: JSON.stringify(dataset),
       });
       const resWhichSave = await response.json();
-
+      console.log(resWhichSave);
       if (resWhichSave.message === "Form data saved successfully") {
         setLoading(false);
         toast("Good Wishes, Registration successfull");
@@ -57,7 +57,7 @@ export default function Home(props) {
           "something went worng, please contact and send the requeset on the contact-us page.📞"
         );
       }
-      console.log("hell", resWhichSave);
+
       // Handle success message or redirect
     } catch (error) {
       console.log("Failed to submit form:", error);
@@ -145,7 +145,12 @@ export default function Home(props) {
       image: "",
       handler: function (response) {
         toast("Please wait, registring you to the couse.... 😊");
-        handleSubmit();
+        const dataset = {
+          userdata: props.formData,
+          courseId: props.CourseId,
+          payData: response,
+        };
+        handleSubmit(dataset);
         // Validate payment at server - using webhooks is a better idea.
         // toast(response.razorpay_payment_id);
         // toast(response.razorpay_order_id);

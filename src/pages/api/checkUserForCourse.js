@@ -10,11 +10,13 @@ async function submitForm(req, res) {
 			
 		   	Name: String,
 		   	Email: String,
-		   
+               RazorpayOrderId: String,
+               RazorpayPaymentId: String,
+               RazorpaySignature: String,
 		    CourseId: String,
   	
 	})
-	const courseUserModel = models.courseUser || model('courseUser', courseUserSchema)
+	const courseUserModel = models.courseUserData || model('courseUserData', courseUserSchema)
 
 	
 	const CouserDataSchema = new mongoose.Schema({
@@ -36,7 +38,7 @@ async function submitForm(req, res) {
    try {
    		const CourseId = req.body.CourseId
    		const Email = req.body.formData.email
-   		console.log(CourseId,Email)
+   		
 		
         await connectToDatabase();
         let checkUserIsAlreadyFilled = await courseUserModel.findOne({CourseId, Email})

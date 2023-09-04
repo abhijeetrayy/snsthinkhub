@@ -1,6 +1,5 @@
 "use client";
 
-import { previewData } from "next/dist/client/components/headers";
 import { useState } from "react";
 import programF from "../fetch/programF";
 
@@ -64,11 +63,10 @@ export default function Example() {
       <div className=" bg-white p-6 rounded-md">
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900">
-            Profile
+            Course
           </h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            This information will be displayed publicly so be careful what you
-            share.
+            create a course
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -87,7 +85,7 @@ export default function Example() {
                     id="Title"
                     autoComplete="Designation"
                     className="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                    placeholder="  Web Developer"
+                    placeholder="  Web Developer full course"
                     value={formData.title}
                     onChange={handleChange}
                   />
@@ -100,14 +98,14 @@ export default function Example() {
                 htmlFor="Details"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Details
+                concise Details
               </label>
               <div className="mt-2">
                 <textarea
                   id="Details"
                   name="Details"
                   rows={3}
-                  placeholder="Interview Profile Details"
+                  placeholder="concise details for the course"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={""}
                   onChange={handleChange}
@@ -115,7 +113,7 @@ export default function Example() {
                 />
               </div>
               <p className="mt-3 text-sm leading-6 text-gray-600">
-                Write a Program details.
+                Write course details.
               </p>
             </div>
 
@@ -232,10 +230,10 @@ export default function Example() {
 
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900">
-            Prgram Content
+            What ou will learn
           </h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            Content shown in tabular form in UI
+            Content shown in tabular/row form in UI
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
