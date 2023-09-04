@@ -32,7 +32,7 @@ export default function getInternData() {
               <div key={index} className="flex flex-row gap-6 justify-around">
                 <Link
                   className=""
-                  href={`/admin/internships/${item.internshipId}`}
+                  href={`/home/admin/internships/${item.internshipId}`}
                   key={item._id}
                 >
                   <span>
@@ -42,7 +42,7 @@ export default function getInternData() {
                     {item.internshipId}
                   </span>
                 </Link>
-                <span>web devlopment</span>
+                <span>{item.InternshipName}</span>
               </div>
             ))
           : "wait"}

@@ -13,7 +13,7 @@ function page() {
       try {
         const url = pathname?.split("/")[4];
         console.log(url);
-        const res = await fetch("/api/courseUsers", {
+        const res = await fetch("/api/getInternUsers", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -31,7 +31,7 @@ function page() {
   }, []);
   return (
     <>
-      <h1>Course #{url} - Users List</h1>
+      <h1>Internship #{url} - Users List</h1>
       {data
         ? data.map((item: any, index) => (
             <div key={index} className="flex flex-row gap-6 justify-around">

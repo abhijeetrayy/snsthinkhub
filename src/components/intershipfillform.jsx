@@ -5,7 +5,7 @@ import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import toast from "react-hot-toast";
 import DotLoader from "react-spinners/DotLoader";
 
-export default function form({ title, tag, ids }) {
+export default function form({ title, tag, ids, name }) {
   let [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -24,7 +24,6 @@ export default function form({ title, tag, ids }) {
     const { name, value } = e.target;
 
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-
   };
 
   const handleSubmit = async () => {
@@ -32,8 +31,6 @@ export default function form({ title, tag, ids }) {
       setLoading(true);
       console.log(formData);
       if (title == "Job details form") {
-
-
         const response = await fetch("/api/careerUser", {
           method: "POST",
           headers: {
@@ -55,14 +52,17 @@ export default function form({ title, tag, ids }) {
         }
 
         console.log("hell", data);
-      }
-      else {
-        const response = await fetch("/api/intershipData", {
+      } else {
+        const formDatas = {
+          formData,
+          name,
+        };
+        const response = await fetch("/api/internshipData", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(formDatas),
         });
         const data = await response.json();
         if (data.message === "User You have already Filled the internship") {
@@ -77,7 +77,7 @@ export default function form({ title, tag, ids }) {
           toast("something went wrong!😢");
         }
 
-        console.log("hell", data)
+        console.log("hell", data);
       }
       // Handle success message or redirect
     } catch (error) {
