@@ -20,7 +20,7 @@ export default function Layout({ children }) {
   if (session) {
     if (
       session.user.email === "abhijeet11ray@gmail.com" ||
-      session?.user.email === "harshit9897@gmali.com"
+      session?.user.email === "harshitmunjal769@gmali.com"
     ) {
       return (
         <html>
