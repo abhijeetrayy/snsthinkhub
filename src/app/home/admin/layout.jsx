@@ -19,8 +19,8 @@ export default function Layout({ children }) {
   }
   if (session) {
     if (
-      session.user.email === "abhijeet11ray@gmail.com" ||
-      session?.user.email === "harshitmunjal769@gmali.com"
+      session.user.email == "abhijeet11ray@gmail.com" ||
+      session.user.email == "harshitmunjal769@gmail.com"
     ) {
       return (
         <html>
