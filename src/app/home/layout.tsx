@@ -5,11 +5,15 @@ import Footer from "../../components/footer";
 
 import { Toaster } from "react-hot-toast";
 import AuthProvider from "../../context/sessionProvider";
-import { NextRequest } from "next/server";
-import { number } from "prop-types";
-import { usePathname } from "next/navigation";
 
-export default function Layout({ children }, req: NextRequest) {
+import { usePathname } from "next/navigation";
+import Head from "next/head";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const url = usePathname();
   if (url?.startsWith("/home/admin")) {
     return (
@@ -21,8 +25,9 @@ export default function Layout({ children }, req: NextRequest) {
     );
   }
   return (
-    <html>
+    <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
           rel="stylesheet"
