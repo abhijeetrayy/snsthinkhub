@@ -11,6 +11,9 @@ import Card from "../../components/card";
 import ProgramBuy from "../../components/programBuy";
 import ContactUs from "../../components/contactus";
 import Link from "next/link";
+import HomeTextCtc from "../../components/homeTextCtc";
+import InternshipCtc from "../../components/internhipCtc";
+import HomeAbout from "../../components/homeAbout";
 
 const Home = () => {
   return (
@@ -29,6 +32,7 @@ const Home = () => {
           </span>
         </Link>
       </div>
+      <HomeTextCtc />
       <Features />
       {/* <ProgramBuy /> */}
 
@@ -38,10 +42,11 @@ const Home = () => {
       ></SectionTitle>
       <Video /> */}
       {/* <AboutReason /> */}
+      <InternshipCtc />
+      <HomeAbout />
       <Team />
       <div className="w-full xl:flex justify-center px-3">
-
-      <Testimonials />
+        <Testimonials />
       </div>
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions" />
 
