@@ -6,30 +6,30 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 
 function homeAbout() {
   return (
-    <div>
-      <div className="w-full max-w-[1900px] flex flex-col md:flex-row justify-center overflow-x-clip my-20 p-5 gap-20 md:gap-5">
+    <div className="w-full flex justify-center">
+      <div className="w-full max-w-[1200px] flex flex-col md:flex-row justify-center overflow-x-clip my-20 p-5 gap-20 md:gap-5">
         <div className="flex flex-col gap-6 overflow-visible w-[50%]">
           <div className=" text-gray-600 text-5xl font-bold">
             Every Thing Student Needs - SandSthinkhub
           </div>
           <div className="flex flex-col gap-4 text-indigo-500   ">
-            <span className="flex flex-row gap-3">
+            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
               <BsArrowRightCircleFill />
               Courses
             </span>
-            <span className="flex flex-row gap-3">
+            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
               {" "}
               <BsArrowRightCircleFill /> Internship
             </span>
-            <span className="flex flex-row gap-3">
+            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
               {" "}
               <BsArrowRightCircleFill /> Counseling
             </span>
-            <span className="flex flex-row gap-3">
+            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
               {" "}
               <BsArrowRightCircleFill /> Career Guidence
             </span>
-            <span className="flex flex-row gap-3">
+            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
               {" "}
               <BsArrowRightCircleFill /> Placement
             </span>

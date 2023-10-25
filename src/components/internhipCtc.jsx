@@ -6,8 +6,8 @@ import MoreButton from "./moreButton";
 
 function internhipCtc() {
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-full max-w-[1900px] flex flex-col md:flex-row justify-center items-center bg-indigo-300 my-7 p-7 gap-10">
+    <div className="w-full flex justify-center bg-indigo-300">
+      <div className="w-full max-w-[1200px] flex flex-col md:flex-row justify-center items-center  my-7 p-7 gap-10">
         <div className="flex-1">
           <div className="text-5xl text-indigo-700 font-semibold w-full">
             An{" "}

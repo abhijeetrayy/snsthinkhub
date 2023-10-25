@@ -2,8 +2,8 @@ import React from "react";
 
 function homeTextCtc() {
   return (
-    <div className="w-full my-7 flex justify-center">
-      <div className="max-w-[1900px] w-full flex justify-center flex-col md:flex-row items-center bg-indigo-300">
+    <div className="w-full my-7 flex justify-center  bg-indigo-300">
+      <div className="max-w-[1200px] w-full flex justify-center flex-col md:flex-row items-center">
         <div className="w-fit flex-1 p-10 text-6xl font-extrabold text-indigo-700">
           Boost your career with innovative skill-building courses
         </div>
