@@ -27,7 +27,7 @@ function homeAbout() {
             </span>
             <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
               {" "}
-              <BsArrowRightCircleFill /> Career Guidence
+              <BsArrowRightCircleFill /> Career Guidance
             </span>
             <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
               {" "}
