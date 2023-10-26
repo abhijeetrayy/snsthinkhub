@@ -14,8 +14,8 @@ function internhipCtc() {
             <Link href={"/home/internship"} className="text-white underline">
               internship
             </Link>{" "}
-            internship is a transformative learning experience, bridging the gap
-            between education and professional practice.
+            is a transformative learning experience, bridging the gap between
+            education and professional practice.
           </div>
         </div>
         <div className="">
