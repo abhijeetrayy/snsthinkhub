@@ -22,7 +22,8 @@ function Navbar() {
     // { name: "Success Story", url: "/home/success-story" },
     { name: "Team", url: "/home/team" },
     { name: "About", url: "/home/about" },
-    { name: "Career", url: "/home/career" },
+    // { name: "Career", url: "/home/career" },
+    { name: "Gallery", url: "/home/gallery" },
   ];
 
   return (
