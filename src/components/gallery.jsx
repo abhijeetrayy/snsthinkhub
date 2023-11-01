@@ -18,7 +18,7 @@ function gallery() {
     <div className="w-full w-max-[1200px] flex justify-center flex-col">
       <div className="w-full flex justify-center p-6">
         <h1
-          className="text-4xl md:text-7xl font-bold text-indigo-500"
+          className="text-4xl md:text-7xl  text-indigo-500"
           style={styles.font}
         >
           Gallery
