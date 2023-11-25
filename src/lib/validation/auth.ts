@@ -32,10 +32,10 @@ export const authOptions: NextAuthOptions = {
             clientId: getGoogleCredentials().clientId,
             clientSecret: getGoogleCredentials().clientSecret,
         }),
-        GithubProvider({
-            clientId: process.env.clientIdG as string
-            ,clientSecret: process.env.cientSceretG as string
-        }),
+        // GithubProvider({
+        //     clientId: process.env.clientIdG as string
+        //     ,clientSecret: process.env.cientSceretG as string
+        // }),
         // CredentialProvider({
         //     name: "credentials",
         //     credentials:{
