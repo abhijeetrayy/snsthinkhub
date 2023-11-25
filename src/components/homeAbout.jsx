@@ -3,6 +3,7 @@ import React from "react";
 import aboutImg from "../public/photos/groupMam.jpg";
 import Image from "next/image";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+import Link from "next/link";
 
 function homeAbout() {
   return (
@@ -13,26 +14,41 @@ function homeAbout() {
             Every Thing Student Needs - SandSthinkhub
           </div>
           <div className="flex flex-col gap-4 text-indigo-500   ">
-            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
+            <Link
+              href={"/home/courses"}
+              className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer"
+            >
               <BsArrowRightCircleFill />
               Courses
-            </span>
-            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
+            </Link>
+            <Link
+              href={"/home/internship"}
+              className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer"
+            >
               {" "}
               <BsArrowRightCircleFill /> Internship
-            </span>
-            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
+            </Link>
+            <Link
+              href={"/home/program"}
+              className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer"
+            >
               {" "}
               <BsArrowRightCircleFill /> Counseling
-            </span>
-            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
+            </Link>
+            <Link
+              href={"/home/program"}
+              className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer"
+            >
               {" "}
               <BsArrowRightCircleFill /> Career Guidance
-            </span>
-            <span className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer">
+            </Link>
+            <Link
+              href={"/home/program"}
+              className="flex flex-row gap-3 hover:pl-2 duration-200 cursor-pointer"
+            >
               {" "}
               <BsArrowRightCircleFill /> Placement
-            </span>
+            </Link>
           </div>
         </div>
         <div className=" bg-clip-border w-fit">
