@@ -13,6 +13,7 @@ export default function Footer() {
     // { name: "Success Story", link: "/home/success-story" },
     { name: "Team", link: "/home/team" },
     { name: "Career", link: "/home/career" },
+    { name: "Contact-Us", link: "/home/contact-us" },
     { name: "About", link: "/home/about" },
   ];
   const legal = ["Terms", "Privacy", "Legal"];
@@ -42,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pl-5 md:pl-0 flex flex-row gap-10   w-full">
-          <div >
+          <div>
             <div className="flex flex-col gap-3 w-fit -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
                 <Link
@@ -80,11 +81,19 @@ export default function Footer() {
               <span className="sr-only">Facebook</span>
               <Facebook />
             </a>
-            <a href="https://instagram.com/snsthinkhub" target="_blank" rel="noopener">
+            <a
+              href="https://instagram.com/snsthinkhub"
+              target="_blank"
+              rel="noopener"
+            >
               <span className="sr-only">Instagram</span>
               <Instagram />
             </a>
-            <a href="https://linkedin.com/company/snsthinkhub" target="_blank" rel="noopener">
+            <a
+              href="https://linkedin.com/company/snsthinkhub"
+              target="_blank"
+              rel="noopener"
+            >
               <span className="sr-only">Linkedin</span>
               <Linkedin />
             </a>
@@ -104,14 +113,16 @@ export default function Footer() {
 
 const Twitter = ({ size = 24 }) => (
   <svg
-    className="text-white hover:text-gray-200"
-    xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
+    viewBox="0 0 357 322"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z" />
+    <path
+      d="M281.026 0.125H335.608L216.362 136.415L356.645 321.875H246.805L160.774 209.395L62.335 321.875H7.71996L135.265 176.098L0.690964 0.125H113.32L191.084 102.937L281.026 0.125ZM261.869 289.205H292.114L96.886 31.079H64.4305L261.869 289.205Z"
+      fill="white"
+    />
   </svg>
 );
 

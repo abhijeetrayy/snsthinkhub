@@ -36,18 +36,17 @@ export default function contactus() {
 
       if (data.message === "Form data saved successfully") {
         setLoading(false);
-        formData.Name = ""
-        formData.Email = ""
-        formData.Message = ""
-        formData.Phone = ""
+        formData.Name = "";
+        formData.Email = "";
+        formData.Message = "";
+        formData.Phone = "";
         toast("Thanks, We will reach to you soon");
-      }
-      else {
+      } else {
         setLoading(false);
-        formData.Name = ""
-        formData.Email = ""
-        formData.Message = ""
-        formData.Phone = ""
+        formData.Name = "";
+        formData.Email = "";
+        formData.Message = "";
+        formData.Phone = "";
       }
       console.log("hell", data);
       // Handle success message or redirect
@@ -109,9 +108,12 @@ export default function contactus() {
                   <h4 className="text-dark mb-1 text-md font-semibold">
                     Phone Number
                   </h4>
-                  <p className="text-body-color text-sm">
+                  <a
+                    href="tel:+9174170 77000"
+                    className="text-body-color text-sm"
+                  >
                     (+91)74170 77000
-                  </p>
+                  </a>
                 </div>
               </div>
               <div className="mb-8 flex w-full max-w-[370px]">
@@ -129,10 +131,12 @@ export default function contactus() {
                   <h4 className="text-dark mb-1 text-md font-semibold">
                     Email Address
                   </h4>
-                  <p className="text-body-color text-sm ">
+                  <a
+                    href="mailto:founder@sandsthinkhub.com"
+                    className="text-body-color text-sm "
+                  >
                     founder@sandsthinkhub.com
-                  </p>
-
+                  </a>
                 </div>
               </div>
             </div>

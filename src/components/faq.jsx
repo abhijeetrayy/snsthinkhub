@@ -1,28 +1,52 @@
 "use client";
 import React from "react";
+import { useRef } from "react";
 import Container from "./container";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const Faq = () => {
+  const ref = useRef(null);
   return (
     <Container className="!p-0">
-      <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
+      <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl ">
         {faqdata.map((item, index) => (
-          <div key={item.question} className="mb-5">
+          <div key={item.question} className="mb-5 duration-1000 transform">
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-md text-left text-gray-800 rounded-lg bg-gray-100 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75">
+                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-md text-left text-gray-800 rounded-lg bg-gray-100 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 ">
                     <span>{item.question}</span>
                     <ChevronDownIcon
-                      className={`${open ? "transform rotate-180" : ""
-                        } w-5 h-5 text-indigo-500`}
+                      className={`${
+                        open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-indigo-500`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                    {item.answer}
-                  </Disclosure.Panel>
+                  <Transition
+                    ref={ref}
+                    show={open}
+                    beforeEnter={() => {
+                      ref.current &&
+                        ref.current.style.setProperty(
+                          `max-height`,
+                          `${ref.current.scrollHeight}px`
+                        );
+                    }}
+                    beforeLeave={() => {
+                      ref.current &&
+                        ref.current.style.setProperty(`max-height`, `0px`);
+                    }}
+                    className="transition-all duration-300"
+                    enterFrom="transform opacity-0 max-h-[0px]"
+                    enterTo="transform opacity-100"
+                    leaveFrom="transform opacity-50"
+                    leaveTo="transform opacity-0"
+                  >
+                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                      {item.answer}
+                    </Disclosure.Panel>
+                  </Transition>
                 </>
               )}
             </Disclosure>
