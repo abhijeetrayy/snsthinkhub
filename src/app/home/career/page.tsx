@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const data = [
   {
-    title: "Freelace  Trainer",
+    title: "Freelance  Trainer",
     detail:
       "We're looking for experinced  teacher with required technical knowledge",
     tag: "freelance",
