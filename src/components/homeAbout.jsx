@@ -9,7 +9,7 @@ function homeAbout() {
   return (
     <div className="w-full flex justify-center">
       <div className="w-full max-w-[1200px] flex flex-col md:flex-row justify-center overflow-x-clip my-20 p-5 gap-20 md:gap-5">
-        <div className="flex flex-col gap-6 overflow-visible w-[50%]">
+        <div className="flex flex-col gap-6 overflow-visible md:w-[50%]">
           <div className=" text-gray-600 text-3xl md:text-5xl font-bold">
             Every Thing Student Needs - SandSthinkhub
           </div>

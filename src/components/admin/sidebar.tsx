@@ -35,6 +35,12 @@ function sidebar() {
         >
           career
         </Link>
+        <Link
+          className="px-8 py-3 bg-indigo-100 rounded-md border-1 border-gray-400 hover:bg-indigo-50"
+          href={"/home/admin/team"}
+        >
+          Team
+        </Link>
       </div>
 
       <div className="flex flex-col gap-2">

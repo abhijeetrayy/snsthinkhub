@@ -9,7 +9,7 @@ function internhipCtc() {
     <div className="w-full flex justify-center bg-indigo-300">
       <div className="w-full max-w-[1200px] flex flex-col md:flex-row justify-center items-center  my-7 p-7 gap-10">
         <div className="flex-1">
-          <div className="text-5xl text-indigo-700 font-semibold w-full">
+          <div className="text-3xl md:text-5xl text-indigo-700 font-semibold w-full">
             An{" "}
             <Link href={"/home/internship"} className="text-white underline">
               internship
