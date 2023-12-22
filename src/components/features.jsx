@@ -49,18 +49,16 @@ const Statistic = () => {
     <div className="px-2 py-3 w-full flex justify-center ">
       <section className="bg-white max-w-6xl">
         <div className="py-8 px-4 mx-auto sm:py- lg:px-6">
-        <div className="w-full flex justify-center mb-4">
-
-              <hr className="border max-w-md w-full" />
-        </div>
+          <div className="w-full flex justify-center mb-4">
+            <hr className="border max-w-md w-full" />
+          </div>
           <div className="w-full flex flex-col  md:items-center md:text-center  mb-8 lg:mb-16">
             <div className="max-w-6xl">
               <p className="text-indigo-600 sm:text-sm font-bold uppercase">
-              Key features
-
+                Key features
               </p>
               <h2 className="mb-4 mt-6 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-700 ">
-              What makes S&S different ?
+                What makes S&S different ?
               </h2>
             </div>
           </div>
@@ -68,23 +66,25 @@ const Statistic = () => {
             {features.map((item, index) => (
               <div
                 key={index}
-                className="group flex flex-col border  h-full border-indigo-400 p-3 rounded-md hover:bg-indigo-500 duration-300 hover:text-white cursor-default"
+                className="group flex flex-col border  h-full border-indigo-400 p-3 rounded-md hover:bg-white bg-indigo-500 duration-300 hover:text-white cursor-default"
               >
-                <div className="flex mb-4 w-fit rounded-lg bg-primary-100 border  overflow-clip ">
+                <div className="flex mb-4 w-fit rounded-lg bg-primary-100 border border-indigo-500 overflow-clip ">
                   <Image
-                    className="w-16 h-16 p-2 group-hover:bg-white duration-300"
+                    className="w-16 h-16 p-2 text-indigo-500  bg-white  duration-300"
                     src={item.icon}
                     width={24}
                     height={24}
                     alt=""
-                    style={{ color: "blue" }}
+                    style={{ color: "rgb(99 102 241)" }}
                   />
                 </div>
 
-                <h3 className="mb-2 text-lg font-bold text-gray-700 group-hover:text-white duration-300">
+                <h3 className="mb-2 text-lg font-bold group-hover:text-gray-700 text-white duration-300">
                   {item.title}
                 </h3>
-                <h4 className="text-gray-500 text-sm group-hover:text-white duration-300">{item.details}</h4>
+                <h4 className="group-hover:text-gray-500 text-sm text-white duration-300">
+                  {item.details}
+                </h4>
               </div>
             ))}
           </div>

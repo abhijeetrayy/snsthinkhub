@@ -53,9 +53,9 @@ function homeAbout() {
         </div>
         <div className=" bg-clip-border w-fit">
           <Image
-            className="z-10 rotate-6 scale-110"
-            width={500}
-            height={500}
+            className="z-10 rotate-6 scale-110 md:border-8 md:border-indigo-500 md:rounded-lg "
+            width={400}
+            height={400}
             src={aboutImg}
             alt=""
           />
