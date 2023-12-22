@@ -51,9 +51,9 @@ function homeAbout() {
             </Link>
           </div>
         </div>
-        <div className=" bg-clip-border w-fit">
+        <div className=" flex justify-center w-full bg-clip-border md:w-fit ">
           <Image
-            className="z-10 rotate-6 scale-110 md:border-8 md:border-indigo-500 md:rounded-lg "
+            className="z-10 md:rotate-6 md:hover:rotate-0 duration-700 scale-110 md:border-8 md:border-indigo-500 md:rounded-lg "
             width={400}
             height={400}
             src={aboutImg}
