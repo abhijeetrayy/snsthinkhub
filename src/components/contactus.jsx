@@ -87,7 +87,7 @@ export default function contactus() {
                     Our Location
                   </h4>
                   <p className="text-body-color text-sm ">
-                    248009, Dehradun, Uttarakhand, India
+                    Dehradun, Uttarakhand, India - PinCode-248009
                   </p>
                 </div>
               </div>
