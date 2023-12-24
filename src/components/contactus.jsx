@@ -87,7 +87,7 @@ export default function contactus() {
                     Our Location
                   </h4>
                   <p className="text-body-color text-sm ">
-                    Dehradun, Uttarakhand, India
+                    248009, Dehradun, Uttarakhand, India
                   </p>
                 </div>
               </div>
