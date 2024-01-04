@@ -156,7 +156,7 @@ function Navbar() {
                                     onClick={signIn}
                                     className=" px-4 py-2 -ml-4 text-left text-white bg-indigo-500 rounded-md hover:bg-indigo-400 hover:text-white focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none w-52"
                                   >
-                                    signIn
+                                    SignIn
                                   </button>
                                 ) : (
                                   <Link
@@ -214,7 +214,7 @@ function Navbar() {
               onClick={signIn}
               className="px-4 py-2 text-white bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-600 rounded-md md:ml-5"
             >
-              signIn
+              SignIn
             </button>
           ) : (
             <Link
