@@ -8,7 +8,7 @@ import Atoshi from "../../../public/img/team/Atoshi.jpg";
 import Sir from "../../../public/img/team/Sir.jpg";
 const data = [
   // { Name: "Sangita Badoni", Position: "Founder/CEO", Image: img1 , qoute: "Discouragement and failure are two of the surest stepping stones to success."},
-  { Name: "Harshit Munjal", Position: "Chief Operating Officer", Image: img2 , qoute: "Triumph grows on the soil of setbacks."},
+  { Name: "Harshit Munjal", Position: "Head of Operations", Image: img2 , qoute: "Triumph grows on the soil of setbacks."},
   { Name: "Atoshi Roy", Position: "SoftSkill Trainer", Image: Atoshi , qoute: "Mistakes fuel victories, and shape your success."},
   { Name: "Sharad Gupta", Position: "Technical Trainer", Image: Sir , qoute: "Fail forward, achieve greatness through setbacks."},
 
