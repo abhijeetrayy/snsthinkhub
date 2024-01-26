@@ -23,7 +23,7 @@ export default function Team() {
           </p>
         </div>
         <div className="w-full grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <div>
+          {/* <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <Image
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -40,8 +40,8 @@ export default function Team() {
                 <p className="mb-4 text-xs tracking-wide text-white">
                   "Discouragement and failure are two of the surest stepping
                   stones to success"
-                </p>
-                {/* <div className="flex items-center justify-center space-x-3">
+                </p> */}
+          {/* <div className="flex items-center justify-center space-x-3">
                   <a
                     href="/"
                     className="text-white transition-colors duration-300 hover:text-black"
@@ -67,10 +67,10 @@ export default function Team() {
                     </svg>
                   </a>
                 </div> */}
-              </div>
+          {/* </div>
             </div>
-          </div>
-          {/* <div>
+          </div> */}
+          <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <Image
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -81,7 +81,7 @@ export default function Team() {
                 <p className="mb-1 text-lg font-bold text-gray-50">
                   Harshit Munjal
                 </p>
-                <p className="mb-4 text-xs text-gray-50">COO</p>
+                <p className="mb-4 text-xs text-gray-50">HOO</p>
                 <p className="mb-4 text-xs tracking-wide text-white">
                   "Triumph grows on the soil of setbacks"
                 </p>
@@ -113,7 +113,7 @@ export default function Team() {
                 </div> */}
               </div>
             </div>
-          </div> */}
+          </div>
 
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
