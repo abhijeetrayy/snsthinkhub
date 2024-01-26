@@ -70,7 +70,7 @@ export default function Team() {
               </div>
             </div>
           </div>
-          <div>
+          {/* <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <Image
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -113,7 +113,7 @@ export default function Team() {
                 </div> */}
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
