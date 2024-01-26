@@ -22,7 +22,8 @@ export default function Team() {
             Dedicated to making the future you imagine, your reality.
           </p>
         </div>
-        <div className="w-full grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {/* <div className="w-full grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"> */}
+        <div className="w-full grid gap-10 sm:grid-cols-2 md:grid-cols-3 ">
           {/* <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <Image
